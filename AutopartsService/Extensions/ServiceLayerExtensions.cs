@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using AutopartsService.FluentValidation.Catalog.WarrantyValidation;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace AutopartsService.Extensions
@@ -25,6 +28,13 @@ namespace AutopartsService.Extensions
                     services.AddScoped(iServiceType, serviceType);
                 }
             }
+
+            services.AddFluentValidationAutoValidation(opt =>
+            {
+                opt.DisableDataAnnotationsValidation = true;
+            });
+
+            services.AddValidatorsFromAssemblyContaining<WarrantyCreateValidation>();
 
             return services;
         }
