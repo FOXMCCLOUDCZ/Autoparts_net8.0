@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutopartsEntity.Catalog.ViewModels.CountryViewModel;
 
-namespace AutopartsService.Services.Catalog.Interfaces
+namespace AutopartsService.Services.ExtensionForUsers.Interfaces
 {
     public interface ICountryService
     {
+        Task<List<CountryListVM>> AllListAsync();
+        Task CreateCountryAsync(CountryCreateVM request);
+        Task DeleteCountryAsync(int id);
+        Task<CountryEditVM> GetCountryById(int id);
+        Task EditCountryAsync(CountryEditVM request);
     }
 }

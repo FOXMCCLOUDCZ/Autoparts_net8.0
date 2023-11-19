@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutopartsEntity.Catalog.ViewModels.BrandViewModel;
 
 namespace AutopartsService.Services.Catalog.Interfaces
 {
     public interface IBrandService
     {
+        Task<List<BrandListVM>> AllListAsync();
+        Task CreateBrandAsync(BrandCreateVM request);
+        Task DeleteBrandAsync(int id);
+        Task<BrandEditVM> GetBrandById(int id);
+        Task EditBrandAsync(BrandEditVM request);
     }
 }

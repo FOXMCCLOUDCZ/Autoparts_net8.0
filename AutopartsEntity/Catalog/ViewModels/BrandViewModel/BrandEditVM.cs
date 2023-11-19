@@ -1,6 +1,4 @@
-﻿using AutopartsEntity.Catalog.ViewModels.BrandInformationViewModel;
-
-namespace AutopartsEntity.Catalog.ViewModels.BrandViewModel
+﻿namespace AutopartsEntity.Catalog.ViewModels.BrandViewModel
 {
     public class BrandEditVM
     {
@@ -13,8 +11,6 @@ namespace AutopartsEntity.Catalog.ViewModels.BrandViewModel
         public string Title { get; set; } = null!;
         public string? LogoPath { get; set; }
         public bool IsActive { get; set; } = false;
-
-        public int? BrandInformationId { get; set; }
-        public BrandInformationEditVM? BrandInformation { get; set; }
+        public string? GeneralInformation { get; set; }
     }
 }

@@ -15,13 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AutopartsEntity\AutopartsEntity.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="FluentValidation\Catalog\BrandValidation\" />
-    <Folder Include="FluentValidation\Catalog\BrandInformationValidation\" />
-    <Folder Include="FluentValidation\Catalog\CountryValidation\" />
-    <Folder Include="FluentValidation\Catalog\CurrencyValidation\" />
+    <ProjectReference Include="..\AutopartsRepository\AutopartsRepository.csproj" />
   </ItemGroup>
 
 </Project>

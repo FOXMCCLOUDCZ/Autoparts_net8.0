@@ -19,7 +19,6 @@ namespace AutopartsRepository.Contexts
 
         // DbSet -> AutopartsEntity/Catalog/Entities
         public DbSet<Brand> Brands { get; set; }
-        public DbSet<BrandInformation> BrandInformation{ get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<Warranty> Warranties { get; set; }

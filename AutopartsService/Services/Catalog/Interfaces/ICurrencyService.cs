@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutopartsEntity.Catalog.ViewModels.CurrencyViewModel;
 
-namespace AutopartsService.Services.Catalog.Interfaces
+namespace AutopartsService.Services.ExtensionForUsers.Interfaces
 {
     public interface ICurrencyService
     {
+        Task<List<CurrencyListVM>> AllListAsync();
+        Task CreateCurrencyAsync(CurrencyCreateVM request);
+        Task DeleteCurrencyAsync(int id);
+        Task<CurrencyEditVM> GetCurrencyById(int id);
+        Task EditCurrencyAsync(CurrencyEditVM request);
     }
 }

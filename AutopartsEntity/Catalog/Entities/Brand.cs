@@ -8,8 +8,6 @@ namespace AutopartsEntity.Catalog.Entities
         public string Title { get; set; } = null!;
         public string? LogoPath { get; set; }
         public bool IsActive { get; set; } = false;
-
-        public int? BrandInformationId { get; set; }
-        public BrandInformation? BrandInformation { get; set; }
+        public string? GeneralInformation { get; set; }
     }
 }
