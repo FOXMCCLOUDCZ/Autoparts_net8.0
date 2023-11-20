@@ -1,5 +1,7 @@
 ﻿using AutopartsEntity.Catalog.ViewModels.WarrantyViewModel;
 using AutopartsService.Services.Catalog.Interfaces;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutopartsWeb.Areas.SuperAdmin.Controllers
@@ -8,10 +10,14 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
     public class WarrantyController : Controller
     {
         private readonly IWarrantyService _warrantyService;
+        private readonly IValidator<WarrantyCreateVM> _createValidator;
+        private readonly IValidator<WarrantyEditVM> _editValidator;
 
-        public WarrantyController(IWarrantyService warrantyService)
+        public WarrantyController(IWarrantyService warrantyService, IValidator<WarrantyCreateVM> createValidator, IValidator<WarrantyEditVM> editValidator)
         {
             _warrantyService = warrantyService;
+            _createValidator = createValidator;
+            _editValidator = editValidator;
         }
 
         public async Task<IActionResult> WarrantyList()
@@ -29,8 +35,15 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> WarrantyCreate(WarrantyCreateVM request)
         {
-            await _warrantyService.CreateWarrantyAsync(request);
-            return RedirectToAction("WarrantyList", "Warranty", new { Area = ("SuperAdmin") });
+            var validation = await _createValidator.ValidateAsync(request);
+            if (validation.IsValid)
+            {
+                await _warrantyService.CreateWarrantyAsync(request);
+                return RedirectToAction("WarrantyList", "Warranty", new { Area = ("SuperAdmin") });
+            }
+
+            validation.AddToModelState(this.ModelState);
+            return View();
         }
 
         [HttpGet]
@@ -43,8 +56,15 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> WarrantyEdit(WarrantyEditVM request)
         {
-            await _warrantyService.EditWarrantyAsync(request);
-            return RedirectToAction("WarrantyList", "Warranty", new { Area = ("SuperAdmin") });
+            var validation = await _editValidator.ValidateAsync(request);
+            if (validation.IsValid)
+            {
+                await _warrantyService.EditWarrantyAsync(request);
+                return RedirectToAction("WarrantyList", "Warranty", new { Area = ("SuperAdmin") });
+            }
+
+            validation.AddToModelState(this.ModelState);
+            return View();
         }
 
         public async Task<IActionResult> WarrantyDelete(int id)

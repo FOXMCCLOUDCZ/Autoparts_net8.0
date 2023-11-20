@@ -21,7 +21,7 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> BrandCreate()
+        public IActionResult BrandCreate()
         {
             return View();
         }

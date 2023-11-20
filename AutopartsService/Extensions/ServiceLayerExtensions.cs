@@ -35,6 +35,7 @@ namespace AutopartsService.Extensions
             });
 
             services.AddValidatorsFromAssemblyContaining<WarrantyCreateValidation>();
+            services.AddValidatorsFromAssemblyContaining<WarrantyEditValidation>();
 
             return services;
         }

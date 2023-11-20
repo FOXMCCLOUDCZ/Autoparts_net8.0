@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutopartsEntity.Catalog.ViewModels.BrandViewModel;
+using FluentValidation;
 
 namespace AutopartsService.FluentValidation.Catalog.BrandValidation
 {
-    internal class BrandCreateValidation
+    public class BrandCreateValidation : AbstractValidator<BrandCreateVM>
     {
+        public BrandCreateValidation()
+        {
+            RuleFor(x => x.TecDoc)
+                .GreaterThanOrEqualTo(1)
+                .LessThanOrEqualTo(999999);
+            RuleFor(x => x.Title)
+                .NotEmpty()
+                .NotNull()
+                .MaximumLength(50);
+            RuleFor(x => x.LogoPath);
+            RuleFor(x => x.GeneralInformation)
+                .MaximumLength(2000);
+        }
     }
 }

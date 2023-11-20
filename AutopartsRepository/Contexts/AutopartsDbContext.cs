@@ -15,7 +15,7 @@ namespace AutopartsRepository.Contexts
         }
 
         // DbSet -> AutopartsEntity/ExtensionForUser/Entities
-        
+
 
         // DbSet -> AutopartsEntity/Catalog/Entities
         public DbSet<Brand> Brands { get; set; }

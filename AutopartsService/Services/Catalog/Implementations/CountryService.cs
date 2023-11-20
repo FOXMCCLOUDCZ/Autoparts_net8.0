@@ -4,7 +4,7 @@ using AutopartsEntity.Catalog.Entities;
 using AutopartsEntity.Catalog.ViewModels.CountryViewModel;
 using AutopartsRepository.Repositories.Interfaces;
 using AutopartsRepository.UnitOfWorks.Interfaces;
-using AutopartsService.Services.Catalog.Interfaces;
+using AutopartsService.Services.ExtensionForUsers.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutopartsService.Services.ExtensionForUsers.Implementations

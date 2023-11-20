@@ -1,4 +1,5 @@
 ﻿using AutopartsEntity.Catalog.ViewModels.WarrantyViewModel;
+using AutopartsService.Messages.Catalog;
 using FluentValidation;
 
 namespace AutopartsService.FluentValidation.Catalog.WarrantyValidation
@@ -8,9 +9,9 @@ namespace AutopartsService.FluentValidation.Catalog.WarrantyValidation
         public WarrantyCreateValidation()
         {
             RuleFor(x => x.Title)
-                .NotEmpty()
-                .NotNull()
-                .MaximumLength(50);
+                .NotEmpty().WithMessage(ValidationMessages.NullEmptyMessageTitle("záruční lhůty"))
+                .NotNull().WithMessage(ValidationMessages.NullEmptyMessageTitle("záruční lhůty"))
+                .MaximumLength(50).WithMessage(ValidationMessages.MaximumCharacterAllowenceMessageTitle("záruční lhůty",50));
         }
     }
 }

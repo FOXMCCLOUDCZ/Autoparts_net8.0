@@ -31,7 +31,7 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> CountryCreate()
+        public IActionResult CountryCreate()
         {
             ViewData["Currency"] = GetActiveCurrencies();
             return View();
