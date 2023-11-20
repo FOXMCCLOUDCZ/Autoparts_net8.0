@@ -9,9 +9,9 @@ namespace AutopartsService.FluentValidation.Catalog.WarrantyValidation
         public WarrantyEditValidation()
         {
             RuleFor(x => x.Title)
-                .NotEmpty().WithMessage(ValidationMessages.NullEmptyMessageTitle("záruční lhůty"))
-                .NotNull().WithMessage(ValidationMessages.NullEmptyMessageTitle("záruční lhůty"))
-                .MaximumLength(50).WithMessage(ValidationMessages.MaximumCharacterAllowenceMessageTitle("Záruční lhůta",50));
+                .NotEmpty().WithMessage(ValidationMessages.NullEmptyMessage("pro název záruční lhůty"))
+                .NotNull().WithMessage(ValidationMessages.NullEmptyMessage("pro název záruční lhůty"))
+                .MaximumLength(50).WithMessage(ValidationMessages.MaximumCharacterAllowenceMessage("Záruční lhůta", 50));
         }
     }
 }

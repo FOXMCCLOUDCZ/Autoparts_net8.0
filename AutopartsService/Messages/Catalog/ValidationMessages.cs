@@ -2,24 +2,24 @@
 {
     public static class ValidationMessages
     {
-        public static string NullEmptyMessageTitle(string propName)
+        public static string NullEmptyMessage(string propName)
         {
-            return $"Vyplňte název {propName}.";
+            return $"Vyplňte pole {propName}.";
         }
 
-        public static string MaximumCharacterAllowenceMessageTitle(string propName, int resctriction)
+        public static string MaximumCharacterAllowenceMessage(string propName, int resctriction)
         {
-            return $"V názvu {propName} byl překročen maximální počet znaků ({resctriction}).";
+            return $"{propName} je omezena maximálním počtem znaků ({resctriction}).";
         }
 
         public static string GreaterThanMessage(string propName, int resctriction)
         {
-            return $"{propName} minimální hodnota {resctriction}.";
+            return $"Minimální hodnota {propName} je {resctriction}.";
         }
 
         public static string LessThanMessage(string propName, int resctriction)
         {
-            return $"{propName} maximální hodnota {resctriction}.";
+            return $"Maximální hodnota {propName} je {resctriction}.";
         }
     }
 }
