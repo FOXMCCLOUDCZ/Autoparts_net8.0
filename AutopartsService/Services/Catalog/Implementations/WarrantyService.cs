@@ -5,7 +5,6 @@ using AutopartsEntity.Catalog.ViewModels.WarrantyViewModel;
 using AutopartsRepository.Repositories.Interfaces;
 using AutopartsRepository.UnitOfWorks.Interfaces;
 using AutopartsService.Services.Catalog.Interfaces;
-using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutopartsService.Services.Catalog.Implementations

@@ -1,5 +1,7 @@
 ﻿using AutopartsEntity.Catalog.ViewModels.BrandViewModel;
 using AutopartsService.Services.Catalog.Interfaces;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutopartsWeb.Areas.SuperAdmin.Controllers
@@ -8,10 +10,14 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
     public class BrandController : Controller
     {
         private readonly IBrandService _brandService;
+        private readonly IValidator<BrandCreateVM> _createValidator;
+        private readonly IValidator<BrandEditVM> _editValidator;
 
-        public BrandController(IBrandService brandService)
+        public BrandController(IBrandService brandService, IValidator<BrandCreateVM> createValidator, IValidator<BrandEditVM> editValidator)
         {
             _brandService = brandService;
+            _createValidator = createValidator;
+            _editValidator = editValidator;
         }
 
         public async Task<IActionResult> BrandList()
@@ -29,8 +35,15 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> BrandCreate(BrandCreateVM request)
         {
-            await _brandService.CreateBrandAsync(request);
-            return RedirectToAction("BrandList", "Brand", new { Area = ("SuperAdmin") });
+            var validation = await _createValidator.ValidateAsync(request);
+            if (validation.IsValid)
+            {
+                await _brandService.CreateBrandAsync(request);
+                return RedirectToAction("BrandList", "Brand", new { Area = ("SuperAdmin") });
+            }
+
+            validation.AddToModelState(this.ModelState);
+            return View();
         }
 
         [HttpGet]
@@ -43,8 +56,15 @@ namespace AutopartsWeb.Areas.SuperAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> BrandEdit(BrandEditVM request)
         {
-            await _brandService.EditBrandAsync(request);
-            return RedirectToAction("BrandList", "Brand", new { Area = ("SuperAdmin") });
+            var validation = await _editValidator.ValidateAsync(request);
+            if (validation.IsValid)
+            {
+                await _brandService.EditBrandAsync(request);
+                return RedirectToAction("BrandList", "Brand", new { Area = ("SuperAdmin") });
+            }
+
+            validation.AddToModelState(this.ModelState);
+            return View();
         }
 
         public async Task<IActionResult> BrandDelete(int id)

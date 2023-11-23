@@ -128,7 +128,7 @@
                 </ul>
             </li>
             <!-- END nastaveni Webove stranky -->
-            <!-- START nastaveni DATA -->
+            <!-- START nastaveni pro SuperAdmin -->
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-database"></i>
@@ -155,6 +155,12 @@
                         </a>
                     </li>
                     <li>
+                        <a asp-area="SuperAdmin" asp-controller="Manufacturer" asp-action="ManufacturerList">
+                            <i class="bi bi-circle"></i>
+                            <span>Výrobci</span>
+                        </a>
+                    </li>
+                    <li>
                         <a asp-area="SuperAdmin" asp-controller="Warranty" asp-action="WarrantyList">
                             <i class="bi bi-circle"></i>
                             <span>Záruční lhůty</span>
@@ -168,7 +174,7 @@
                     </li>
                 </ul>
             </li>
-            <!-- END nastaveni DATA -->
+            <!-- END nastaveni pro SuperAdmin -->
         </ul>
     </aside>
     <!-- === END Sidebar === -->
