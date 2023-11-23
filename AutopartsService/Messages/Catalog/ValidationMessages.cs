@@ -7,9 +7,24 @@
             return $"Vyplňte pole {propName}.";
         }
 
-        public static string MaximumCharacterAllowenceMessage(string propName, int resctriction)
+        public static string NullEmptyMessageSelect(string propName)
+        {
+            return $"Vyberte {propName}.";
+        }
+
+        public static string MaximumCharacterAllowenceMessageMale(string propName, int resctriction)
+        {
+            return $"{propName} je omezen maximálním počtem znaků ({resctriction}).";
+        }
+
+        public static string MaximumCharacterAllowenceMessageFemale(string propName, int resctriction)
         {
             return $"{propName} je omezena maximálním počtem znaků ({resctriction}).";
+        }
+
+        public static string MaximumCharacterAllowenceMessageMiddle(string propName, int resctriction)
+        {
+            return $"{propName} je omezeno maximálním počtem znaků ({resctriction}).";
         }
 
         public static string GreaterThanMessage(string propName, int resctriction)

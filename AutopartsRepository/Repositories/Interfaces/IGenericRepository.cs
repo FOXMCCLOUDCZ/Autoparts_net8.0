@@ -11,5 +11,6 @@ namespace AutopartsRepository.Repositories.Interfaces
         IQueryable<T> ListEntity();
         IQueryable<T> Where(Expression<Func<T, bool>> expression);
         Task<T> FindEntity(int id);
+        Task<bool> IsUnique(Expression<Func<T, bool>> expression);
     }
 }

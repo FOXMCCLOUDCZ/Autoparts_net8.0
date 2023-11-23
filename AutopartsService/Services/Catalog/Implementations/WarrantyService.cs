@@ -5,6 +5,7 @@ using AutopartsEntity.Catalog.ViewModels.WarrantyViewModel;
 using AutopartsRepository.Repositories.Interfaces;
 using AutopartsRepository.UnitOfWorks.Interfaces;
 using AutopartsService.Services.Catalog.Interfaces;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 namespace AutopartsService.Services.Catalog.Implementations
@@ -22,6 +23,14 @@ namespace AutopartsService.Services.Catalog.Implementations
             _repository = _unitOfWork.GetGenericRepository<Warranty>();
         }
 
+        //public async Task<bool> IsWarrantyUnique(string title)
+        //{
+        //    // Zkontrolujte unikátnost názvu
+        //    bool isUnique = await _repository.IsUnique(x => x.Title == title);
+
+        //    return isUnique;
+        //}
+
         public async Task<List<WarrantyListVM>> AllListAsync()
         {
             var warrantyListVM = await _unitOfWork.GetGenericRepository<Warranty>().ListEntity()
@@ -36,6 +45,7 @@ namespace AutopartsService.Services.Catalog.Implementations
             var warranty = _mapper.Map<Warranty>(request);
             await _repository.CreateEntity(warranty);
             await _unitOfWork.CommitAsync();
+
         }
 
         public async Task DeleteWarrantyAsync(int id)

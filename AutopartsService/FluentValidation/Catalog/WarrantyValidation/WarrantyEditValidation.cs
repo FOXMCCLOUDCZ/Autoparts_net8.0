@@ -11,7 +11,7 @@ namespace AutopartsService.FluentValidation.Catalog.WarrantyValidation
             RuleFor(x => x.Title)
                 .NotEmpty().WithMessage(ValidationMessages.NullEmptyMessage("pro název záruční lhůty"))
                 .NotNull().WithMessage(ValidationMessages.NullEmptyMessage("pro název záruční lhůty"))
-                .MaximumLength(50).WithMessage(ValidationMessages.MaximumCharacterAllowenceMessage("Záruční lhůta", 50));
+                .MaximumLength(50).WithMessage(ValidationMessages.MaximumCharacterAllowenceMessageFemale("Záruční lhůta", 50));
         }
     }
 }

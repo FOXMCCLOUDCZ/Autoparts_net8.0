@@ -6,3 +6,25 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="container">
+    <div class="form-group">
+        <label for="characterCountInput50">Input (max 50 characters):</label>
+        <input type="text" class="form-control" id="characterCountInput50" maxlength="50">
+        <small id="characterCount50" class="form-text text-muted">50 characters remaining</small>
+    </div>
+
+    <div class="form-group">
+        <label for="characterCountInput70">Input (max 70 characters):</label>
+        <input type="text" class="form-control" id="characterCountInput70" maxlength="70">
+        <small id="characterCount70" class="form-text text-muted">70 characters remaining</small>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/liveCharacterCount.js" asp-append-version="true"></script>
+    <script>
+        setupLiveCharacterCount('characterCountInput50', 'characterCount50', 50);
+        setupLiveCharacterCount('characterCountInput70', 'characterCount70', 70);
+    </script>
+}

@@ -10,6 +10,8 @@ namespace AutopartsService.Extensions
     {
         public static IServiceCollection LoadServiceLayerExtensions(this IServiceCollection services)
         {
+            //services.LoadIdentityExtensions();
+
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             var types = Assembly.GetExecutingAssembly()

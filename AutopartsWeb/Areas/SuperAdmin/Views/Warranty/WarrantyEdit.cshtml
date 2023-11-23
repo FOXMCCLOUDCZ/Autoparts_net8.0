@@ -23,8 +23,11 @@
             <input type="hidden" asp-for="CreateDate" />
             <input type="hidden" asp-for="RowVersion" />
             <div class="col-md-12">
+                <div class="text-end mx-3">
+                    <small id="TitleCount50" class="form-text text-muted">0/50</small>
+                </div>
                 <div class="form-floating">
-                    <input asp-for="Title" type="text" class="form-control" id="floatingName" placeholder="Název záruční lhůty">
+                    <input asp-for="Title" type="text" class="form-control" id="Title" placeholder="Název záruční lhůty">
                     <label asp-for="Title">Název záruční lhůty</label>
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
@@ -43,3 +46,9 @@
         </form>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        setupLiveCharacterCount('Title', 'TitleCount50', 50);
+    </script>
+}

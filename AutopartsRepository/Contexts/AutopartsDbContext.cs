@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace AutopartsRepository.Contexts
 {
-    public class AutopartsDbContext : DbContext
+    public class AutopartsDbContext : DbContext /*IdentityDbContext<AutopartsUser, AutopartsRole, string>*/
     {
         public AutopartsDbContext(DbContextOptions options) : base(options)
         {
@@ -14,7 +14,7 @@ namespace AutopartsRepository.Contexts
         {
         }
 
-        // DbSet -> AutopartsEntity/ExtensionForUser/Entities
+        // DbSet -> AutopartsEntity/Identity/Entities
 
 
         // DbSet -> AutopartsEntity/Catalog/Entities

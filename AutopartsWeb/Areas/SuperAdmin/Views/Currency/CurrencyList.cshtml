@@ -1,22 +1,22 @@
-﻿@model List<WarrantyListVM>
+﻿@model List<CurrencyListVM>
 @{
-    ViewData["Title"] = "WarrantyList";
+    ViewData["Title"] = "CurrencyList";
     Layout = "~/Areas/SuperAdmin/Views/Shared/_Layout.cshtml";
 }
 
 <div>
-    <h5 class="card-title">Záruční lhůty</h5>
+    <h5 class="card-title">Měna</h5>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a asp-area="SuperAdmin" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
-            <li class="breadcrumb-item active"><a asp-area="SuperAdmin" asp-controller="Warranty" asp-action="WarrantyList">Záruční lhůty</a></li>
+            <li class="breadcrumb-item active"><a asp-area="SuperAdmin" asp-controller="Currency" asp-action="CurrencyList">Měna</a></li>
         </ol>
     </nav>
 </div>
 
 
 <div class="d-grid gap-2 mt-2 mb-2">
-    <a asp-area="SuperAdmin" asp-controller="Warranty" asp-action="WarrantyCreate" class="btn btn-success btn-sm px-2"><i class="bi bi-plus-lg"></i></a>
+    <a asp-area="SuperAdmin" asp-controller="Currency" asp-action="CurrencyCreate" class="btn btn-success btn-sm px-2"><i class="bi bi-plus-lg"></i></a>
 </div>
 
 <div class="card">
@@ -24,7 +24,9 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th class="text-center align-middle" scope="col">Název</th>
+                    <th class="text-center align-middle" scope="col">Číselný<br />kód<br />měny</th>
+                    <th class="text-center align-middle" scope="col">Kód<br />měny</th>
+                    <th class="text-center align-middle" scope="col">Název<br />měny</th>
                     <th class="text-center align-middle" scope="col">Vytvořeno<br />Editováno</th>
                     <th class="text-center align-middle" scope="col">Aktivní<br />neaktivní</th>
                     <th class="text-center align-middle" scope="col">Akce</th>
@@ -34,7 +36,9 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td class="text-center align-middle">@item.Title</td>
+                        <td class="text-center align-middle">@item.NumericCurrencyCode</td>
+                        <td class="text-center align-middle">@item.CurrencyCode</td>
+                        <td class="text-center align-middle">@item.CurrencyName</td>
                         <td class="text-center align-middle">@item.CreateDate.ToString("d")<br />@item.UpdateDate?.ToString("d")</td>
                         @if (item.IsActive == false)
                         {
@@ -53,8 +57,8 @@
                             </td>
                         }
                         <td class="text-center align-middle">
-                            <a asp-area="SuperAdmin" asp-controller="Warranty" asp-action="WarrantyEdit" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                            <a asp-area="SuperAdmin" asp-controller="Warranty" asp-action="WarrantyDelete" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+                            <a asp-area="SuperAdmin" asp-controller="Currency" asp-action="CurrencyEdit" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                            <a asp-area="SuperAdmin" asp-controller="Currency" asp-action="CurrencyDelete" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
                         </td>
                     </tr>
                 }

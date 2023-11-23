@@ -46,5 +46,9 @@ namespace AutopartsRepository.Repositories.Implementations
         {
             return await _dbSet.FindAsync(id);
         }
+        public async Task<bool> IsUnique(Expression<Func<T, bool>> expression)
+        {
+            return await _dbSet.AllAsync(expression);
+        }
     }
 }

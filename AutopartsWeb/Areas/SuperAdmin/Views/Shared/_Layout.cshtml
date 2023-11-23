@@ -193,6 +193,9 @@
 
     <!-- Template Main JS File -->
     <script src="~/SuperAdmin/assets/js/main.js"></script>
+    <script src="~/js/liveCharacterCount.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 
 </body>
 </html>
