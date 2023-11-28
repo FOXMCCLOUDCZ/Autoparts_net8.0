@@ -36,5 +36,10 @@
         {
             return $"Maximální hodnota {propName} je {resctriction}.";
         }
+
+        //public static string UniqueValueMessage(string propName)
+        //{
+        //    return $"Hodnota {propName} již existuje.";
+        //}
     }
 }

@@ -1,5 +1,4 @@
 ﻿using AutopartsCore.BaseEntities;
-using AutopartsEntity.Catalog.ViewModels.CurrencyViewModel;
 
 namespace AutopartsEntity.Catalog.Entities
 {

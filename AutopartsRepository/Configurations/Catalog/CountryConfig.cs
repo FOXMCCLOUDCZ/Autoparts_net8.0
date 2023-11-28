@@ -8,6 +8,10 @@ namespace AutopartsRepository.Configurations.Catalog
     {
         public void Configure(EntityTypeBuilder<Country> builder)
         {
+            //builder.HasIndex(x => x.NumericCountryCode).IsUnique();
+            //builder.HasIndex(x => x.ISOAlpha2).IsUnique();
+            //builder.HasIndex(x => x.ISOAlpha3).IsUnique();
+
             builder.Property(x => x.CreateDate).IsRequired()
                 .HasMaxLength(10);
             builder.Property(x => x.UpdateDate)

@@ -1,8 +1,324 @@
-﻿
+﻿@model List<ManufacturerListVM>
 @{
     ViewData["Title"] = "ManufacturerList";
     Layout = "~/Areas/SuperAdmin/Views/Shared/_Layout.cshtml";
 }
 
-<h1>ManufacturerList</h1>
+<div>
+    <h5 class="card-title">Výrobci</h5>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-area="SuperAdmin" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
+            <li class="breadcrumb-item active"><a asp-area="SuperAdmin" asp-controller="Manufacturer" asp-action="ManufacturerList">Výrobci</a></li>
+        </ol>
+    </nav>
+</div>
 
+<div class="d-grid gap-2 mt-2 mb-2">
+    <a asp-area="SuperAdmin" asp-controller="Manufacturer" asp-action="ManufacturerCreate" class="btn btn-success btn-sm px-2"><i class="bi bi-plus-lg"></i></a>
+</div>
+<div class="card">
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center align-middle" scope="col">TecDoc</th>
+                    <th class="text-center align-middle" scope="col">Název</th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/spare-parts32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/sport-car32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/truck32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/motorbike32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/tractor32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/air-compressor32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/excavator32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/factory-machine32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/car-engine32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/forklift32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/mining-truck32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/sail-boat32.png" />
+                    </th>
+                    <th class="text-center align-middle" scope="col">
+                        <img src="~/Image/Icons/32px/carpet32.png" />
+                    </th>
+                    
+
+                    <th class="text-center align-middle align-middle" scope="col">Vytvořeno<br />Editováno</th>
+                    <th class="text-center align-middle align-middle" scope="col">Aktivní<br />neaktivní</th>
+                    <th class="text-center align-middle" scope="col">Akce</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center align-middle">@item.TecDoc</td>
+                        <td class="text-center align-middle">@item.Title</td>
+                        @if (item.IsAutoParts == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsPKW == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsLKW == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsMotorcycle == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsAgriculturalMachinery == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsCompressors == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsConstuctionAndMining == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsElectronicDischargeMachines == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsEngines == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsForkLiftTruck == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsIndustrialApplications == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsShipsAndBoats == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        @if (item.IsVacuumPumps == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        <td class="text-center align-middle align-middle">@item.CreateDate.ToString("d")<br />@item.UpdateDate?.ToString("d")</td>
+                        @if (item.IsActive == false)
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center align-middle">
+                                <div class="btn btn-success btn-sm">
+                                    <i class="bi bi-check-lg"></i>
+                                </div>
+                            </td>
+                        }
+                        <td class="text-center align-middle">
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#collapse@(item.Id)"><i class="bi bi-info-lg"></i></button>
+                            <a asp-area="SuperAdmin" asp-controller="Manufacturer" asp-action="ManufacturerEdit" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                            <a asp-area="SuperAdmin" asp-controller="Manufacturer" asp-action="ManufacturerDelete" asp-route-id="@item.Id" data-id="@item.Id" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="p-0">
+                            <div id="collapse@(item.Id)" class="accordion-collapse collapse" aria-labelledby="flush-heading@(item.Id)" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body px-2 py-2">
+                                    <p><strong>Informace o výrobci @item.Title:</strong></p>
+                                    <p>@item.Description</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
