@@ -30,13 +30,18 @@ namespace AutopartsRepository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("BrandDescription")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("BrandName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<DateTime>("CreateDate")
                         .HasMaxLength(10)
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("GeneralInformation")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -57,11 +62,6 @@ namespace AutopartsRepository.Migrations
                         .HasMaxLength(6)
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.Property<DateTime?>("UpdateDate")
                         .HasMaxLength(10)
                         .HasColumnType("datetime2");
@@ -74,2261 +74,2261 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8552),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SPIDAN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(418),
                             IsActive = true,
-                            TecDoc = 1,
-                            Title = "SPIDAN"
+                            TecDoc = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8608),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HELLA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(469),
                             IsActive = true,
-                            TecDoc = 2,
-                            Title = "HELLA"
+                            TecDoc = 2
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8613),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ATE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(473),
                             IsActive = true,
-                            TecDoc = 3,
-                            Title = "ATE"
+                            TecDoc = 3
                         },
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8616),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MANN-FILTER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(477),
                             IsActive = true,
-                            TecDoc = 4,
-                            Title = "MANN-FILTER"
+                            TecDoc = 4
                         },
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8620),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PIERBURG",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(481),
                             IsActive = true,
-                            TecDoc = 5,
-                            Title = "PIERBURG"
+                            TecDoc = 5
                         },
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8623),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LuK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(484),
                             IsActive = true,
-                            TecDoc = 6,
-                            Title = "LuK"
+                            TecDoc = 6
                         },
                         new
                         {
                             Id = 7,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8627),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EBERSPÄCHER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(488),
                             IsActive = true,
-                            TecDoc = 7,
-                            Title = "EBERSPÄCHER"
+                            TecDoc = 7
                         },
                         new
                         {
                             Id = 8,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8630),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VICTOR REINZ",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(491),
                             IsActive = true,
-                            TecDoc = 9,
-                            Title = "VICTOR REINZ"
+                            TecDoc = 9
                         },
                         new
                         {
                             Id = 9,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8634),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ELRING",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(495),
                             IsActive = true,
-                            TecDoc = 10,
-                            Title = "ELRING"
+                            TecDoc = 10
                         },
                         new
                         {
                             Id = 10,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8637),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner (BERU)",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(498),
                             IsActive = true,
-                            TecDoc = 11,
-                            Title = "BorgWarner (BERU)"
+                            TecDoc = 11
                         },
                         new
                         {
                             Id = 11,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8641),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "WALKER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(502),
                             IsActive = true,
-                            TecDoc = 13,
-                            Title = "WALKER"
+                            TecDoc = 13
                         },
                         new
                         {
                             Id = 12,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8644),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NGK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(506),
                             IsActive = true,
-                            TecDoc = 15,
-                            Title = "NGK"
+                            TecDoc = 15
                         },
                         new
                         {
                             Id = 13,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8648),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BILSTEIN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(509),
                             IsActive = true,
-                            TecDoc = 16,
-                            Title = "BILSTEIN"
+                            TecDoc = 16
                         },
                         new
                         {
                             Id = 14,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8709),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KONI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(513),
                             IsActive = true,
-                            TecDoc = 18,
-                            Title = "KONI"
+                            TecDoc = 18
                         },
                         new
                         {
                             Id = 15,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8715),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SWF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(517),
                             IsActive = true,
-                            TecDoc = 19,
-                            Title = "SWF"
+                            TecDoc = 19
                         },
                         new
                         {
                             Id = 16,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8718),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VALEO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(521),
                             IsActive = true,
-                            TecDoc = 21,
-                            Title = "VALEO"
+                            TecDoc = 21
                         },
                         new
                         {
                             Id = 17,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8723),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "RUVILLE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(524),
                             IsActive = true,
-                            TecDoc = 23,
-                            Title = "RUVILLE"
+                            TecDoc = 23
                         },
                         new
                         {
                             Id = 18,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8726),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EXIDE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(527),
                             IsActive = true,
-                            TecDoc = 24,
-                            Title = "EXIDE"
+                            TecDoc = 24
                         },
                         new
                         {
                             Id = 19,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8729),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VARTA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(531),
                             IsActive = true,
-                            TecDoc = 26,
-                            Title = "VARTA"
+                            TecDoc = 26
                         },
                         new
                         {
                             Id = 20,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8733),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ERNST",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(534),
                             IsActive = true,
-                            TecDoc = 29,
-                            Title = "ERNST"
+                            TecDoc = 29
                         },
                         new
                         {
                             Id = 21,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8737),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BOSCH",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(539),
                             IsActive = true,
-                            TecDoc = 30,
-                            Title = "BOSCH"
+                            TecDoc = 30
                         },
                         new
                         {
                             Id = 22,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8741),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CONTINENTAL CTAM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(542),
                             IsActive = true,
-                            TecDoc = 31,
-                            Title = "CONTINENTAL CTAM"
+                            TecDoc = 31
                         },
                         new
                         {
                             Id = 23,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8745),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SACHS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(546),
                             IsActive = true,
-                            TecDoc = 32,
-                            Title = "SACHS"
+                            TecDoc = 32
                         },
                         new
                         {
                             Id = 24,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8748),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GATES",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(549),
                             IsActive = true,
-                            TecDoc = 33,
-                            Title = "GATES"
+                            TecDoc = 33
                         },
                         new
                         {
                             Id = 25,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8752),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KNECHT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(553),
                             IsActive = true,
-                            TecDoc = 34,
-                            Title = "KNECHT"
+                            TecDoc = 34
                         },
                         new
                         {
                             Id = 26,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8755),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LEMFÖRDER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(556),
                             IsActive = true,
-                            TecDoc = 35,
-                            Title = "LEMFÖRDER"
+                            TecDoc = 35
                         },
                         new
                         {
                             Id = 27,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8759),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VAN WEZEL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(560),
                             IsActive = true,
-                            TecDoc = 36,
-                            Title = "VAN WEZEL"
+                            TecDoc = 36
                         },
                         new
                         {
                             Id = 28,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8763),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MONROE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(563),
                             IsActive = true,
-                            TecDoc = 37,
-                            Title = "MONROE"
+                            TecDoc = 37
                         },
                         new
                         {
                             Id = 29,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8766),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PURFLUX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(567),
                             IsActive = true,
-                            TecDoc = 38,
-                            Title = "PURFLUX"
+                            TecDoc = 38
                         },
                         new
                         {
                             Id = 30,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8770),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TEXTAR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(570),
                             IsActive = true,
-                            TecDoc = 39,
-                            Title = "TEXTAR"
+                            TecDoc = 39
                         },
                         new
                         {
                             Id = 31,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8773),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BOSAL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(573),
                             IsActive = true,
-                            TecDoc = 41,
-                            Title = "BOSAL"
+                            TecDoc = 41
                         },
                         new
                         {
                             Id = 32,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8777),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DAYCO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(577),
                             IsActive = true,
-                            TecDoc = 42,
-                            Title = "DAYCO"
+                            TecDoc = 42
                         },
                         new
                         {
                             Id = 33,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8780),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CHAMPION",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(580),
                             IsActive = true,
-                            TecDoc = 43,
-                            Title = "CHAMPION"
+                            TecDoc = 43
                         },
                         new
                         {
                             Id = 34,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8784),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BREMI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(584),
                             IsActive = true,
-                            TecDoc = 47,
-                            Title = "BREMI"
+                            TecDoc = 47
                         },
                         new
                         {
                             Id = 35,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8787),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JURID",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(588),
                             IsActive = true,
-                            TecDoc = 48,
-                            Title = "JURID"
+                            TecDoc = 48
                         },
                         new
                         {
                             Id = 36,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8791),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SKF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(591),
                             IsActive = true,
-                            TecDoc = 50,
-                            Title = "SKF"
+                            TecDoc = 50
                         },
                         new
                         {
                             Id = 37,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8794),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "WESTFALIA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(595),
                             IsActive = true,
-                            TecDoc = 51,
-                            Title = "WESTFALIA"
+                            TecDoc = 51
                         },
                         new
                         {
                             Id = 38,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8797),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FTE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(598),
                             IsActive = true,
-                            TecDoc = 54,
-                            Title = "FTE"
+                            TecDoc = 54
                         },
                         new
                         {
                             Id = 39,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8801),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HERTH+BUSS JAKOPARTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(602),
                             IsActive = true,
-                            TecDoc = 55,
-                            Title = "HERTH+BUSS JAKOPARTS"
+                            TecDoc = 55
                         },
                         new
                         {
                             Id = 40,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8805),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LÖBRO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(605),
                             IsActive = true,
-                            TecDoc = 56,
-                            Title = "LÖBRO"
+                            TecDoc = 56
                         },
                         new
                         {
                             Id = 41,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8808),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "QUINTON HAZELL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(610),
                             IsActive = true,
-                            TecDoc = 57,
-                            Title = "QUINTON HAZELL"
+                            TecDoc = 57
                         },
                         new
                         {
                             Id = 42,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8812),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TYC",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(613),
                             IsActive = true,
-                            TecDoc = 61,
-                            Title = "TYC"
+                            TecDoc = 61
                         },
                         new
                         {
                             Id = 43,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8815),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BREMBO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(617),
                             IsActive = true,
-                            TecDoc = 65,
-                            Title = "BREMBO"
+                            TecDoc = 65
                         },
                         new
                         {
                             Id = 44,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8819),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DENSO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(620),
                             IsActive = true,
-                            TecDoc = 66,
-                            Title = "DENSO"
+                            TecDoc = 66
                         },
                         new
                         {
                             Id = 45,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8823),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ams-OSRAM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(624),
                             IsActive = true,
-                            TecDoc = 67,
-                            Title = "ams-OSRAM"
+                            TecDoc = 67
                         },
                         new
                         {
                             Id = 46,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8826),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ZF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(627),
                             IsActive = true,
-                            TecDoc = 68,
-                            Title = "ZF"
+                            TecDoc = 68
                         },
                         new
                         {
                             Id = 47,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8830),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HERTH+BUSS ELPARTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(631),
                             IsActive = true,
-                            TecDoc = 72,
-                            Title = "HERTH+BUSS ELPARTS"
+                            TecDoc = 72
                         },
                         new
                         {
                             Id = 48,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8833),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PHILIPS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(634),
                             IsActive = true,
-                            TecDoc = 75,
-                            Title = "PHILIPS"
+                            TecDoc = 75
                         },
                         new
                         {
                             Id = 49,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8837),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KLOKKERHOLM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(638),
                             IsActive = true,
-                            TecDoc = 78,
-                            Title = "KLOKKERHOLM"
+                            TecDoc = 78
                         },
                         new
                         {
                             Id = 50,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8840),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner (Wahler)",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(641),
                             IsActive = true,
-                            TecDoc = 79,
-                            Title = "BorgWarner (Wahler)"
+                            TecDoc = 79
                         },
                         new
                         {
                             Id = 51,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8844),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HENGST FILTER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(654),
                             IsActive = true,
-                            TecDoc = 81,
-                            Title = "HENGST FILTER"
+                            TecDoc = 81
                         },
                         new
                         {
                             Id = 52,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8847),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CONTINENTAL/VDO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(657),
                             IsActive = true,
-                            TecDoc = 83,
-                            Title = "CONTINENTAL/VDO"
+                            TecDoc = 83
                         },
                         new
                         {
                             Id = 53,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8851),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KYB",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(661),
                             IsActive = true,
-                            TecDoc = 85,
-                            Title = "KYB"
+                            TecDoc = 85
                         },
                         new
                         {
                             Id = 54,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8854),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ZIMMERMANN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(664),
                             IsActive = true,
-                            TecDoc = 86,
-                            Title = "ZIMMERMANN"
+                            TecDoc = 86
                         },
                         new
                         {
                             Id = 55,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8858),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GLASER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(669),
                             IsActive = true,
-                            TecDoc = 88,
-                            Title = "GLASER"
+                            TecDoc = 88
                         },
                         new
                         {
                             Id = 56,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8861),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DELPHI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(672),
                             IsActive = true,
-                            TecDoc = 89,
-                            Title = "DELPHI"
+                            TecDoc = 89
                         },
                         new
                         {
                             Id = 57,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8865),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "METZGER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(676),
                             IsActive = true,
-                            TecDoc = 94,
-                            Title = "METZGER"
+                            TecDoc = 94
                         },
                         new
                         {
                             Id = 58,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8869),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MAGNETI MARELLI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(679),
                             IsActive = true,
-                            TecDoc = 95,
-                            Title = "MAGNETI MARELLI"
+                            TecDoc = 95
                         },
                         new
                         {
                             Id = 59,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8872),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "WAECO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(683),
                             IsActive = true,
-                            TecDoc = 97,
-                            Title = "WAECO"
+                            TecDoc = 97
                         },
                         new
                         {
                             Id = 60,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8876),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FEBI BILSTEIN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(687),
                             IsActive = true,
-                            TecDoc = 101,
-                            Title = "FEBI BILSTEIN"
+                            TecDoc = 101
                         },
                         new
                         {
                             Id = 61,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8880),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BRINK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(690),
                             IsActive = true,
-                            TecDoc = 106,
-                            Title = "BRINK"
+                            TecDoc = 106
                         },
                         new
                         {
                             Id = 62,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8884),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BUGATTI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(694),
                             IsActive = true,
-                            TecDoc = 109,
-                            Title = "BUGATTI"
+                            TecDoc = 109
                         },
                         new
                         {
                             Id = 63,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8888),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SNR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(697),
                             IsActive = true,
-                            TecDoc = 110,
-                            Title = "SNR"
+                            TecDoc = 110
                         },
                         new
                         {
                             Id = 64,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8891),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EIBACH",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(700),
                             IsActive = true,
-                            TecDoc = 112,
-                            Title = "EIBACH"
+                            TecDoc = 112
                         },
                         new
                         {
                             Id = 65,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8896),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PAYEN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(704),
                             IsActive = true,
-                            TecDoc = 113,
-                            Title = "PAYEN"
+                            TecDoc = 113
                         },
                         new
                         {
                             Id = 66,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8900),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BUDWEG CALIPER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(707),
                             IsActive = true,
-                            TecDoc = 114,
-                            Title = "BUDWEG CALIPER"
+                            TecDoc = 114
                         },
                         new
                         {
                             Id = 67,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8904),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ULO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(710),
                             IsActive = true,
-                            TecDoc = 115,
-                            Title = "ULO"
+                            TecDoc = 115
                         },
                         new
                         {
                             Id = 68,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8908),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LRT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(714),
                             IsActive = true,
-                            TecDoc = 117,
-                            Title = "LRT"
+                            TecDoc = 117
                         },
                         new
                         {
                             Id = 69,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8912),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HJS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(717),
                             IsActive = true,
-                            TecDoc = 118,
-                            Title = "HJS"
+                            TecDoc = 118
                         },
                         new
                         {
                             Id = 70,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8916),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "METELLI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(721),
                             IsActive = true,
-                            TecDoc = 121,
-                            Title = "METELLI"
+                            TecDoc = 121
                         },
                         new
                         {
                             Id = 71,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8920),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NISSENS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(724),
                             IsActive = true,
-                            TecDoc = 123,
-                            Title = "NISSENS"
+                            TecDoc = 123
                         },
                         new
                         {
                             Id = 72,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8923),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "STABILUS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(727),
                             IsActive = true,
-                            TecDoc = 126,
-                            Title = "STABILUS"
+                            TecDoc = 126
                         },
                         new
                         {
                             Id = 73,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8927),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(731),
                             IsActive = true,
-                            TecDoc = 127,
-                            Title = "NK"
+                            TecDoc = 127
                         },
                         new
                         {
                             Id = 74,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8930),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "OPTIMAL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(734),
                             IsActive = true,
-                            TecDoc = 129,
-                            Title = "OPTIMAL"
+                            TecDoc = 129
                         },
                         new
                         {
                             Id = 75,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8934),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SIDEM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(738),
                             IsActive = true,
-                            TecDoc = 135,
-                            Title = "SIDEM"
+                            TecDoc = 135
                         },
                         new
                         {
                             Id = 76,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8938),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "UFI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(742),
                             IsActive = true,
-                            TecDoc = 137,
-                            Title = "UFI"
+                            TecDoc = 137
                         },
                         new
                         {
                             Id = 77,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8942),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JOHNS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(746),
                             IsActive = true,
-                            TecDoc = 138,
-                            Title = "JOHNS"
+                            TecDoc = 138
                         },
                         new
                         {
                             Id = 78,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8945),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AJUSA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(749),
                             IsActive = true,
-                            TecDoc = 139,
-                            Title = "AJUSA"
+                            TecDoc = 139
                         },
                         new
                         {
                             Id = 79,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8949),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CORTECO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(752),
                             IsActive = true,
-                            TecDoc = 140,
-                            Title = "CORTECO"
+                            TecDoc = 140
                         },
                         new
                         {
                             Id = 80,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8952),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(756),
                             IsActive = true,
-                            TecDoc = 141,
-                            Title = "AE"
+                            TecDoc = 141
                         },
                         new
                         {
                             Id = 81,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8956),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SOFIMA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(759),
                             IsActive = true,
-                            TecDoc = 142,
-                            Title = "SOFIMA"
+                            TecDoc = 142
                         },
                         new
                         {
                             Id = 82,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8960),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MEYLE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(763),
                             IsActive = true,
-                            TecDoc = 144,
-                            Title = "MEYLE"
+                            TecDoc = 144
                         },
                         new
                         {
                             Id = 83,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8963),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SWAG",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(766),
                             IsActive = true,
-                            TecDoc = 151,
-                            Title = "SWAG"
+                            TecDoc = 151
                         },
                         new
                         {
                             Id = 84,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8967),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DOLZ",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(770),
                             IsActive = true,
-                            TecDoc = 154,
-                            Title = "DOLZ"
+                            TecDoc = 154
                         },
                         new
                         {
                             Id = 85,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8970),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JAPANPARTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(773),
                             IsActive = true,
-                            TecDoc = 156,
-                            Title = "JAPANPARTS"
+                            TecDoc = 156
                         },
                         new
                         {
                             Id = 86,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8974),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ICER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(776),
                             IsActive = true,
-                            TecDoc = 158,
-                            Title = "ICER"
+                            TecDoc = 158
                         },
                         new
                         {
                             Id = 87,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8977),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FACET",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(780),
                             IsActive = true,
-                            TecDoc = 159,
-                            Title = "FACET"
+                            TecDoc = 159
                         },
                         new
                         {
                             Id = 88,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8981),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TRW",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(784),
                             IsActive = true,
-                            TecDoc = 161,
-                            Title = "TRW"
+                            TecDoc = 161
                         },
                         new
                         {
                             Id = 89,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8984),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VAICO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(788),
                             IsActive = true,
-                            TecDoc = 162,
-                            Title = "VAICO"
+                            TecDoc = 162
                         },
                         new
                         {
                             Id = 90,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8988),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AISIN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(791),
                             IsActive = true,
-                            TecDoc = 166,
-                            Title = "AISIN"
+                            TecDoc = 166
                         },
                         new
                         {
                             Id = 91,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8991),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DUPLI COLOR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(795),
                             IsActive = true,
-                            TecDoc = 167,
-                            Title = "DUPLI COLOR"
+                            TecDoc = 167
                         },
                         new
                         {
                             Id = 92,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8995),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MOTIP",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(798),
                             IsActive = true,
-                            TecDoc = 168,
-                            Title = "MOTIP"
+                            TecDoc = 168
                         },
                         new
                         {
                             Id = 93,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(8998),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PRESTO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(801),
                             IsActive = true,
-                            TecDoc = 169,
-                            Title = "PRESTO"
+                            TecDoc = 169
                         },
                         new
                         {
                             Id = 94,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9003),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LESJÖFORS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(805),
                             IsActive = true,
-                            TecDoc = 175,
-                            Title = "LESJÖFORS"
+                            TecDoc = 175
                         },
                         new
                         {
                             Id = 95,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9006),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BTS Turbo",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(809),
                             IsActive = true,
-                            TecDoc = 177,
-                            Title = "BTS Turbo"
+                            TecDoc = 177
                         },
                         new
                         {
                             Id = 96,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9010),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HEPU",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(812),
                             IsActive = true,
-                            TecDoc = 178,
-                            Title = "HEPU"
+                            TecDoc = 178
                         },
                         new
                         {
                             Id = 97,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9139),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ALCO FILTER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(816),
                             IsActive = true,
-                            TecDoc = 180,
-                            Title = "ALCO FILTER"
+                            TecDoc = 180
                         },
                         new
                         {
                             Id = 98,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9145),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(820),
                             IsActive = true,
-                            TecDoc = 181,
-                            Title = "GK"
+                            TecDoc = 181
                         },
                         new
                         {
                             Id = 99,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9148),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SCHLÜTTER TURBOLADER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(824),
                             IsActive = true,
-                            TecDoc = 182,
-                            Title = "SCHLÜTTER TURBOLADER"
+                            TecDoc = 182
                         },
                         new
                         {
                             Id = 100,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9152),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VEMO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(827),
                             IsActive = true,
-                            TecDoc = 183,
-                            Title = "VEMO"
+                            TecDoc = 183
                         },
                         new
                         {
                             Id = 101,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9155),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KAMOKA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(830),
                             IsActive = true,
-                            TecDoc = 185,
-                            Title = "KAMOKA"
+                            TecDoc = 185
                         },
                         new
                         {
                             Id = 102,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9159),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "IMASAF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(834),
                             IsActive = true,
-                            TecDoc = 191,
-                            Title = "IMASAF"
+                            TecDoc = 191
                         },
                         new
                         {
                             Id = 103,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9163),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FAG",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(837),
                             IsActive = true,
-                            TecDoc = 192,
-                            Title = "FAG"
+                            TecDoc = 192
                         },
                         new
                         {
                             Id = 104,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9167),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LPR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(840),
                             IsActive = true,
-                            TecDoc = 197,
-                            Title = "LPR"
+                            TecDoc = 197
                         },
                         new
                         {
                             Id = 105,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9170),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "OCAP",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(844),
                             IsActive = true,
-                            TecDoc = 198,
-                            Title = "OCAP"
+                            TecDoc = 198
                         },
                         new
                         {
                             Id = 106,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9174),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GLYCO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(847),
                             IsActive = true,
-                            TecDoc = 202,
-                            Title = "GLYCO"
+                            TecDoc = 202
                         },
                         new
                         {
                             Id = 107,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9177),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "INA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(851),
                             IsActive = true,
-                            TecDoc = 204,
-                            Title = "INA"
+                            TecDoc = 204
                         },
                         new
                         {
                             Id = 108,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9181),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NRF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(855),
                             IsActive = true,
-                            TecDoc = 205,
-                            Title = "NRF"
+                            TecDoc = 205
                         },
                         new
                         {
                             Id = 109,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9184),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "A.B.S.",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(858),
                             IsActive = true,
-                            TecDoc = 206,
-                            Title = "A.B.S."
+                            TecDoc = 206
                         },
                         new
                         {
                             Id = 110,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9188),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CASTROL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(862),
                             IsActive = true,
-                            TecDoc = 207,
-                            Title = "CASTROL"
+                            TecDoc = 207
                         },
                         new
                         {
                             Id = 111,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9191),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TRUCKTEC AUTOMOTIVE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(866),
                             IsActive = true,
-                            TecDoc = 209,
-                            Title = "TRUCKTEC AUTOMOTIVE"
+                            TecDoc = 209
                         },
                         new
                         {
                             Id = 112,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9196),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "REMY",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(870),
                             IsActive = true,
-                            TecDoc = 214,
-                            Title = "REMY"
+                            TecDoc = 214
                         },
                         new
                         {
                             Id = 113,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9199),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CALORSTAT by Vernet",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(874),
                             IsActive = true,
-                            TecDoc = 215,
-                            Title = "CALORSTAT by Vernet"
+                            TecDoc = 215
                         },
                         new
                         {
                             Id = 114,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9203),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NÜRAL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(877),
                             IsActive = true,
-                            TecDoc = 216,
-                            Title = "NÜRAL"
+                            TecDoc = 216
                         },
                         new
                         {
                             Id = 115,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9206),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AIRTEX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(881),
                             IsActive = true,
-                            TecDoc = 220,
-                            Title = "AIRTEX"
+                            TecDoc = 220
                         },
                         new
                         {
                             Id = 116,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9210),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LIQUI MOLY",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(885),
                             IsActive = true,
-                            TecDoc = 222,
-                            Title = "LIQUI MOLY"
+                            TecDoc = 222
                         },
                         new
                         {
                             Id = 117,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9213),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SCT - MANNOL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(888),
                             IsActive = true,
-                            TecDoc = 225,
-                            Title = "SCT - MANNOL"
+                            TecDoc = 225
                         },
                         new
                         {
                             Id = 118,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9217),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ELSTOCK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(891),
                             IsActive = true,
-                            TecDoc = 226,
-                            Title = "ELSTOCK"
+                            TecDoc = 226
                         },
                         new
                         {
                             Id = 119,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9220),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DINEX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(895),
                             IsActive = true,
-                            TecDoc = 233,
-                            Title = "DINEX"
+                            TecDoc = 233
                         },
                         new
                         {
                             Id = 120,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9224),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ERA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(898),
                             IsActive = true,
-                            TecDoc = 234,
-                            Title = "ERA"
+                            TecDoc = 234
                         },
                         new
                         {
                             Id = 121,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9227),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FRECCIA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(902),
                             IsActive = true,
-                            TecDoc = 235,
-                            Title = "FRECCIA"
+                            TecDoc = 235
                         },
                         new
                         {
                             Id = 122,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9231),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FAE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(905),
                             IsActive = true,
-                            TecDoc = 240,
-                            Title = "FAE"
+                            TecDoc = 240
                         },
                         new
                         {
                             Id = 123,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9234),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MEAT & DORIA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(909),
                             IsActive = true,
-                            TecDoc = 244,
-                            Title = "MEAT & DORIA"
+                            TecDoc = 244
                         },
                         new
                         {
                             Id = 124,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9237),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AVA QUALITY COOLING",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(913),
                             IsActive = true,
-                            TecDoc = 247,
-                            Title = "AVA QUALITY COOLING"
+                            TecDoc = 247
                         },
                         new
                         {
                             Id = 125,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9241),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NIPPARTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(916),
                             IsActive = true,
-                            TecDoc = 248,
-                            Title = "NIPPARTS"
+                            TecDoc = 248
                         },
                         new
                         {
                             Id = 126,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9245),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FILTRON",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(919),
                             IsActive = true,
-                            TecDoc = 256,
-                            Title = "FILTRON"
+                            TecDoc = 256
                         },
                         new
                         {
                             Id = 127,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9248),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ASHIKA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(923),
                             IsActive = true,
-                            TecDoc = 257,
-                            Title = "ASHIKA"
+                            TecDoc = 257
                         },
                         new
                         {
                             Id = 128,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9251),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SASIC",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(926),
                             IsActive = true,
-                            TecDoc = 260,
-                            Title = "SASIC"
+                            TecDoc = 260
                         },
                         new
                         {
                             Id = 129,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9255),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FAI AutoParts",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(930),
                             IsActive = true,
-                            TecDoc = 267,
-                            Title = "FAI AutoParts"
+                            TecDoc = 267
                         },
                         new
                         {
                             Id = 130,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9258),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JP GROUP",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(934),
                             IsActive = true,
-                            TecDoc = 268,
-                            Title = "JP GROUP"
+                            TecDoc = 268
                         },
                         new
                         {
                             Id = 131,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9265),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AMC",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(938),
                             IsActive = true,
-                            TecDoc = 277,
-                            Title = "AMC"
+                            TecDoc = 277
                         },
                         new
                         {
                             Id = 132,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9268),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MAHLE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(942),
                             IsActive = true,
-                            TecDoc = 287,
-                            Title = "MAHLE"
+                            TecDoc = 287
                         },
                         new
                         {
                             Id = 133,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9272),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SACHS PERFORMANCE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(945),
                             IsActive = true,
-                            TecDoc = 294,
-                            Title = "SACHS PERFORMANCE"
+                            TecDoc = 294
                         },
                         new
                         {
                             Id = 134,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9275),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "fri.tech.",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(949),
                             IsActive = true,
-                            TecDoc = 295,
-                            Title = "fri.tech."
+                            TecDoc = 295
                         },
                         new
                         {
                             Id = 135,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9279),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "sbs",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(952),
                             IsActive = true,
-                            TecDoc = 297,
-                            Title = "sbs"
+                            TecDoc = 297
                         },
                         new
                         {
                             Id = 136,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9282),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "WEBASTO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(964),
                             IsActive = true,
-                            TecDoc = 299,
-                            Title = "WEBASTO"
+                            TecDoc = 299
                         },
                         new
                         {
                             Id = 137,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9286),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AUTEX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(967),
                             IsActive = true,
-                            TecDoc = 300,
-                            Title = "AUTEX"
+                            TecDoc = 300
                         },
                         new
                         {
                             Id = 138,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9289),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TOPRAN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(972),
                             IsActive = true,
-                            TecDoc = 301,
-                            Title = "TOPRAN"
+                            TecDoc = 301
                         },
                         new
                         {
                             Id = 139,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9293),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "K&N Filters",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(975),
                             IsActive = true,
-                            TecDoc = 305,
-                            Title = "K&N Filters"
+                            TecDoc = 305
                         },
                         new
                         {
                             Id = 140,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9297),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GRAF",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(980),
                             IsActive = true,
-                            TecDoc = 310,
-                            Title = "GRAF"
+                            TecDoc = 310
                         },
                         new
                         {
                             Id = 141,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9300),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CIFAM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(983),
                             IsActive = true,
-                            TecDoc = 311,
-                            Title = "CIFAM"
+                            TecDoc = 311
                         },
                         new
                         {
                             Id = 142,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9303),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GENERAL RICAMBI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(986),
                             IsActive = true,
-                            TecDoc = 316,
-                            Title = "GENERAL RICAMBI"
+                            TecDoc = 316
                         },
                         new
                         {
                             Id = 143,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9307),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AUTOMEGA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(991),
                             IsActive = true,
-                            TecDoc = 323,
-                            Title = "AUTOMEGA"
+                            TecDoc = 323
                         },
                         new
                         {
                             Id = 144,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9310),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "WIX FILTERS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(995),
                             IsActive = true,
-                            TecDoc = 324,
-                            Title = "WIX FILTERS"
+                            TecDoc = 324
                         },
                         new
                         {
                             Id = 145,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9314),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner (Schwitze",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(998),
                             IsActive = true,
-                            TecDoc = 326,
-                            Title = "BorgWarner (Schwitze"
+                            TecDoc = 326
                         },
                         new
                         {
                             Id = 146,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9317),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1002),
                             IsActive = true,
-                            TecDoc = 327,
-                            Title = "BorgWarner"
+                            TecDoc = 327
                         },
                         new
                         {
                             Id = 147,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9321),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner (3K)",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1005),
                             IsActive = true,
-                            TecDoc = 328,
-                            Title = "BorgWarner (3K)"
+                            TecDoc = 328
                         },
                         new
                         {
                             Id = 148,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9325),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ORIGINAL IMPERIUM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1008),
                             IsActive = true,
-                            TecDoc = 331,
-                            Title = "ORIGINAL IMPERIUM"
+                            TecDoc = 331
                         },
                         new
                         {
                             Id = 149,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9329),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PRASCO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1013),
                             IsActive = true,
-                            TecDoc = 340,
-                            Title = "PRASCO"
+                            TecDoc = 340
                         },
                         new
                         {
                             Id = 150,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9332),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TRW Engine Component",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1016),
                             IsActive = true,
-                            TecDoc = 347,
-                            Title = "TRW Engine Component"
+                            TecDoc = 347
                         },
                         new
                         {
                             Id = 151,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9336),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BLUE PRINT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1020),
                             IsActive = true,
-                            TecDoc = 350,
-                            Title = "BLUE PRINT"
+                            TecDoc = 350
                         },
                         new
                         {
                             Id = 152,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9339),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AUTOFREN SEINSA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1023),
                             IsActive = true,
-                            TecDoc = 351,
-                            Title = "AUTOFREN SEINSA"
+                            TecDoc = 351
                         },
                         new
                         {
                             Id = 153,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9343),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TESLA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1026),
                             IsActive = true,
-                            TecDoc = 356,
-                            Title = "TESLA"
+                            TecDoc = 356
                         },
                         new
                         {
                             Id = 154,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9346),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ALKAR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1030),
                             IsActive = true,
-                            TecDoc = 362,
-                            Title = "ALKAR"
+                            TecDoc = 362
                         },
                         new
                         {
                             Id = 155,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9350),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FA1",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1033),
                             IsActive = true,
-                            TecDoc = 367,
-                            Title = "FA1"
+                            TecDoc = 367
                         },
                         new
                         {
                             Id = 156,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9354),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GSP",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1036),
                             IsActive = true,
-                            TecDoc = 373,
-                            Title = "GSP"
+                            TecDoc = 373
                         },
                         new
                         {
                             Id = 157,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9357),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CENTRA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1040),
                             IsActive = true,
-                            TecDoc = 376,
-                            Title = "CENTRA"
+                            TecDoc = 376
                         },
                         new
                         {
                             Id = 158,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9361),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BOSCH DIAGNOSTICS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1043),
                             IsActive = true,
-                            TecDoc = 377,
-                            Title = "BOSCH DIAGNOSTICS"
+                            TecDoc = 377
                         },
                         new
                         {
                             Id = 159,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9364),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FRENKIT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1047),
                             IsActive = true,
-                            TecDoc = 380,
-                            Title = "FRENKIT"
+                            TecDoc = 380
                         },
                         new
                         {
                             Id = 160,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9367),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GOETZE ENGINE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1050),
                             IsActive = true,
-                            TecDoc = 385,
-                            Title = "GOETZE ENGINE"
+                            TecDoc = 385
                         },
                         new
                         {
                             Id = 161,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9371),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MOTORAD",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1054),
                             IsActive = true,
-                            TecDoc = 388,
-                            Title = "MOTORAD"
+                            TecDoc = 388
                         },
                         new
                         {
                             Id = 162,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9375),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GLYSANTIN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1057),
                             IsActive = true,
-                            TecDoc = 389,
-                            Title = "GLYSANTIN"
+                            TecDoc = 389
                         },
                         new
                         {
                             Id = 163,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9378),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EAI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1060),
                             IsActive = true,
-                            TecDoc = 391,
-                            Title = "EAI"
+                            TecDoc = 391
                         },
                         new
                         {
                             Id = 164,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9383),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BARUM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1064),
                             IsActive = true,
-                            TecDoc = 394,
-                            Title = "BARUM"
+                            TecDoc = 394
                         },
                         new
                         {
                             Id = 165,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9387),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JANMOR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1068),
                             IsActive = true,
-                            TecDoc = 397,
-                            Title = "JANMOR"
+                            TecDoc = 397
                         },
                         new
                         {
                             Id = 166,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9390),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EXEDY",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1071),
                             IsActive = true,
-                            TecDoc = 399,
-                            Title = "EXEDY"
+                            TecDoc = 399
                         },
                         new
                         {
                             Id = 167,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9395),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "RAICAM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1074),
                             IsActive = true,
-                            TecDoc = 400,
-                            Title = "RAICAM"
+                            TecDoc = 400
                         },
                         new
                         {
                             Id = 168,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9399),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MAXGEAR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1079),
                             IsActive = true,
-                            TecDoc = 403,
-                            Title = "MAXGEAR"
+                            TecDoc = 403
                         },
                         new
                         {
                             Id = 169,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9403),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BM CATALYSTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1082),
                             IsActive = true,
-                            TecDoc = 406,
-                            Title = "BM CATALYSTS"
+                            TecDoc = 406
                         },
                         new
                         {
                             Id = 170,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9407),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "FREMAX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1086),
                             IsActive = true,
-                            TecDoc = 409,
-                            Title = "FREMAX"
+                            TecDoc = 409
                         },
                         new
                         {
                             Id = 171,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9410),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ASMET",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1089),
                             IsActive = true,
-                            TecDoc = 427,
-                            Title = "ASMET"
+                            TecDoc = 427
                         },
                         new
                         {
                             Id = 172,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9414),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "RTS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1092),
                             IsActive = true,
-                            TecDoc = 430,
-                            Title = "RTS"
+                            TecDoc = 430
                         },
                         new
                         {
                             Id = 173,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9417),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KOLBENSCHMIDT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1096),
                             IsActive = true,
-                            TecDoc = 432,
-                            Title = "KOLBENSCHMIDT"
+                            TecDoc = 432
                         },
                         new
                         {
                             Id = 174,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9421),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "STATIM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1099),
                             IsActive = true,
-                            TecDoc = 433,
-                            Title = "STATIM"
+                            TecDoc = 433
                         },
                         new
                         {
                             Id = 175,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9424),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MOTUL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1102),
                             IsActive = true,
-                            TecDoc = 436,
-                            Title = "MOTUL"
+                            TecDoc = 436
                         },
                         new
                         {
                             Id = 176,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9428),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CoopersFiaam",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1106),
                             IsActive = true,
-                            TecDoc = 437,
-                            Title = "CoopersFiaam"
+                            TecDoc = 437
                         },
                         new
                         {
                             Id = 177,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9431),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ENERGIZER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1109),
                             IsActive = true,
-                            TecDoc = 443,
-                            Title = "ENERGIZER"
+                            TecDoc = 443
                         },
                         new
                         {
                             Id = 178,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9435),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PILKINGTON",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1113),
                             IsActive = true,
-                            TecDoc = 447,
-                            Title = "PILKINGTON"
+                            TecDoc = 447
                         },
                         new
                         {
                             Id = 179,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9438),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HITACHI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1116),
                             IsActive = true,
-                            TecDoc = 449,
-                            Title = "HITACHI"
+                            TecDoc = 449
                         },
                         new
                         {
                             Id = 180,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9442),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BANDO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1120),
                             IsActive = true,
-                            TecDoc = 454,
-                            Title = "BANDO"
+                            TecDoc = 454
                         },
                         new
                         {
                             Id = 181,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9445),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DRI",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1123),
                             IsActive = true,
-                            TecDoc = 460,
-                            Title = "DRI"
+                            TecDoc = 460
                         },
                         new
                         {
                             Id = 182,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9541),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "RAVENOL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1126),
                             IsActive = true,
-                            TecDoc = 461,
-                            Title = "RAVENOL"
+                            TecDoc = 461
                         },
                         new
                         {
                             Id = 183,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9545),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "OSVAT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1130),
                             IsActive = true,
-                            TecDoc = 464,
-                            Title = "OSVAT"
+                            TecDoc = 464
                         },
                         new
                         {
                             Id = 184,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9549),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CS Germany",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1133),
                             IsActive = true,
-                            TecDoc = 467,
-                            Title = "CS Germany"
+                            TecDoc = 467
                         },
                         new
                         {
                             Id = 185,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9553),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BORG & BECK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1137),
                             IsActive = true,
-                            TecDoc = 475,
-                            Title = "BORG & BECK"
+                            TecDoc = 475
                         },
                         new
                         {
                             Id = 186,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9557),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ClimAir",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1141),
                             IsActive = true,
-                            TecDoc = 483,
-                            Title = "ClimAir"
+                            TecDoc = 483
                         },
                         new
                         {
                             Id = 187,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9560),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NARVA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1145),
                             IsActive = true,
-                            TecDoc = 485,
-                            Title = "NARVA"
+                            TecDoc = 485
                         },
                         new
                         {
                             Id = 188,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9564),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BRISK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1149),
                             IsActive = true,
-                            TecDoc = 494,
-                            Title = "BRISK"
+                            TecDoc = 494
                         },
                         new
                         {
                             Id = 189,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9567),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ZAFFO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1152),
                             IsActive = true,
-                            TecDoc = 499,
-                            Title = "ZAFFO"
+                            TecDoc = 499
                         },
                         new
                         {
                             Id = 190,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9571),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EPS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1156),
                             IsActive = true,
-                            TecDoc = 4005,
-                            Title = "EPS"
+                            TecDoc = 4005
                         },
                         new
                         {
                             Id = 191,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9574),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KW",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1159),
                             IsActive = true,
-                            TecDoc = 4006,
-                            Title = "KW"
+                            TecDoc = 4006
                         },
                         new
                         {
                             Id = 192,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9577),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "KS TOOLS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1162),
                             IsActive = true,
-                            TecDoc = 4023,
-                            Title = "KS TOOLS"
+                            TecDoc = 4023
                         },
                         new
                         {
                             Id = 193,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9581),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VIGOR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1166),
                             IsActive = true,
-                            TecDoc = 4026,
-                            Title = "VIGOR"
+                            TecDoc = 4026
                         },
                         new
                         {
                             Id = 194,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9585),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SHELL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1170),
                             IsActive = true,
-                            TecDoc = 4314,
-                            Title = "SHELL"
+                            TecDoc = 4314
                         },
                         new
                         {
                             Id = 195,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9588),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Prestone",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1173),
                             IsActive = true,
-                            TecDoc = 4333,
-                            Title = "Prestone"
+                            TecDoc = 4333
                         },
                         new
                         {
                             Id = 196,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9592),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ELTA AUTOMOTIVE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1177),
                             IsActive = true,
-                            TecDoc = 4344,
-                            Title = "ELTA AUTOMOTIVE"
+                            TecDoc = 4344
                         },
                         new
                         {
                             Id = 197,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9595),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "vika",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1181),
                             IsActive = true,
-                            TecDoc = 4346,
-                            Title = "vika"
+                            TecDoc = 4346
                         },
                         new
                         {
                             Id = 198,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9599),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DPA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1184),
                             IsActive = true,
-                            TecDoc = 4353,
-                            Title = "DPA"
+                            TecDoc = 4353
                         },
                         new
                         {
                             Id = 199,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9602),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "STOP&GO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1188),
                             IsActive = true,
-                            TecDoc = 4367,
-                            Title = "STOP&GO"
+                            TecDoc = 4367
                         },
                         new
                         {
                             Id = 200,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9606),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "PETEC",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1191),
                             IsActive = true,
-                            TecDoc = 4372,
-                            Title = "PETEC"
+                            TecDoc = 4372
                         },
                         new
                         {
                             Id = 201,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9609),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Airstal",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1195),
                             IsActive = true,
-                            TecDoc = 4381,
-                            Title = "Airstal"
+                            TecDoc = 4381
                         },
                         new
                         {
                             Id = 202,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9613),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CONTINENTAL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1198),
                             IsActive = true,
-                            TecDoc = 4434,
-                            Title = "CONTINENTAL"
+                            TecDoc = 4434
                         },
                         new
                         {
                             Id = 203,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9617),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DUNLOP",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1201),
                             IsActive = true,
-                            TecDoc = 4436,
-                            Title = "DUNLOP"
+                            TecDoc = 4436
                         },
                         new
                         {
                             Id = 204,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9621),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MOBIL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1205),
                             IsActive = true,
-                            TecDoc = 4449,
-                            Title = "MOBIL"
+                            TecDoc = 4449
                         },
                         new
                         {
                             Id = 205,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9624),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "YUASA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1209),
                             IsActive = true,
-                            TecDoc = 4451,
-                            Title = "YUASA"
+                            TecDoc = 4451
                         },
                         new
                         {
                             Id = 206,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9627),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1212),
                             IsActive = true,
-                            TecDoc = 4452,
-                            Title = "GS"
+                            TecDoc = 4452
                         },
                         new
                         {
                             Id = 207,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9631),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SONAX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1216),
                             IsActive = true,
-                            TecDoc = 4457,
-                            Title = "SONAX"
+                            TecDoc = 4457
                         },
                         new
                         {
                             Id = 208,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9634),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ERT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1219),
                             IsActive = true,
-                            TecDoc = 4512,
-                            Title = "ERT"
+                            TecDoc = 4512
                         },
                         new
                         {
                             Id = 209,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9638),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ET ENGINETEAM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1223),
                             IsActive = true,
-                            TecDoc = 4514,
-                            Title = "ET ENGINETEAM"
+                            TecDoc = 4514
                         },
                         new
                         {
                             Id = 210,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9641),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LINEX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1226),
                             IsActive = true,
-                            TecDoc = 4536,
-                            Title = "LINEX"
+                            TecDoc = 4536
                         },
                         new
                         {
                             Id = 211,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9645),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Arnott",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1229),
                             IsActive = true,
-                            TecDoc = 4539,
-                            Title = "Arnott"
+                            TecDoc = 4539
                         },
                         new
                         {
                             Id = 212,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9648),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TEDGUM",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1233),
                             IsActive = true,
-                            TecDoc = 4593,
-                            Title = "TEDGUM"
+                            TecDoc = 4593
                         },
                         new
                         {
                             Id = 213,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9652),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1236),
                             IsActive = true,
-                            TecDoc = 4612,
-                            Title = "GE"
+                            TecDoc = 4612
                         },
                         new
                         {
                             Id = 214,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9655),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GARRETT",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1240),
                             IsActive = true,
-                            TecDoc = 4615,
-                            Title = "GARRETT"
+                            TecDoc = 4615
                         },
                         new
                         {
                             Id = 215,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9659),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ABAKUS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1243),
                             IsActive = true,
-                            TecDoc = 4657,
-                            Title = "ABAKUS"
+                            TecDoc = 4657
                         },
                         new
                         {
                             Id = 216,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9662),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ROTINGER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1247),
                             IsActive = true,
-                            TecDoc = 4676,
-                            Title = "ROTINGER"
+                            TecDoc = 4676
                         },
                         new
                         {
                             Id = 217,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9666),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CAFFARO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1250),
                             IsActive = true,
-                            TecDoc = 4679,
-                            Title = "CAFFARO"
+                            TecDoc = 4679
                         },
                         new
                         {
                             Id = 218,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9669),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MOBILETRON",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1253),
                             IsActive = true,
-                            TecDoc = 4705,
-                            Title = "MOBILETRON"
+                            TecDoc = 4705
                         },
                         new
                         {
                             Id = 219,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9673),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1257),
                             IsActive = true,
-                            TecDoc = 4717,
-                            Title = "NE"
+                            TecDoc = 4717
                         },
                         new
                         {
                             Id = 220,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9676),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "LIFT-TEK",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1260),
                             IsActive = true,
-                            TecDoc = 4719,
-                            Title = "LIFT-TEK"
+                            TecDoc = 4719
                         },
                         new
                         {
                             Id = 221,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9681),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "MIRAGLIO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1264),
                             IsActive = true,
-                            TecDoc = 4721,
-                            Title = "MIRAGLIO"
+                            TecDoc = 4721
                         },
                         new
                         {
                             Id = 222,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9684),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HELLA GUTMANN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1277),
                             IsActive = true,
-                            TecDoc = 4734,
-                            Title = "HELLA GUTMANN"
+                            TecDoc = 4734
                         },
                         new
                         {
                             Id = 223,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9688),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HAZET",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1280),
                             IsActive = true,
-                            TecDoc = 4808,
-                            Title = "HAZET"
+                            TecDoc = 4808
                         },
                         new
                         {
                             Id = 224,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9691),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Borsehung",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1284),
                             IsActive = true,
-                            TecDoc = 4815,
-                            Title = "Borsehung"
+                            TecDoc = 4815
                         },
                         new
                         {
                             Id = 225,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9695),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "QUARO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1288),
                             IsActive = true,
-                            TecDoc = 4821,
-                            Title = "QUARO"
+                            TecDoc = 4821
                         },
                         new
                         {
                             Id = 226,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9698),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AS-PL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1291),
                             IsActive = true,
-                            TecDoc = 4843,
-                            Title = "AS-PL"
+                            TecDoc = 4843
                         },
                         new
                         {
                             Id = 227,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9701),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Ac Rolcar",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1295),
                             IsActive = true,
-                            TecDoc = 4849,
-                            Title = "Ac Rolcar"
+                            TecDoc = 4849
                         },
                         new
                         {
                             Id = 228,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9705),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ARAL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1298),
                             IsActive = true,
-                            TecDoc = 4866,
-                            Title = "ARAL"
+                            TecDoc = 4866
                         },
                         new
                         {
                             Id = 229,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9708),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "COFLE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1302),
                             IsActive = true,
-                            TecDoc = 4871,
-                            Title = "COFLE"
+                            TecDoc = 4871
                         },
                         new
                         {
                             Id = 230,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9712),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "POLMO",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1305),
                             IsActive = true,
-                            TecDoc = 4873,
-                            Title = "POLMO"
+                            TecDoc = 4873
                         },
                         new
                         {
                             Id = 231,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9716),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "DYNAMAX",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1308),
                             IsActive = true,
-                            TecDoc = 4881,
-                            Title = "DYNAMAX"
+                            TecDoc = 4881
                         },
                         new
                         {
                             Id = 232,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9719),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ALLIGATOR",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1312),
                             IsActive = true,
-                            TecDoc = 4911,
-                            Title = "ALLIGATOR"
+                            TecDoc = 4911
                         },
                         new
                         {
                             Id = 233,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9722),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GEDORE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1315),
                             IsActive = true,
-                            TecDoc = 4912,
-                            Title = "GEDORE"
+                            TecDoc = 4912
                         },
                         new
                         {
                             Id = 234,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9726),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "NORMA",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1319),
                             IsActive = true,
-                            TecDoc = 4923,
-                            Title = "NORMA"
+                            TecDoc = 4923
                         },
                         new
                         {
                             Id = 235,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9729),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "SCHRADER",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1322),
                             IsActive = true,
-                            TecDoc = 4946,
-                            Title = "SCHRADER"
+                            TecDoc = 4946
                         },
                         new
                         {
                             Id = 236,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9733),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "TURBORAIL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1326),
                             IsActive = true,
-                            TecDoc = 4949,
-                            Title = "TURBORAIL"
+                            TecDoc = 4949
                         },
                         new
                         {
                             Id = 237,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9737),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ESEN SKV",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1330),
                             IsActive = true,
-                            TecDoc = 4969,
-                            Title = "ESEN SKV"
+                            TecDoc = 4969
                         },
                         new
                         {
                             Id = 238,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9740),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "HART",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1335),
                             IsActive = true,
-                            TecDoc = 5251,
-                            Title = "HART"
+                            TecDoc = 5251
                         },
                         new
                         {
                             Id = 239,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9743),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "ACPS-ORIS",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1338),
                             IsActive = true,
-                            TecDoc = 6102,
-                            Title = "ACPS-ORIS"
+                            TecDoc = 6102
                         },
                         new
                         {
                             Id = 240,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9747),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "VALVOLINE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1342),
                             IsActive = true,
-                            TecDoc = 6186,
-                            Title = "VALVOLINE"
+                            TecDoc = 6186
                         },
                         new
                         {
                             Id = 241,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9750),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "CPB",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1345),
                             IsActive = true,
-                            TecDoc = 6263,
-                            Title = "CPB"
+                            TecDoc = 6263
                         },
                         new
                         {
                             Id = 242,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9754),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "QUICK BRAKE",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1349),
                             IsActive = true,
-                            TecDoc = 6304,
-                            Title = "QUICK BRAKE"
+                            TecDoc = 6304
                         },
                         new
                         {
                             Id = 243,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9757),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "GKN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1352),
                             IsActive = true,
-                            TecDoc = 6306,
-                            Title = "GKN"
+                            TecDoc = 6306
                         },
                         new
                         {
                             Id = 244,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9760),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "REPSOL",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1355),
                             IsActive = true,
-                            TecDoc = 6343,
-                            Title = "REPSOL"
+                            TecDoc = 6343
                         },
                         new
                         {
                             Id = 245,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9764),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "EBC Brakes",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1359),
                             IsActive = true,
-                            TecDoc = 6368,
-                            Title = "EBC Brakes"
+                            TecDoc = 6368
                         },
                         new
                         {
                             Id = 246,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9767),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BERU by DRiV",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1362),
                             IsActive = true,
-                            TecDoc = 6441,
-                            Title = "BERU by DRiV"
+                            TecDoc = 6441
                         },
                         new
                         {
                             Id = 247,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9771),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "BorgWarner (AWD)",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1365),
                             IsActive = true,
-                            TecDoc = 6444,
-                            Title = "BorgWarner (AWD)"
+                            TecDoc = 6444
                         },
                         new
                         {
                             Id = 248,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9774),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Dr.Motor Automotive",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1369),
                             IsActive = true,
-                            TecDoc = 6534,
-                            Title = "Dr.Motor Automotive"
+                            TecDoc = 6534
                         },
                         new
                         {
                             Id = 249,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9778),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "AIC",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1372),
                             IsActive = true,
-                            TecDoc = 6558,
-                            Title = "AIC"
+                            TecDoc = 6558
                         },
                         new
                         {
                             Id = 250,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9781),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "Oyodo",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1376),
                             IsActive = true,
-                            TecDoc = 6984,
-                            Title = "Oyodo"
+                            TecDoc = 6984
                         },
                         new
                         {
                             Id = 251,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 471, DateTimeKind.Local).AddTicks(9785),
-                            GeneralInformation = "",
+                            BrandDescription = "",
+                            BrandName = "JPN",
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1379),
                             IsActive = true,
-                            TecDoc = 6985,
-                            Title = "JPN"
+                            TecDoc = 6985
                         });
                 });
 
@@ -2398,7 +2398,7 @@ namespace AutopartsRepository.Migrations
                             Id = 1,
                             CountryNameCZ = "Česká republika",
                             CountryNameENG = "Czech Republic",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5115),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6210),
                             CurrencyId = 1,
                             ISOAlpha2 = "CZ",
                             ISOAlpha3 = "CZE",
@@ -2410,7 +2410,7 @@ namespace AutopartsRepository.Migrations
                             Id = 2,
                             CountryNameCZ = "Slovenská republika",
                             CountryNameENG = "Slovakia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5153),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6243),
                             CurrencyId = 2,
                             ISOAlpha2 = "SK",
                             ISOAlpha3 = "SVK",
@@ -2422,7 +2422,7 @@ namespace AutopartsRepository.Migrations
                             Id = 3,
                             CountryNameCZ = "Polsko",
                             CountryNameENG = "Poland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5158),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6248),
                             CurrencyId = 3,
                             ISOAlpha2 = "PL",
                             ISOAlpha3 = "POL",
@@ -2434,7 +2434,7 @@ namespace AutopartsRepository.Migrations
                             Id = 4,
                             CountryNameCZ = "Německo",
                             CountryNameENG = "Germany",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5163),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6252),
                             CurrencyId = 2,
                             ISOAlpha2 = "DE",
                             ISOAlpha3 = "DEU",
@@ -2446,7 +2446,7 @@ namespace AutopartsRepository.Migrations
                             Id = 5,
                             CountryNameCZ = "Rakousko",
                             CountryNameENG = "Austria",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5167),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6257),
                             CurrencyId = 2,
                             ISOAlpha2 = "AT",
                             ISOAlpha3 = "AUT",
@@ -2458,7 +2458,7 @@ namespace AutopartsRepository.Migrations
                             Id = 6,
                             CountryNameCZ = "Albánie",
                             CountryNameENG = "Albania",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5171),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6261),
                             CurrencyId = 4,
                             ISOAlpha2 = "AL",
                             ISOAlpha3 = "ALB",
@@ -2470,7 +2470,7 @@ namespace AutopartsRepository.Migrations
                             Id = 7,
                             CountryNameCZ = "Andorra",
                             CountryNameENG = "Andorra",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5176),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6265),
                             CurrencyId = 2,
                             ISOAlpha2 = "AD",
                             ISOAlpha3 = "AND",
@@ -2482,7 +2482,7 @@ namespace AutopartsRepository.Migrations
                             Id = 8,
                             CountryNameCZ = "Arménie",
                             CountryNameENG = "Armenia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5180),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6268),
                             CurrencyId = 5,
                             ISOAlpha2 = "AM",
                             ISOAlpha3 = "ARM",
@@ -2494,7 +2494,7 @@ namespace AutopartsRepository.Migrations
                             Id = 9,
                             CountryNameCZ = "Ázerbájdžán",
                             CountryNameENG = "Azerbaijan",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5185),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6272),
                             CurrencyId = 19,
                             ISOAlpha2 = "AZ",
                             ISOAlpha3 = "AZE",
@@ -2506,7 +2506,7 @@ namespace AutopartsRepository.Migrations
                             Id = 10,
                             CountryNameCZ = "Belgie",
                             CountryNameENG = "Belgium",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5189),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6276),
                             CurrencyId = 2,
                             ISOAlpha2 = "BE",
                             ISOAlpha3 = "BEL",
@@ -2518,7 +2518,7 @@ namespace AutopartsRepository.Migrations
                             Id = 11,
                             CountryNameCZ = "Bělorusko",
                             CountryNameENG = "Belarus",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5194),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6280),
                             CurrencyId = 24,
                             ISOAlpha2 = "BY",
                             ISOAlpha3 = "BLR",
@@ -2530,7 +2530,7 @@ namespace AutopartsRepository.Migrations
                             Id = 12,
                             CountryNameCZ = "Bosna a Hercegovina",
                             CountryNameENG = "Bosnia and Herzegovina",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5198),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6285),
                             CurrencyId = 26,
                             ISOAlpha2 = "BA",
                             ISOAlpha3 = "BIH",
@@ -2542,7 +2542,7 @@ namespace AutopartsRepository.Migrations
                             Id = 13,
                             CountryNameCZ = "Bulharsko",
                             CountryNameENG = "Bulgaria",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5202),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6289),
                             CurrencyId = 25,
                             ISOAlpha2 = "BG",
                             ISOAlpha3 = "BGR",
@@ -2554,7 +2554,7 @@ namespace AutopartsRepository.Migrations
                             Id = 14,
                             CountryNameCZ = "Černá Hora",
                             CountryNameENG = "Montenegro",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5206),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6293),
                             CurrencyId = 2,
                             ISOAlpha2 = "ME",
                             ISOAlpha3 = "MNE",
@@ -2566,7 +2566,7 @@ namespace AutopartsRepository.Migrations
                             Id = 15,
                             CountryNameCZ = "Dánsko",
                             CountryNameENG = "Denmark",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5210),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6299),
                             CurrencyId = 7,
                             ISOAlpha2 = "DK",
                             ISOAlpha3 = "DNK",
@@ -2578,7 +2578,7 @@ namespace AutopartsRepository.Migrations
                             Id = 16,
                             CountryNameCZ = "Estonsko",
                             CountryNameENG = "Estonia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5214),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6303),
                             CurrencyId = 2,
                             ISOAlpha2 = "EE",
                             ISOAlpha3 = "EST",
@@ -2590,7 +2590,7 @@ namespace AutopartsRepository.Migrations
                             Id = 17,
                             CountryNameCZ = "Finsko",
                             CountryNameENG = "Finland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5306),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6308),
                             CurrencyId = 2,
                             ISOAlpha2 = "FI",
                             ISOAlpha3 = "FIN",
@@ -2602,7 +2602,7 @@ namespace AutopartsRepository.Migrations
                             Id = 18,
                             CountryNameCZ = "Francie",
                             CountryNameENG = "France",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5311),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6313),
                             CurrencyId = 2,
                             ISOAlpha2 = "FR",
                             ISOAlpha3 = "FRA",
@@ -2614,7 +2614,7 @@ namespace AutopartsRepository.Migrations
                             Id = 19,
                             CountryNameCZ = "Gruzie",
                             CountryNameENG = "Georgia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5315),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6318),
                             CurrencyId = 28,
                             ISOAlpha2 = "GE",
                             ISOAlpha3 = "GEO",
@@ -2626,7 +2626,7 @@ namespace AutopartsRepository.Migrations
                             Id = 20,
                             CountryNameCZ = "Chorvatsko",
                             CountryNameENG = "Croatia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5320),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6323),
                             CurrencyId = 6,
                             ISOAlpha2 = "HR",
                             ISOAlpha3 = "HRV",
@@ -2638,7 +2638,7 @@ namespace AutopartsRepository.Migrations
                             Id = 21,
                             CountryNameCZ = "Irsko",
                             CountryNameENG = "Ireland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5324),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6328),
                             CurrencyId = 2,
                             ISOAlpha2 = "IE",
                             ISOAlpha3 = "IRL",
@@ -2650,7 +2650,7 @@ namespace AutopartsRepository.Migrations
                             Id = 22,
                             CountryNameCZ = "Island",
                             CountryNameENG = "Iceland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5328),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6333),
                             CurrencyId = 9,
                             ISOAlpha2 = "IS",
                             ISOAlpha3 = "ISL",
@@ -2662,7 +2662,7 @@ namespace AutopartsRepository.Migrations
                             Id = 23,
                             CountryNameCZ = "Itálie",
                             CountryNameENG = "Italy",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5333),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6338),
                             CurrencyId = 2,
                             ISOAlpha2 = "IT",
                             ISOAlpha3 = "ITA",
@@ -2674,7 +2674,7 @@ namespace AutopartsRepository.Migrations
                             Id = 24,
                             CountryNameCZ = "Kazachstán",
                             CountryNameENG = "Kazakhstan",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5337),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6343),
                             CurrencyId = 10,
                             ISOAlpha2 = "KZ",
                             ISOAlpha3 = "KAZ",
@@ -2686,7 +2686,7 @@ namespace AutopartsRepository.Migrations
                             Id = 25,
                             CountryNameCZ = "Kypr (Kyperská republika)",
                             CountryNameENG = "Cyprus",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5341),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6348),
                             CurrencyId = 2,
                             ISOAlpha2 = "CY",
                             ISOAlpha3 = "CYP",
@@ -2698,7 +2698,7 @@ namespace AutopartsRepository.Migrations
                             Id = 26,
                             CountryNameCZ = "Lichtenštejnsko (Lichtenštejnské knížectví)",
                             CountryNameENG = "Liechtenstein",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5344),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6353),
                             CurrencyId = 15,
                             ISOAlpha2 = "LI",
                             ISOAlpha3 = "LIE",
@@ -2710,7 +2710,7 @@ namespace AutopartsRepository.Migrations
                             Id = 27,
                             CountryNameCZ = "Litva (Litevská republika)",
                             CountryNameENG = "Lithuania",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5348),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6358),
                             CurrencyId = 2,
                             ISOAlpha2 = "LT",
                             ISOAlpha3 = "LTU",
@@ -2722,7 +2722,7 @@ namespace AutopartsRepository.Migrations
                             Id = 28,
                             CountryNameCZ = "Lotyšsko (Lotyšská republika)",
                             CountryNameENG = "Latvia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5352),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6364),
                             CurrencyId = 2,
                             ISOAlpha2 = "LV",
                             ISOAlpha3 = "LVA",
@@ -2734,7 +2734,7 @@ namespace AutopartsRepository.Migrations
                             Id = 29,
                             CountryNameCZ = "Lucembursko",
                             CountryNameENG = "Luxembourg",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5357),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6369),
                             CurrencyId = 2,
                             ISOAlpha2 = "LU",
                             ISOAlpha3 = "LUX",
@@ -2746,7 +2746,7 @@ namespace AutopartsRepository.Migrations
                             Id = 30,
                             CountryNameCZ = "Maďarsko",
                             CountryNameENG = "Hungary",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5361),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6374),
                             CurrencyId = 8,
                             ISOAlpha2 = "HU",
                             ISOAlpha3 = "HUN",
@@ -2758,7 +2758,7 @@ namespace AutopartsRepository.Migrations
                             Id = 31,
                             CountryNameCZ = "Malta",
                             CountryNameENG = "Malta",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5365),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6380),
                             CurrencyId = 2,
                             ISOAlpha2 = "MT",
                             ISOAlpha3 = "MLT",
@@ -2770,7 +2770,7 @@ namespace AutopartsRepository.Migrations
                             Id = 32,
                             CountryNameCZ = "Moldavsko (Moldavská republika)",
                             CountryNameENG = "Moldova",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5368),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6385),
                             CurrencyId = 11,
                             ISOAlpha2 = "MD",
                             ISOAlpha3 = "MDA",
@@ -2782,7 +2782,7 @@ namespace AutopartsRepository.Migrations
                             Id = 33,
                             CountryNameCZ = "Monako",
                             CountryNameENG = "Monaco",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5372),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6453),
                             CurrencyId = 2,
                             ISOAlpha2 = "MC",
                             ISOAlpha3 = "MCO",
@@ -2794,7 +2794,7 @@ namespace AutopartsRepository.Migrations
                             Id = 34,
                             CountryNameCZ = "Nizozemsko",
                             CountryNameENG = "Netherlands",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5376),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6457),
                             CurrencyId = 2,
                             ISOAlpha2 = "NL",
                             ISOAlpha3 = "NLD",
@@ -2806,7 +2806,7 @@ namespace AutopartsRepository.Migrations
                             Id = 35,
                             CountryNameCZ = "Norsko",
                             CountryNameENG = "Norway",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5380),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6461),
                             CurrencyId = 12,
                             ISOAlpha2 = "NO",
                             ISOAlpha3 = "NOR",
@@ -2818,7 +2818,7 @@ namespace AutopartsRepository.Migrations
                             Id = 36,
                             CountryNameCZ = "Portugalsko",
                             CountryNameENG = "Portugal",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5385),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6465),
                             CurrencyId = 2,
                             ISOAlpha2 = "PT",
                             ISOAlpha3 = "PRT",
@@ -2830,7 +2830,7 @@ namespace AutopartsRepository.Migrations
                             Id = 37,
                             CountryNameCZ = "Rumunsko",
                             CountryNameENG = "Romania",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5390),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6469),
                             CurrencyId = 20,
                             ISOAlpha2 = "RO",
                             ISOAlpha3 = "ROU",
@@ -2842,7 +2842,7 @@ namespace AutopartsRepository.Migrations
                             Id = 38,
                             CountryNameCZ = "Rusko",
                             CountryNameENG = "Russian Federation",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5395),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6473),
                             CurrencyId = 13,
                             ISOAlpha2 = "RU",
                             ISOAlpha3 = "RUS",
@@ -2854,7 +2854,7 @@ namespace AutopartsRepository.Migrations
                             Id = 39,
                             CountryNameCZ = "Řecko",
                             CountryNameENG = "Greece",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5399),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6477),
                             CurrencyId = 2,
                             ISOAlpha2 = "GR",
                             ISOAlpha3 = "GRC",
@@ -2866,7 +2866,7 @@ namespace AutopartsRepository.Migrations
                             Id = 40,
                             CountryNameCZ = "San Marino",
                             CountryNameENG = "San Marino",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5403),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6481),
                             CurrencyId = 2,
                             ISOAlpha2 = "SM",
                             ISOAlpha3 = "SMR",
@@ -2878,7 +2878,7 @@ namespace AutopartsRepository.Migrations
                             Id = 41,
                             CountryNameCZ = "Severní Makedonie (Republika Severní Makedonie)",
                             CountryNameENG = "Macedonia, Republic of",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5407),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6484),
                             CurrencyId = 16,
                             ISOAlpha2 = "MK",
                             ISOAlpha3 = "MKD",
@@ -2890,7 +2890,7 @@ namespace AutopartsRepository.Migrations
                             Id = 42,
                             CountryNameCZ = "Slovinsko",
                             CountryNameENG = "Slovenia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5411),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6488),
                             CurrencyId = 2,
                             ISOAlpha2 = "SI",
                             ISOAlpha3 = "SVN",
@@ -2902,7 +2902,7 @@ namespace AutopartsRepository.Migrations
                             Id = 43,
                             CountryNameCZ = "Srbsko",
                             CountryNameENG = "Serbia",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5415),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6493),
                             CurrencyId = 18,
                             ISOAlpha2 = "RS",
                             ISOAlpha3 = "SRB",
@@ -2914,7 +2914,7 @@ namespace AutopartsRepository.Migrations
                             Id = 44,
                             CountryNameCZ = "Španělsko",
                             CountryNameENG = "Spain",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5419),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6497),
                             CurrencyId = 2,
                             ISOAlpha2 = "ES",
                             ISOAlpha3 = "ESP",
@@ -2926,7 +2926,7 @@ namespace AutopartsRepository.Migrations
                             Id = 45,
                             CountryNameCZ = "Švédsko",
                             CountryNameENG = "Sweden",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5423),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6501),
                             CurrencyId = 14,
                             ISOAlpha2 = "SE",
                             ISOAlpha3 = "SWE",
@@ -2938,7 +2938,7 @@ namespace AutopartsRepository.Migrations
                             Id = 46,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5427),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6504),
                             CurrencyId = 21,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2950,7 +2950,7 @@ namespace AutopartsRepository.Migrations
                             Id = 47,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5431),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6508),
                             CurrencyId = 15,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2962,7 +2962,7 @@ namespace AutopartsRepository.Migrations
                             Id = 48,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5435),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6512),
                             CurrencyId = 22,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2974,7 +2974,7 @@ namespace AutopartsRepository.Migrations
                             Id = 49,
                             CountryNameCZ = "Turecko",
                             CountryNameENG = "Turkey",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5439),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6516),
                             CurrencyId = 23,
                             ISOAlpha2 = "TR",
                             ISOAlpha3 = "TUR",
@@ -2986,7 +2986,7 @@ namespace AutopartsRepository.Migrations
                             Id = 50,
                             CountryNameCZ = "Ukrajina",
                             CountryNameENG = "Ukraine",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5444),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6519),
                             CurrencyId = 27,
                             ISOAlpha2 = "UA",
                             ISOAlpha3 = "UKR",
@@ -2998,7 +2998,7 @@ namespace AutopartsRepository.Migrations
                             Id = 51,
                             CountryNameCZ = "Vatikán (Městský stát Vatikán)",
                             CountryNameENG = "Holy See (Vatican City State)",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5448),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6523),
                             CurrencyId = 2,
                             ISOAlpha2 = "VA",
                             ISOAlpha3 = "VAT",
@@ -3010,7 +3010,7 @@ namespace AutopartsRepository.Migrations
                             Id = 52,
                             CountryNameCZ = "Velká Británie (Spojené království)",
                             CountryNameENG = "United Kingdom",
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 472, DateTimeKind.Local).AddTicks(5453),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6527),
                             CurrencyId = 17,
                             ISOAlpha2 = "GB",
                             ISOAlpha3 = "GBR",
@@ -3068,7 +3068,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(88),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(389),
                             CurrencyCode = "CZK",
                             CurrencyName = "Česká koruna",
                             IsActive = true,
@@ -3077,7 +3077,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(119),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(419),
                             CurrencyCode = "EUR",
                             CurrencyName = "Euro",
                             IsActive = true,
@@ -3086,7 +3086,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(123),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(424),
                             CurrencyCode = "PLN",
                             CurrencyName = "Złoty",
                             IsActive = true,
@@ -3095,7 +3095,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(127),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(427),
                             CurrencyCode = "ALL",
                             CurrencyName = "Albánský lek",
                             IsActive = false,
@@ -3104,7 +3104,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(130),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(431),
                             CurrencyCode = "AMD",
                             CurrencyName = "Arménský dram",
                             IsActive = false,
@@ -3113,7 +3113,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(134),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(435),
                             CurrencyCode = "HRK",
                             CurrencyName = "Kuna",
                             IsActive = false,
@@ -3122,7 +3122,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 7,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(137),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(438),
                             CurrencyCode = "DKK",
                             CurrencyName = "Dánská koruna",
                             IsActive = false,
@@ -3131,7 +3131,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 8,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(141),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(442),
                             CurrencyCode = "HUF",
                             CurrencyName = "Forint",
                             IsActive = false,
@@ -3140,7 +3140,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 9,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(145),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(445),
                             CurrencyCode = "ISK",
                             CurrencyName = "Islandská koruna",
                             IsActive = false,
@@ -3149,7 +3149,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 10,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(148),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(448),
                             CurrencyCode = "KZT",
                             CurrencyName = "Tenge",
                             IsActive = false,
@@ -3158,7 +3158,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 11,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(152),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(452),
                             CurrencyCode = "MDL",
                             CurrencyName = "Moldavské leu",
                             IsActive = false,
@@ -3167,7 +3167,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 12,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(155),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(455),
                             CurrencyCode = "NOK",
                             CurrencyName = "Norská koruna",
                             IsActive = false,
@@ -3176,7 +3176,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 13,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(158),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(459),
                             CurrencyCode = "RUB",
                             CurrencyName = "Ruský rubl",
                             IsActive = false,
@@ -3185,7 +3185,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 14,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(162),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(462),
                             CurrencyCode = "SEK",
                             CurrencyName = "Švédská koruna",
                             IsActive = false,
@@ -3194,7 +3194,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 15,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(165),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(466),
                             CurrencyCode = "CHF",
                             CurrencyName = "Švýcarský frank",
                             IsActive = false,
@@ -3203,7 +3203,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 16,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(169),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(469),
                             CurrencyCode = "MKD",
                             CurrencyName = "Denár",
                             IsActive = false,
@@ -3212,7 +3212,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 17,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(172),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(472),
                             CurrencyCode = "GBP",
                             CurrencyName = "Libra šterlinků",
                             IsActive = false,
@@ -3221,7 +3221,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 18,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(176),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(476),
                             CurrencyCode = "RSD",
                             CurrencyName = "Srbský dinár",
                             IsActive = false,
@@ -3230,7 +3230,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 19,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(179),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(479),
                             CurrencyCode = "AZN",
                             CurrencyName = "Ázerbájdžánský manat",
                             IsActive = false,
@@ -3239,7 +3239,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 20,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(183),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(482),
                             CurrencyCode = "RON",
                             CurrencyName = "Rumunské leu",
                             IsActive = false,
@@ -3248,7 +3248,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 21,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(186),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(486),
                             CurrencyCode = "CHE",
                             CurrencyName = "WIR Euro",
                             IsActive = false,
@@ -3257,7 +3257,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 22,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(190),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(489),
                             CurrencyCode = "CHW",
                             CurrencyName = "WIR Frank",
                             IsActive = false,
@@ -3266,7 +3266,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 23,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(193),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(492),
                             CurrencyCode = "TRY",
                             CurrencyName = "Turecká lira",
                             IsActive = false,
@@ -3275,7 +3275,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 24,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(197),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(496),
                             CurrencyCode = "BYR",
                             CurrencyName = "Běloruský rubl",
                             IsActive = false,
@@ -3284,7 +3284,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 25,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(201),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(499),
                             CurrencyCode = "BGN",
                             CurrencyName = "Bulharská leva",
                             IsActive = false,
@@ -3293,7 +3293,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 26,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(204),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(503),
                             CurrencyCode = "BAM",
                             CurrencyName = "Konvertibilní marka",
                             IsActive = false,
@@ -3302,7 +3302,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 27,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(208),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(506),
                             CurrencyCode = "UAH",
                             CurrencyName = "Ukrajinská hřivna",
                             IsActive = false,
@@ -3311,7 +3311,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 28,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 473, DateTimeKind.Local).AddTicks(211),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(509),
                             CurrencyCode = "GEL",
                             CurrencyName = "Lari",
                             IsActive = false,
@@ -3330,10 +3330,6 @@ namespace AutopartsRepository.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasMaxLength(10)
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -3409,6 +3405,15 @@ namespace AutopartsRepository.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<string>("ManufacturerDescription")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("ManufacturerName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<byte[]>("RowVersion")
                         .IsConcurrencyToken()
                         .IsRequired()
@@ -3418,11 +3423,6 @@ namespace AutopartsRepository.Migrations
                     b.Property<int?>("TecDoc")
                         .HasMaxLength(6)
                         .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
 
                     b.Property<DateTime?>("UpdateDate")
                         .HasMaxLength(10)
@@ -3436,7 +3436,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1415),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3158),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3451,13 +3451,13 @@ namespace AutopartsRepository.Migrations
                             IsPKW = true,
                             IsShipsAndBoats = false,
                             IsVacuumPumps = false,
-                            TecDoc = 3854,
-                            Title = "ABARTH"
+                            ManufacturerName = "AUDI",
+                            TecDoc = 3854
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1449),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3212),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3472,13 +3472,13 @@ namespace AutopartsRepository.Migrations
                             IsPKW = true,
                             IsShipsAndBoats = false,
                             IsVacuumPumps = false,
-                            TecDoc = 1480,
-                            Title = "AIXAM"
+                            ManufacturerName = "MAN",
+                            TecDoc = 1480
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1456),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3223),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3493,13 +3493,13 @@ namespace AutopartsRepository.Migrations
                             IsPKW = true,
                             IsShipsAndBoats = false,
                             IsVacuumPumps = false,
-                            TecDoc = 2,
-                            Title = "ALFA ROMEO"
+                            ManufacturerName = "SEAT",
+                            TecDoc = 2
                         },
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1462),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3230),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3514,13 +3514,13 @@ namespace AutopartsRepository.Migrations
                             IsPKW = true,
                             IsShipsAndBoats = false,
                             IsVacuumPumps = false,
-                            TecDoc = 1360,
-                            Title = "ARO"
+                            ManufacturerName = "ŠKODA",
+                            TecDoc = 1360
                         },
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1468),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3237),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3535,1646 +3535,8 @@ namespace AutopartsRepository.Migrations
                             IsPKW = true,
                             IsShipsAndBoats = false,
                             IsVacuumPumps = false,
-                            TecDoc = 881,
-                            Title = "ASTON MARTIN"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1475),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 5,
-                            Title = "AUDI"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1556),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 6,
-                            Title = "AUSTIN"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1564),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 799,
-                            Title = "AUTOBIANCHI"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1570),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 815,
-                            Title = "BENTLEY"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1576),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 16,
-                            Title = "BMW"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1582),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 788,
-                            Title = "BUGATTI"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1589),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 816,
-                            Title = "BUICK"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1594),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 819,
-                            Title = "CADILLAC"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1600),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 21,
-                            Title = "CITROËN"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1605),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 139,
-                            Title = "DACIA"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1615),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 185,
-                            Title = "DAEWOO"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1621),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 24,
-                            Title = "DAF"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1627),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 25,
-                            Title = "DAIHATSU"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1634),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 29,
-                            Title = "DODGE"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1640),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 4468,
-                            Title = "DS"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1646),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 3332,
-                            Title = "EMGRAND"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1653),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 700,
-                            Title = "FERRARI"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1659),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 35,
-                            Title = "FIAT"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1665),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 36,
-                            Title = "FORD"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1671),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 776,
-                            Title = "FORD USA"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1677),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 148,
-                            Title = "GAZ"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1683),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 2590,
-                            Title = "GEELY"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1688),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 831,
-                            Title = "GEO"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1694),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 2903,
-                            Title = "GREAT WALL"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1700),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 45,
-                            Title = "HONDA"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1707),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1506,
-                            Title = "HUMMER"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1712),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 183,
-                            Title = "HYUNDAI"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1718),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 2887,
-                            Title = "CHERY"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1724),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 138,
-                            Title = "CHEVROLET"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1729),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 20,
-                            Title = "CHRYSLER"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1735),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1526,
-                            Title = "INFINITI"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1741),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 54,
-                            Title = "ISUZU"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1746),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 55,
-                            Title = "IVECO"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1752),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 56,
-                            Title = "JAGUAR"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1759),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 882,
-                            Title = "JEEP"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1764),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 184,
-                            Title = "KIA"
-                        },
-                        new
-                        {
-                            Id = 42,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1770),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 2760,
-                            Title = "KTM"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1776),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 63,
-                            Title = "LADA"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1782),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 701,
-                            Title = "LAMBORGHINI"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1787),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 64,
-                            Title = "LANCIA"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1793),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1820,
-                            Title = "LAND ROVER"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1799),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1380,
-                            Title = "LDV"
-                        },
-                        new
-                        {
-                            Id = 48,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1804),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 842,
-                            Title = "LEXUS"
-                        },
-                        new
-                        {
-                            Id = 49,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1810),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1200,
-                            Title = "LINCOLN"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1816),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 802,
-                            Title = "LOTUS"
-                        },
-                        new
-                        {
-                            Id = 51,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1821),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 69,
-                            Title = "MAN"
-                        },
-                        new
-                        {
-                            Id = 52,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1827),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 771,
-                            Title = "MASERATI"
-                        },
-                        new
-                        {
-                            Id = 53,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1833),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 72,
-                            Title = "MAZDA"
-                        },
-                        new
-                        {
-                            Id = 54,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1839),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 74,
-                            Title = "MERCEDES-BENZ"
-                        },
-                        new
-                        {
-                            Id = 55,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1844),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 75,
-                            Title = "MG"
-                        },
-                        new
-                        {
-                            Id = 56,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1850),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1523,
-                            Title = "MINI"
-                        },
-                        new
-                        {
-                            Id = 57,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1855),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 77,
-                            Title = "MITSUBISHI"
-                        },
-                        new
-                        {
-                            Id = 58,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1861),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 813,
-                            Title = "MOSKVICH"
-                        },
-                        new
-                        {
-                            Id = 59,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1867),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 80,
-                            Title = "NISSAN"
-                        },
-                        new
-                        {
-                            Id = 60,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1873),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 84,
-                            Title = "OPEL"
-                        },
-                        new
-                        {
-                            Id = 61,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1878),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 88,
-                            Title = "PEUGEOT"
-                        },
-                        new
-                        {
-                            Id = 62,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1883),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 850,
-                            Title = "PLYMOUTH"
-                        },
-                        new
-                        {
-                            Id = 63,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1889),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 774,
-                            Title = "PONTIAC"
-                        },
-                        new
-                        {
-                            Id = 64,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1894),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 92,
-                            Title = "PORSCHE"
-                        },
-                        new
-                        {
-                            Id = 65,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1900),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 778,
-                            Title = "PROTON"
-                        },
-                        new
-                        {
-                            Id = 66,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1906),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 93,
-                            Title = "RENAULT"
-                        },
-                        new
-                        {
-                            Id = 67,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1911),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 694,
-                            Title = "RENAULT TRUCKS"
-                        },
-                        new
-                        {
-                            Id = 68,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1918),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 705,
-                            Title = "ROLLS-ROYCE"
-                        },
-                        new
-                        {
-                            Id = 69,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1923),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 95,
-                            Title = "ROVER"
-                        },
-                        new
-                        {
-                            Id = 70,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1930),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 99,
-                            Title = "SAAB"
-                        },
-                        new
-                        {
-                            Id = 71,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1936),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 104,
-                            Title = "SEAT"
-                        },
-                        new
-                        {
-                            Id = 72,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1942),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 106,
-                            Title = "ŠKODA"
-                        },
-                        new
-                        {
-                            Id = 73,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1947),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 1138,
-                            Title = "SMART"
-                        },
-                        new
-                        {
-                            Id = 74,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1953),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 175,
-                            Title = "SSANGYONG"
-                        },
-                        new
-                        {
-                            Id = 75,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1959),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 107,
-                            Title = "SUBARU"
-                        },
-                        new
-                        {
-                            Id = 76,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1965),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 109,
-                            Title = "SUZUKI"
-                        },
-                        new
-                        {
-                            Id = 77,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1970),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 110,
-                            Title = "TALBOT"
-                        },
-                        new
-                        {
-                            Id = 78,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1976),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 3328,
-                            Title = "TESLA"
-                        },
-                        new
-                        {
-                            Id = 79,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1981),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 111,
-                            Title = "TOYOTA"
-                        },
-                        new
-                        {
-                            Id = 80,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1987),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 187,
-                            Title = "TRABANT"
-                        },
-                        new
-                        {
-                            Id = 81,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1992),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 121,
-                            Title = "VOLKSWAGEN"
-                        },
-                        new
-                        {
-                            Id = 82,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(1998),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 120,
-                            Title = "VOLVO"
-                        },
-                        new
-                        {
-                            Id = 83,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(2004),
-                            IsActive = true,
-                            IsAgriculturalMachinery = false,
-                            IsAutoParts = false,
-                            IsCompressors = false,
-                            IsConstuctionAndMining = false,
-                            IsElectronicDischargeMachines = false,
-                            IsEngines = false,
-                            IsForkLiftTruck = false,
-                            IsIndustrialApplications = false,
-                            IsLKW = false,
-                            IsMotorcycle = false,
-                            IsPKW = true,
-                            IsShipsAndBoats = false,
-                            IsVacuumPumps = false,
-                            TecDoc = 186,
-                            Title = "WARTBURG"
+                            ManufacturerName = "VOLKSWAGEN",
+                            TecDoc = 881
                         });
                 });
 
@@ -5201,14 +3563,14 @@ namespace AutopartsRepository.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("rowversion");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.Property<DateTime?>("UpdateDate")
                         .HasMaxLength(10)
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("WarrantyPeriod")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -5218,44 +3580,44 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5676),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8879),
                             IsActive = true,
-                            Title = "6 měsíců"
+                            WarrantyPeriod = "6 měsíců"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5703),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8910),
                             IsActive = true,
-                            Title = "12 měsíců"
+                            WarrantyPeriod = "12 měsíců"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5707),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8916),
                             IsActive = true,
-                            Title = "24 měsíců"
+                            WarrantyPeriod = "24 měsíců"
                         },
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5711),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8921),
                             IsActive = true,
-                            Title = "36 měsíců"
+                            WarrantyPeriod = "36 měsíců"
                         },
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5714),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8926),
                             IsActive = false,
-                            Title = "48 měsíců"
+                            WarrantyPeriod = "48 měsíců"
                         },
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2023, 11, 27, 13, 30, 39, 474, DateTimeKind.Local).AddTicks(5717),
+                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8931),
                             IsActive = false,
-                            Title = "60 měsíců"
+                            WarrantyPeriod = "60 měsíců"
                         });
                 });
 

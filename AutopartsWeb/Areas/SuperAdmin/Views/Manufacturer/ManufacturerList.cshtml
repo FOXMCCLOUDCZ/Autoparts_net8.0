@@ -75,7 +75,7 @@
                 {
                     <tr>
                         <td class="text-center align-middle">@item.TecDoc</td>
-                        <td class="text-center align-middle">@item.Title</td>
+                        <td class="text-center align-middle">@item.ManufacturerName</td>
                         @if (item.IsAutoParts == false)
                         {
                             <td class="text-center align-middle">
@@ -311,8 +311,8 @@
                         <td colspan="7" class="p-0">
                             <div id="collapse@(item.Id)" class="accordion-collapse collapse" aria-labelledby="flush-heading@(item.Id)" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body px-2 py-2">
-                                    <p><strong>Informace o výrobci @item.Title:</strong></p>
-                                    <p>@item.Description</p>
+                                    <p><strong>Informace o výrobci @item.ManufacturerName:</strong></p>
+                                    <p>@item.ManufacturerDescription</p>
                                 </div>
                             </div>
                         </td>

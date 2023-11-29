@@ -34,7 +34,7 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td class="text-center align-middle">@item.Title</td>
+                        <td class="text-center align-middle">@item.WarrantyPeriod</td>
                         <td class="text-center align-middle">@item.CreateDate.ToString("d")<br />@item.UpdateDate?.ToString("d")</td>
                         @if (item.IsActive == false)
                         {

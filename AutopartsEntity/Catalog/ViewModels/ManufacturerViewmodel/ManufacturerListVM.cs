@@ -7,9 +7,9 @@
         public DateTime? UpdateDate { get; set; } = DateTime.Now;
 
         public int? TecDoc { get; set; }
-        public string Title { get; set; } = null!;
+        public string ManufacturerName { get; set; } = null!;
         public string? LogoPath { get; set; }
-        public string? Description { get; set; }
+        public string? ManufacturerDescription { get; set; }
         public bool IsAutoParts { get; set; } = false;
         public bool IsPKW { get; set; } = false;
         public bool IsLKW { get; set; } = false;

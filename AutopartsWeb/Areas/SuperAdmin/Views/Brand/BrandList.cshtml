@@ -35,7 +35,7 @@
                 {
                     <tr>
                         <td class="text-center align-middle">@item.TecDoc</td>
-                        <td class="text-center align-middle">@item.Title</td>
+                        <td class="text-center align-middle">@item.BrandName</td>
                         <td class="text-center align-middle">@item.LogoPath</td>
                         <td class="text-center align-middle align-middle">@item.CreateDate.ToString("d")<br />@item.UpdateDate?.ToString("d")</td>
                         @if (item.IsActive == false)
@@ -64,8 +64,8 @@
                         <td colspan="7" class="p-0">
                             <div id="collapse@(item.Id)" class="accordion-collapse collapse" aria-labelledby="flush-heading@(item.Id)" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body px-2 py-2">
-                                    <p><strong>Informace o brandu @item.Title:</strong></p>
-                                    <p>@item.GeneralInformation</p>
+                                    <p><strong>Informace o brandu @item.BrandName:</strong></p>
+                                    <p>@item.BrandDescription</p>
                                 </div>
                             </div>
                         </td>

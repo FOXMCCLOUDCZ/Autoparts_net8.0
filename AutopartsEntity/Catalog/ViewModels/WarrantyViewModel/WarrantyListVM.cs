@@ -6,7 +6,7 @@
         public DateTime CreateDate { get; set; } = DateTime.Now;
         public DateTime? UpdateDate { get; set; } = DateTime.Now;
 
-        public string Title { get; set; } = null!;
+        public string WarrantyPeriod { get; set; } = null!;
         public bool IsActive { get; set; } = false;
     }
 }
