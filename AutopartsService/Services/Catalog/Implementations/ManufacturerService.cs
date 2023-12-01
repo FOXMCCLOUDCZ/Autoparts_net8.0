@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using AutopartsEntity.Catalog.Entities;
-using AutopartsEntity.Catalog.ViewModels.ManufacturerViewmodel;
+using AutopartsEntity.Catalog.ViewModels.ManufacturerViewModel;
 using AutopartsRepository.Repositories.Interfaces;
 using AutopartsRepository.UnitOfWorks.Interfaces;
 using AutopartsService.Services.Catalog.Interfaces;

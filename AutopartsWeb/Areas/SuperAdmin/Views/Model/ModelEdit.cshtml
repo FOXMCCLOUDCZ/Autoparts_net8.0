@@ -1,0 +1,189 @@
+﻿@model ModelEditVM
+@{
+    ViewData["Title"] = "ModelEdit";
+    Layout = "~/Areas/SuperAdmin/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h5 class="card-title">Vytvořit model</h5>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-area="SuperAdmin" asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
+            <li class="breadcrumb-item"><a asp-area="SuperAdmin" asp-controller="Model" asp-action="ModelList">Výrobci</a></li>
+            <li class="breadcrumb-item active"><a asp-area="SuperAdmin" asp-controller="Model" asp-action="ModelEdit">Editovat</a></li>
+        </ol>
+    </nav>
+</div>
+
+<div class="card">
+    <div class="card-body mt-3">
+        <form asp-area="SuperAdmin" asp-controller="Model" asp-action="ModelEdit" method="post" class="row g-3" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="CreateDate" />
+            <input type="hidden" asp-for="RowVersion" />
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="Default select example" asp-items="ViewBag.Manufacturer" asp-for="ManufacturerId">
+                    <option selected>Přiřadit výrobce</option>
+                </select>
+                <label class="mx-2" for="floatingSelect">Výrobce</label>
+                <span asp-validation-for="ManufacturerId" class="text-danger"></span>
+            </div>
+            <div class="col-md-12">
+                <div class="text-end mx-3">
+                    <small id="ModelNameCount100" class="form-text">0/100</small>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="ModelName" type="text" class="form-control" id="ModelName" placeholder="Název modelu">
+                    <label asp-for="ModelName">Název modelu</label>
+                    <span asp-validation-for="ModelName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <label asp-for="MadeBy" class="col-sm-2 col-form-label">Začátek výroby modelu</label>
+                <div class="col-sm-10">
+                    <input asp-for="MadeBy" type="date" class="form-control">
+                    <span asp-validation-for="MadeBy" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row my-3">
+                <label asp-for="MadeTo" class="col-sm-2 col-form-label">Konec výroby modelu</label>
+                <div class="col-sm-10">
+                    <input asp-for="MadeTo" type="date" class="form-control">
+                    <span asp-validation-for="MadeTo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/sport-car32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/truck32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/motorbike32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/tractor32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/air-compressor32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/excavator32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/factory-machine32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/car-engine32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/forklift32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/mining-truck32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/sail-boat32.png" />
+                                </th>
+                                <th class="text-center align-middle" scope="col">
+                                    <img src="~/Image/Icons/32px/carpet32.png" />
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsPKW" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsLKW" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsMotorcycle" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsAgriculturalMachinery" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsCompressors" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsConstuctionAndMining" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsElectronicDischargeMachines" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsEngines" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsForkLiftTruck" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsIndustrialApplications" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsShipsAndBoats" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                                <td class="text-center align-middle">
+                                    <div class="btn  btn-sm">
+                                        <input asp-for="IsVacuumPumps" class="form-check-input fs-3" type="checkbox" id="flexCheckDefault">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-check form-switch">
+                    <input asp-for="IsActive" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label asp-for="IsActive" class="form-check-label" for="flexSwitchCheckDefault">Aktivní/neaktivní</label>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Uložit</button>
+                <button type="reset" class="btn btn-secondary">Vrátit změny</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        setupLiveCharacterCount('ModelName', 'ModelNameCount100', 100);
+    </script>
+}

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using AutopartsEntity.Catalog.Entities;
-using AutopartsEntity.Catalog.ViewModels.ManufacturerViewmodel;
+using AutopartsEntity.Catalog.ViewModels.ManufacturerViewModel;
 
 namespace AutopartsService.AutoMapper.Catalog
 {

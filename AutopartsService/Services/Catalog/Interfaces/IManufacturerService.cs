@@ -1,4 +1,4 @@
-﻿using AutopartsEntity.Catalog.ViewModels.ManufacturerViewmodel;
+﻿using AutopartsEntity.Catalog.ViewModels.ManufacturerViewModel;
 
 namespace AutopartsService.Services.Catalog.Interfaces
 {

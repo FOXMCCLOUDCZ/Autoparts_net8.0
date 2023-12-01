@@ -1,4 +1,4 @@
-﻿using AutopartsEntity.Catalog.ViewModels.ManufacturerViewmodel;
+﻿using AutopartsEntity.Catalog.ViewModels.ManufacturerViewModel;
 using AutopartsService.Messages.Catalog;
 using FluentValidation;
 

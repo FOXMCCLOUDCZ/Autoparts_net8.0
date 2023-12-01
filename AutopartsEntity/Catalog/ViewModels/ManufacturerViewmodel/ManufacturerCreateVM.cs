@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace AutopartsEntity.Catalog.ViewModels.ManufacturerViewmodel
+namespace AutopartsEntity.Catalog.ViewModels.ManufacturerViewModel
 {
     public class ManufacturerCreateVM
     {

@@ -22,6 +22,7 @@ namespace AutopartsRepository.Contexts
         public DbSet<Country> Countries { get; set; }
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<Manufacturer> Manufacturers { get; set; }
+        public DbSet<Model> Models { get; set; }
         public DbSet<Warranty> Warranties { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

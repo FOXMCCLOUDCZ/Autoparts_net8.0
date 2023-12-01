@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutopartsRepository.Migrations
 {
     [DbContext(typeof(AutopartsDbContext))]
-    [Migration("20231129113700_CreateBrandCountryCurrencyManufacturerWarranty")]
-    partial class CreateBrandCountryCurrencyManufacturerWarranty
+    [Migration("20231130104710_AddModelTableBrandCountryCurrencyManufacturerModelWarranty")]
+    partial class AddModelTableBrandCountryCurrencyManufacturerModelWarranty
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,7 +79,7 @@ namespace AutopartsRepository.Migrations
                             Id = 1,
                             BrandDescription = "",
                             BrandName = "SPIDAN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(418),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3505),
                             IsActive = true,
                             TecDoc = 1
                         },
@@ -88,7 +88,7 @@ namespace AutopartsRepository.Migrations
                             Id = 2,
                             BrandDescription = "",
                             BrandName = "HELLA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(469),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3570),
                             IsActive = true,
                             TecDoc = 2
                         },
@@ -97,7 +97,7 @@ namespace AutopartsRepository.Migrations
                             Id = 3,
                             BrandDescription = "",
                             BrandName = "ATE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(473),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3575),
                             IsActive = true,
                             TecDoc = 3
                         },
@@ -106,7 +106,7 @@ namespace AutopartsRepository.Migrations
                             Id = 4,
                             BrandDescription = "",
                             BrandName = "MANN-FILTER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(477),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3579),
                             IsActive = true,
                             TecDoc = 4
                         },
@@ -115,7 +115,7 @@ namespace AutopartsRepository.Migrations
                             Id = 5,
                             BrandDescription = "",
                             BrandName = "PIERBURG",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(481),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3583),
                             IsActive = true,
                             TecDoc = 5
                         },
@@ -124,7 +124,7 @@ namespace AutopartsRepository.Migrations
                             Id = 6,
                             BrandDescription = "",
                             BrandName = "LuK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(484),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3587),
                             IsActive = true,
                             TecDoc = 6
                         },
@@ -133,7 +133,7 @@ namespace AutopartsRepository.Migrations
                             Id = 7,
                             BrandDescription = "",
                             BrandName = "EBERSPÄCHER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(488),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3590),
                             IsActive = true,
                             TecDoc = 7
                         },
@@ -142,7 +142,7 @@ namespace AutopartsRepository.Migrations
                             Id = 8,
                             BrandDescription = "",
                             BrandName = "VICTOR REINZ",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(491),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3594),
                             IsActive = true,
                             TecDoc = 9
                         },
@@ -151,7 +151,7 @@ namespace AutopartsRepository.Migrations
                             Id = 9,
                             BrandDescription = "",
                             BrandName = "ELRING",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(495),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3598),
                             IsActive = true,
                             TecDoc = 10
                         },
@@ -160,7 +160,7 @@ namespace AutopartsRepository.Migrations
                             Id = 10,
                             BrandDescription = "",
                             BrandName = "BorgWarner (BERU)",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(498),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3601),
                             IsActive = true,
                             TecDoc = 11
                         },
@@ -169,7 +169,7 @@ namespace AutopartsRepository.Migrations
                             Id = 11,
                             BrandDescription = "",
                             BrandName = "WALKER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(502),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3605),
                             IsActive = true,
                             TecDoc = 13
                         },
@@ -178,7 +178,7 @@ namespace AutopartsRepository.Migrations
                             Id = 12,
                             BrandDescription = "",
                             BrandName = "NGK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(506),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3608),
                             IsActive = true,
                             TecDoc = 15
                         },
@@ -187,7 +187,7 @@ namespace AutopartsRepository.Migrations
                             Id = 13,
                             BrandDescription = "",
                             BrandName = "BILSTEIN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(509),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3612),
                             IsActive = true,
                             TecDoc = 16
                         },
@@ -196,7 +196,7 @@ namespace AutopartsRepository.Migrations
                             Id = 14,
                             BrandDescription = "",
                             BrandName = "KONI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(513),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3620),
                             IsActive = true,
                             TecDoc = 18
                         },
@@ -205,7 +205,7 @@ namespace AutopartsRepository.Migrations
                             Id = 15,
                             BrandDescription = "",
                             BrandName = "SWF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(517),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3623),
                             IsActive = true,
                             TecDoc = 19
                         },
@@ -214,7 +214,7 @@ namespace AutopartsRepository.Migrations
                             Id = 16,
                             BrandDescription = "",
                             BrandName = "VALEO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(521),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3627),
                             IsActive = true,
                             TecDoc = 21
                         },
@@ -223,7 +223,7 @@ namespace AutopartsRepository.Migrations
                             Id = 17,
                             BrandDescription = "",
                             BrandName = "RUVILLE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(524),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3631),
                             IsActive = true,
                             TecDoc = 23
                         },
@@ -232,7 +232,7 @@ namespace AutopartsRepository.Migrations
                             Id = 18,
                             BrandDescription = "",
                             BrandName = "EXIDE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(527),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3635),
                             IsActive = true,
                             TecDoc = 24
                         },
@@ -241,7 +241,7 @@ namespace AutopartsRepository.Migrations
                             Id = 19,
                             BrandDescription = "",
                             BrandName = "VARTA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(531),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3638),
                             IsActive = true,
                             TecDoc = 26
                         },
@@ -250,7 +250,7 @@ namespace AutopartsRepository.Migrations
                             Id = 20,
                             BrandDescription = "",
                             BrandName = "ERNST",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(534),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3642),
                             IsActive = true,
                             TecDoc = 29
                         },
@@ -259,7 +259,7 @@ namespace AutopartsRepository.Migrations
                             Id = 21,
                             BrandDescription = "",
                             BrandName = "BOSCH",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(539),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3645),
                             IsActive = true,
                             TecDoc = 30
                         },
@@ -268,7 +268,7 @@ namespace AutopartsRepository.Migrations
                             Id = 22,
                             BrandDescription = "",
                             BrandName = "CONTINENTAL CTAM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(542),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3650),
                             IsActive = true,
                             TecDoc = 31
                         },
@@ -277,7 +277,7 @@ namespace AutopartsRepository.Migrations
                             Id = 23,
                             BrandDescription = "",
                             BrandName = "SACHS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(546),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3653),
                             IsActive = true,
                             TecDoc = 32
                         },
@@ -286,7 +286,7 @@ namespace AutopartsRepository.Migrations
                             Id = 24,
                             BrandDescription = "",
                             BrandName = "GATES",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(549),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3657),
                             IsActive = true,
                             TecDoc = 33
                         },
@@ -295,7 +295,7 @@ namespace AutopartsRepository.Migrations
                             Id = 25,
                             BrandDescription = "",
                             BrandName = "KNECHT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(553),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3660),
                             IsActive = true,
                             TecDoc = 34
                         },
@@ -304,7 +304,7 @@ namespace AutopartsRepository.Migrations
                             Id = 26,
                             BrandDescription = "",
                             BrandName = "LEMFÖRDER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(556),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3664),
                             IsActive = true,
                             TecDoc = 35
                         },
@@ -313,7 +313,7 @@ namespace AutopartsRepository.Migrations
                             Id = 27,
                             BrandDescription = "",
                             BrandName = "VAN WEZEL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(560),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3667),
                             IsActive = true,
                             TecDoc = 36
                         },
@@ -322,7 +322,7 @@ namespace AutopartsRepository.Migrations
                             Id = 28,
                             BrandDescription = "",
                             BrandName = "MONROE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(563),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3671),
                             IsActive = true,
                             TecDoc = 37
                         },
@@ -331,7 +331,7 @@ namespace AutopartsRepository.Migrations
                             Id = 29,
                             BrandDescription = "",
                             BrandName = "PURFLUX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(567),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3675),
                             IsActive = true,
                             TecDoc = 38
                         },
@@ -340,7 +340,7 @@ namespace AutopartsRepository.Migrations
                             Id = 30,
                             BrandDescription = "",
                             BrandName = "TEXTAR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(570),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3678),
                             IsActive = true,
                             TecDoc = 39
                         },
@@ -349,7 +349,7 @@ namespace AutopartsRepository.Migrations
                             Id = 31,
                             BrandDescription = "",
                             BrandName = "BOSAL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(573),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3682),
                             IsActive = true,
                             TecDoc = 41
                         },
@@ -358,7 +358,7 @@ namespace AutopartsRepository.Migrations
                             Id = 32,
                             BrandDescription = "",
                             BrandName = "DAYCO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(577),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3687),
                             IsActive = true,
                             TecDoc = 42
                         },
@@ -367,7 +367,7 @@ namespace AutopartsRepository.Migrations
                             Id = 33,
                             BrandDescription = "",
                             BrandName = "CHAMPION",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(580),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3690),
                             IsActive = true,
                             TecDoc = 43
                         },
@@ -376,7 +376,7 @@ namespace AutopartsRepository.Migrations
                             Id = 34,
                             BrandDescription = "",
                             BrandName = "BREMI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(584),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3775),
                             IsActive = true,
                             TecDoc = 47
                         },
@@ -385,7 +385,7 @@ namespace AutopartsRepository.Migrations
                             Id = 35,
                             BrandDescription = "",
                             BrandName = "JURID",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(588),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3780),
                             IsActive = true,
                             TecDoc = 48
                         },
@@ -394,7 +394,7 @@ namespace AutopartsRepository.Migrations
                             Id = 36,
                             BrandDescription = "",
                             BrandName = "SKF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(591),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3783),
                             IsActive = true,
                             TecDoc = 50
                         },
@@ -403,7 +403,7 @@ namespace AutopartsRepository.Migrations
                             Id = 37,
                             BrandDescription = "",
                             BrandName = "WESTFALIA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(595),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3787),
                             IsActive = true,
                             TecDoc = 51
                         },
@@ -412,7 +412,7 @@ namespace AutopartsRepository.Migrations
                             Id = 38,
                             BrandDescription = "",
                             BrandName = "FTE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(598),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3790),
                             IsActive = true,
                             TecDoc = 54
                         },
@@ -421,7 +421,7 @@ namespace AutopartsRepository.Migrations
                             Id = 39,
                             BrandDescription = "",
                             BrandName = "HERTH+BUSS JAKOPARTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(602),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3794),
                             IsActive = true,
                             TecDoc = 55
                         },
@@ -430,7 +430,7 @@ namespace AutopartsRepository.Migrations
                             Id = 40,
                             BrandDescription = "",
                             BrandName = "LÖBRO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(605),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3797),
                             IsActive = true,
                             TecDoc = 56
                         },
@@ -439,7 +439,7 @@ namespace AutopartsRepository.Migrations
                             Id = 41,
                             BrandDescription = "",
                             BrandName = "QUINTON HAZELL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(610),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3801),
                             IsActive = true,
                             TecDoc = 57
                         },
@@ -448,7 +448,7 @@ namespace AutopartsRepository.Migrations
                             Id = 42,
                             BrandDescription = "",
                             BrandName = "TYC",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(613),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3804),
                             IsActive = true,
                             TecDoc = 61
                         },
@@ -457,7 +457,7 @@ namespace AutopartsRepository.Migrations
                             Id = 43,
                             BrandDescription = "",
                             BrandName = "BREMBO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(617),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3808),
                             IsActive = true,
                             TecDoc = 65
                         },
@@ -466,7 +466,7 @@ namespace AutopartsRepository.Migrations
                             Id = 44,
                             BrandDescription = "",
                             BrandName = "DENSO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(620),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3811),
                             IsActive = true,
                             TecDoc = 66
                         },
@@ -475,7 +475,7 @@ namespace AutopartsRepository.Migrations
                             Id = 45,
                             BrandDescription = "",
                             BrandName = "ams-OSRAM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(624),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3815),
                             IsActive = true,
                             TecDoc = 67
                         },
@@ -484,7 +484,7 @@ namespace AutopartsRepository.Migrations
                             Id = 46,
                             BrandDescription = "",
                             BrandName = "ZF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(627),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3818),
                             IsActive = true,
                             TecDoc = 68
                         },
@@ -493,7 +493,7 @@ namespace AutopartsRepository.Migrations
                             Id = 47,
                             BrandDescription = "",
                             BrandName = "HERTH+BUSS ELPARTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(631),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3822),
                             IsActive = true,
                             TecDoc = 72
                         },
@@ -502,7 +502,7 @@ namespace AutopartsRepository.Migrations
                             Id = 48,
                             BrandDescription = "",
                             BrandName = "PHILIPS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(634),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3825),
                             IsActive = true,
                             TecDoc = 75
                         },
@@ -511,7 +511,7 @@ namespace AutopartsRepository.Migrations
                             Id = 49,
                             BrandDescription = "",
                             BrandName = "KLOKKERHOLM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(638),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3829),
                             IsActive = true,
                             TecDoc = 78
                         },
@@ -520,7 +520,7 @@ namespace AutopartsRepository.Migrations
                             Id = 50,
                             BrandDescription = "",
                             BrandName = "BorgWarner (Wahler)",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(641),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3834),
                             IsActive = true,
                             TecDoc = 79
                         },
@@ -529,7 +529,7 @@ namespace AutopartsRepository.Migrations
                             Id = 51,
                             BrandDescription = "",
                             BrandName = "HENGST FILTER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(654),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3837),
                             IsActive = true,
                             TecDoc = 81
                         },
@@ -538,7 +538,7 @@ namespace AutopartsRepository.Migrations
                             Id = 52,
                             BrandDescription = "",
                             BrandName = "CONTINENTAL/VDO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(657),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3841),
                             IsActive = true,
                             TecDoc = 83
                         },
@@ -547,7 +547,7 @@ namespace AutopartsRepository.Migrations
                             Id = 53,
                             BrandDescription = "",
                             BrandName = "KYB",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(661),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3844),
                             IsActive = true,
                             TecDoc = 85
                         },
@@ -556,7 +556,7 @@ namespace AutopartsRepository.Migrations
                             Id = 54,
                             BrandDescription = "",
                             BrandName = "ZIMMERMANN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(664),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3848),
                             IsActive = true,
                             TecDoc = 86
                         },
@@ -565,7 +565,7 @@ namespace AutopartsRepository.Migrations
                             Id = 55,
                             BrandDescription = "",
                             BrandName = "GLASER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(669),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3851),
                             IsActive = true,
                             TecDoc = 88
                         },
@@ -574,7 +574,7 @@ namespace AutopartsRepository.Migrations
                             Id = 56,
                             BrandDescription = "",
                             BrandName = "DELPHI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(672),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3855),
                             IsActive = true,
                             TecDoc = 89
                         },
@@ -583,7 +583,7 @@ namespace AutopartsRepository.Migrations
                             Id = 57,
                             BrandDescription = "",
                             BrandName = "METZGER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(676),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3858),
                             IsActive = true,
                             TecDoc = 94
                         },
@@ -592,7 +592,7 @@ namespace AutopartsRepository.Migrations
                             Id = 58,
                             BrandDescription = "",
                             BrandName = "MAGNETI MARELLI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(679),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3862),
                             IsActive = true,
                             TecDoc = 95
                         },
@@ -601,7 +601,7 @@ namespace AutopartsRepository.Migrations
                             Id = 59,
                             BrandDescription = "",
                             BrandName = "WAECO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(683),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3865),
                             IsActive = true,
                             TecDoc = 97
                         },
@@ -610,7 +610,7 @@ namespace AutopartsRepository.Migrations
                             Id = 60,
                             BrandDescription = "",
                             BrandName = "FEBI BILSTEIN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(687),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3869),
                             IsActive = true,
                             TecDoc = 101
                         },
@@ -619,7 +619,7 @@ namespace AutopartsRepository.Migrations
                             Id = 61,
                             BrandDescription = "",
                             BrandName = "BRINK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(690),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3872),
                             IsActive = true,
                             TecDoc = 106
                         },
@@ -628,7 +628,7 @@ namespace AutopartsRepository.Migrations
                             Id = 62,
                             BrandDescription = "",
                             BrandName = "BUGATTI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(694),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3876),
                             IsActive = true,
                             TecDoc = 109
                         },
@@ -637,7 +637,7 @@ namespace AutopartsRepository.Migrations
                             Id = 63,
                             BrandDescription = "",
                             BrandName = "SNR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(697),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3880),
                             IsActive = true,
                             TecDoc = 110
                         },
@@ -646,7 +646,7 @@ namespace AutopartsRepository.Migrations
                             Id = 64,
                             BrandDescription = "",
                             BrandName = "EIBACH",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(700),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3883),
                             IsActive = true,
                             TecDoc = 112
                         },
@@ -655,7 +655,7 @@ namespace AutopartsRepository.Migrations
                             Id = 65,
                             BrandDescription = "",
                             BrandName = "PAYEN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(704),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3887),
                             IsActive = true,
                             TecDoc = 113
                         },
@@ -664,7 +664,7 @@ namespace AutopartsRepository.Migrations
                             Id = 66,
                             BrandDescription = "",
                             BrandName = "BUDWEG CALIPER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(707),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3890),
                             IsActive = true,
                             TecDoc = 114
                         },
@@ -673,7 +673,7 @@ namespace AutopartsRepository.Migrations
                             Id = 67,
                             BrandDescription = "",
                             BrandName = "ULO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(710),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3894),
                             IsActive = true,
                             TecDoc = 115
                         },
@@ -682,7 +682,7 @@ namespace AutopartsRepository.Migrations
                             Id = 68,
                             BrandDescription = "",
                             BrandName = "LRT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(714),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3898),
                             IsActive = true,
                             TecDoc = 117
                         },
@@ -691,7 +691,7 @@ namespace AutopartsRepository.Migrations
                             Id = 69,
                             BrandDescription = "",
                             BrandName = "HJS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(717),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3903),
                             IsActive = true,
                             TecDoc = 118
                         },
@@ -700,7 +700,7 @@ namespace AutopartsRepository.Migrations
                             Id = 70,
                             BrandDescription = "",
                             BrandName = "METELLI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(721),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3906),
                             IsActive = true,
                             TecDoc = 121
                         },
@@ -709,7 +709,7 @@ namespace AutopartsRepository.Migrations
                             Id = 71,
                             BrandDescription = "",
                             BrandName = "NISSENS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(724),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3910),
                             IsActive = true,
                             TecDoc = 123
                         },
@@ -718,7 +718,7 @@ namespace AutopartsRepository.Migrations
                             Id = 72,
                             BrandDescription = "",
                             BrandName = "STABILUS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(727),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3913),
                             IsActive = true,
                             TecDoc = 126
                         },
@@ -727,7 +727,7 @@ namespace AutopartsRepository.Migrations
                             Id = 73,
                             BrandDescription = "",
                             BrandName = "NK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(731),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3918),
                             IsActive = true,
                             TecDoc = 127
                         },
@@ -736,7 +736,7 @@ namespace AutopartsRepository.Migrations
                             Id = 74,
                             BrandDescription = "",
                             BrandName = "OPTIMAL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(734),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3921),
                             IsActive = true,
                             TecDoc = 129
                         },
@@ -745,7 +745,7 @@ namespace AutopartsRepository.Migrations
                             Id = 75,
                             BrandDescription = "",
                             BrandName = "SIDEM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(738),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3925),
                             IsActive = true,
                             TecDoc = 135
                         },
@@ -754,7 +754,7 @@ namespace AutopartsRepository.Migrations
                             Id = 76,
                             BrandDescription = "",
                             BrandName = "UFI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(742),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3928),
                             IsActive = true,
                             TecDoc = 137
                         },
@@ -763,7 +763,7 @@ namespace AutopartsRepository.Migrations
                             Id = 77,
                             BrandDescription = "",
                             BrandName = "JOHNS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(746),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3932),
                             IsActive = true,
                             TecDoc = 138
                         },
@@ -772,7 +772,7 @@ namespace AutopartsRepository.Migrations
                             Id = 78,
                             BrandDescription = "",
                             BrandName = "AJUSA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(749),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3935),
                             IsActive = true,
                             TecDoc = 139
                         },
@@ -781,7 +781,7 @@ namespace AutopartsRepository.Migrations
                             Id = 79,
                             BrandDescription = "",
                             BrandName = "CORTECO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(752),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3939),
                             IsActive = true,
                             TecDoc = 140
                         },
@@ -790,7 +790,7 @@ namespace AutopartsRepository.Migrations
                             Id = 80,
                             BrandDescription = "",
                             BrandName = "AE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(756),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3942),
                             IsActive = true,
                             TecDoc = 141
                         },
@@ -799,7 +799,7 @@ namespace AutopartsRepository.Migrations
                             Id = 81,
                             BrandDescription = "",
                             BrandName = "SOFIMA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(759),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3946),
                             IsActive = true,
                             TecDoc = 142
                         },
@@ -808,7 +808,7 @@ namespace AutopartsRepository.Migrations
                             Id = 82,
                             BrandDescription = "",
                             BrandName = "MEYLE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(763),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3950),
                             IsActive = true,
                             TecDoc = 144
                         },
@@ -817,7 +817,7 @@ namespace AutopartsRepository.Migrations
                             Id = 83,
                             BrandDescription = "",
                             BrandName = "SWAG",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(766),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3954),
                             IsActive = true,
                             TecDoc = 151
                         },
@@ -826,7 +826,7 @@ namespace AutopartsRepository.Migrations
                             Id = 84,
                             BrandDescription = "",
                             BrandName = "DOLZ",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(770),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3957),
                             IsActive = true,
                             TecDoc = 154
                         },
@@ -835,7 +835,7 @@ namespace AutopartsRepository.Migrations
                             Id = 85,
                             BrandDescription = "",
                             BrandName = "JAPANPARTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(773),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3961),
                             IsActive = true,
                             TecDoc = 156
                         },
@@ -844,7 +844,7 @@ namespace AutopartsRepository.Migrations
                             Id = 86,
                             BrandDescription = "",
                             BrandName = "ICER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(776),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3965),
                             IsActive = true,
                             TecDoc = 158
                         },
@@ -853,7 +853,7 @@ namespace AutopartsRepository.Migrations
                             Id = 87,
                             BrandDescription = "",
                             BrandName = "FACET",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(780),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3969),
                             IsActive = true,
                             TecDoc = 159
                         },
@@ -862,7 +862,7 @@ namespace AutopartsRepository.Migrations
                             Id = 88,
                             BrandDescription = "",
                             BrandName = "TRW",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(784),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3973),
                             IsActive = true,
                             TecDoc = 161
                         },
@@ -871,7 +871,7 @@ namespace AutopartsRepository.Migrations
                             Id = 89,
                             BrandDescription = "",
                             BrandName = "VAICO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(788),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3976),
                             IsActive = true,
                             TecDoc = 162
                         },
@@ -880,7 +880,7 @@ namespace AutopartsRepository.Migrations
                             Id = 90,
                             BrandDescription = "",
                             BrandName = "AISIN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(791),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3980),
                             IsActive = true,
                             TecDoc = 166
                         },
@@ -889,7 +889,7 @@ namespace AutopartsRepository.Migrations
                             Id = 91,
                             BrandDescription = "",
                             BrandName = "DUPLI COLOR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(795),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3983),
                             IsActive = true,
                             TecDoc = 167
                         },
@@ -898,7 +898,7 @@ namespace AutopartsRepository.Migrations
                             Id = 92,
                             BrandDescription = "",
                             BrandName = "MOTIP",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(798),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3987),
                             IsActive = true,
                             TecDoc = 168
                         },
@@ -907,7 +907,7 @@ namespace AutopartsRepository.Migrations
                             Id = 93,
                             BrandDescription = "",
                             BrandName = "PRESTO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(801),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3990),
                             IsActive = true,
                             TecDoc = 169
                         },
@@ -916,7 +916,7 @@ namespace AutopartsRepository.Migrations
                             Id = 94,
                             BrandDescription = "",
                             BrandName = "LESJÖFORS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(805),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3994),
                             IsActive = true,
                             TecDoc = 175
                         },
@@ -925,7 +925,7 @@ namespace AutopartsRepository.Migrations
                             Id = 95,
                             BrandDescription = "",
                             BrandName = "BTS Turbo",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(809),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(3997),
                             IsActive = true,
                             TecDoc = 177
                         },
@@ -934,7 +934,7 @@ namespace AutopartsRepository.Migrations
                             Id = 96,
                             BrandDescription = "",
                             BrandName = "HEPU",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(812),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4001),
                             IsActive = true,
                             TecDoc = 178
                         },
@@ -943,7 +943,7 @@ namespace AutopartsRepository.Migrations
                             Id = 97,
                             BrandDescription = "",
                             BrandName = "ALCO FILTER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(816),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4005),
                             IsActive = true,
                             TecDoc = 180
                         },
@@ -952,7 +952,7 @@ namespace AutopartsRepository.Migrations
                             Id = 98,
                             BrandDescription = "",
                             BrandName = "GK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(820),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4008),
                             IsActive = true,
                             TecDoc = 181
                         },
@@ -961,7 +961,7 @@ namespace AutopartsRepository.Migrations
                             Id = 99,
                             BrandDescription = "",
                             BrandName = "SCHLÜTTER TURBOLADER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(824),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4012),
                             IsActive = true,
                             TecDoc = 182
                         },
@@ -970,7 +970,7 @@ namespace AutopartsRepository.Migrations
                             Id = 100,
                             BrandDescription = "",
                             BrandName = "VEMO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(827),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4016),
                             IsActive = true,
                             TecDoc = 183
                         },
@@ -979,7 +979,7 @@ namespace AutopartsRepository.Migrations
                             Id = 101,
                             BrandDescription = "",
                             BrandName = "KAMOKA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(830),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4019),
                             IsActive = true,
                             TecDoc = 185
                         },
@@ -988,7 +988,7 @@ namespace AutopartsRepository.Migrations
                             Id = 102,
                             BrandDescription = "",
                             BrandName = "IMASAF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(834),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4023),
                             IsActive = true,
                             TecDoc = 191
                         },
@@ -997,7 +997,7 @@ namespace AutopartsRepository.Migrations
                             Id = 103,
                             BrandDescription = "",
                             BrandName = "FAG",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(837),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4026),
                             IsActive = true,
                             TecDoc = 192
                         },
@@ -1006,7 +1006,7 @@ namespace AutopartsRepository.Migrations
                             Id = 104,
                             BrandDescription = "",
                             BrandName = "LPR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(840),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4031),
                             IsActive = true,
                             TecDoc = 197
                         },
@@ -1015,7 +1015,7 @@ namespace AutopartsRepository.Migrations
                             Id = 105,
                             BrandDescription = "",
                             BrandName = "OCAP",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(844),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4034),
                             IsActive = true,
                             TecDoc = 198
                         },
@@ -1024,7 +1024,7 @@ namespace AutopartsRepository.Migrations
                             Id = 106,
                             BrandDescription = "",
                             BrandName = "GLYCO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(847),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4038),
                             IsActive = true,
                             TecDoc = 202
                         },
@@ -1033,7 +1033,7 @@ namespace AutopartsRepository.Migrations
                             Id = 107,
                             BrandDescription = "",
                             BrandName = "INA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(851),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4041),
                             IsActive = true,
                             TecDoc = 204
                         },
@@ -1042,7 +1042,7 @@ namespace AutopartsRepository.Migrations
                             Id = 108,
                             BrandDescription = "",
                             BrandName = "NRF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(855),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4045),
                             IsActive = true,
                             TecDoc = 205
                         },
@@ -1051,7 +1051,7 @@ namespace AutopartsRepository.Migrations
                             Id = 109,
                             BrandDescription = "",
                             BrandName = "A.B.S.",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(858),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4048),
                             IsActive = true,
                             TecDoc = 206
                         },
@@ -1060,7 +1060,7 @@ namespace AutopartsRepository.Migrations
                             Id = 110,
                             BrandDescription = "",
                             BrandName = "CASTROL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(862),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4053),
                             IsActive = true,
                             TecDoc = 207
                         },
@@ -1069,7 +1069,7 @@ namespace AutopartsRepository.Migrations
                             Id = 111,
                             BrandDescription = "",
                             BrandName = "TRUCKTEC AUTOMOTIVE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(866),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4057),
                             IsActive = true,
                             TecDoc = 209
                         },
@@ -1078,7 +1078,7 @@ namespace AutopartsRepository.Migrations
                             Id = 112,
                             BrandDescription = "",
                             BrandName = "REMY",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(870),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4060),
                             IsActive = true,
                             TecDoc = 214
                         },
@@ -1087,7 +1087,7 @@ namespace AutopartsRepository.Migrations
                             Id = 113,
                             BrandDescription = "",
                             BrandName = "CALORSTAT by Vernet",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(874),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4064),
                             IsActive = true,
                             TecDoc = 215
                         },
@@ -1096,7 +1096,7 @@ namespace AutopartsRepository.Migrations
                             Id = 114,
                             BrandDescription = "",
                             BrandName = "NÜRAL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(877),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4067),
                             IsActive = true,
                             TecDoc = 216
                         },
@@ -1105,7 +1105,7 @@ namespace AutopartsRepository.Migrations
                             Id = 115,
                             BrandDescription = "",
                             BrandName = "AIRTEX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(881),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4070),
                             IsActive = true,
                             TecDoc = 220
                         },
@@ -1114,7 +1114,7 @@ namespace AutopartsRepository.Migrations
                             Id = 116,
                             BrandDescription = "",
                             BrandName = "LIQUI MOLY",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(885),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4074),
                             IsActive = true,
                             TecDoc = 222
                         },
@@ -1123,7 +1123,7 @@ namespace AutopartsRepository.Migrations
                             Id = 117,
                             BrandDescription = "",
                             BrandName = "SCT - MANNOL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(888),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4077),
                             IsActive = true,
                             TecDoc = 225
                         },
@@ -1132,7 +1132,7 @@ namespace AutopartsRepository.Migrations
                             Id = 118,
                             BrandDescription = "",
                             BrandName = "ELSTOCK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(891),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4080),
                             IsActive = true,
                             TecDoc = 226
                         },
@@ -1141,7 +1141,7 @@ namespace AutopartsRepository.Migrations
                             Id = 119,
                             BrandDescription = "",
                             BrandName = "DINEX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(895),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4084),
                             IsActive = true,
                             TecDoc = 233
                         },
@@ -1150,7 +1150,7 @@ namespace AutopartsRepository.Migrations
                             Id = 120,
                             BrandDescription = "",
                             BrandName = "ERA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(898),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4160),
                             IsActive = true,
                             TecDoc = 234
                         },
@@ -1159,7 +1159,7 @@ namespace AutopartsRepository.Migrations
                             Id = 121,
                             BrandDescription = "",
                             BrandName = "FRECCIA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(902),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4165),
                             IsActive = true,
                             TecDoc = 235
                         },
@@ -1168,7 +1168,7 @@ namespace AutopartsRepository.Migrations
                             Id = 122,
                             BrandDescription = "",
                             BrandName = "FAE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(905),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4168),
                             IsActive = true,
                             TecDoc = 240
                         },
@@ -1177,7 +1177,7 @@ namespace AutopartsRepository.Migrations
                             Id = 123,
                             BrandDescription = "",
                             BrandName = "MEAT & DORIA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(909),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4173),
                             IsActive = true,
                             TecDoc = 244
                         },
@@ -1186,7 +1186,7 @@ namespace AutopartsRepository.Migrations
                             Id = 124,
                             BrandDescription = "",
                             BrandName = "AVA QUALITY COOLING",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(913),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4176),
                             IsActive = true,
                             TecDoc = 247
                         },
@@ -1195,7 +1195,7 @@ namespace AutopartsRepository.Migrations
                             Id = 125,
                             BrandDescription = "",
                             BrandName = "NIPPARTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(916),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4180),
                             IsActive = true,
                             TecDoc = 248
                         },
@@ -1204,7 +1204,7 @@ namespace AutopartsRepository.Migrations
                             Id = 126,
                             BrandDescription = "",
                             BrandName = "FILTRON",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(919),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4183),
                             IsActive = true,
                             TecDoc = 256
                         },
@@ -1213,7 +1213,7 @@ namespace AutopartsRepository.Migrations
                             Id = 127,
                             BrandDescription = "",
                             BrandName = "ASHIKA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(923),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4187),
                             IsActive = true,
                             TecDoc = 257
                         },
@@ -1222,7 +1222,7 @@ namespace AutopartsRepository.Migrations
                             Id = 128,
                             BrandDescription = "",
                             BrandName = "SASIC",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(926),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4190),
                             IsActive = true,
                             TecDoc = 260
                         },
@@ -1231,7 +1231,7 @@ namespace AutopartsRepository.Migrations
                             Id = 129,
                             BrandDescription = "",
                             BrandName = "FAI AutoParts",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(930),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4194),
                             IsActive = true,
                             TecDoc = 267
                         },
@@ -1240,7 +1240,7 @@ namespace AutopartsRepository.Migrations
                             Id = 130,
                             BrandDescription = "",
                             BrandName = "JP GROUP",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(934),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4197),
                             IsActive = true,
                             TecDoc = 268
                         },
@@ -1249,7 +1249,7 @@ namespace AutopartsRepository.Migrations
                             Id = 131,
                             BrandDescription = "",
                             BrandName = "AMC",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(938),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4201),
                             IsActive = true,
                             TecDoc = 277
                         },
@@ -1258,7 +1258,7 @@ namespace AutopartsRepository.Migrations
                             Id = 132,
                             BrandDescription = "",
                             BrandName = "MAHLE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(942),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4204),
                             IsActive = true,
                             TecDoc = 287
                         },
@@ -1267,7 +1267,7 @@ namespace AutopartsRepository.Migrations
                             Id = 133,
                             BrandDescription = "",
                             BrandName = "SACHS PERFORMANCE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(945),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4207),
                             IsActive = true,
                             TecDoc = 294
                         },
@@ -1276,7 +1276,7 @@ namespace AutopartsRepository.Migrations
                             Id = 134,
                             BrandDescription = "",
                             BrandName = "fri.tech.",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(949),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4211),
                             IsActive = true,
                             TecDoc = 295
                         },
@@ -1285,7 +1285,7 @@ namespace AutopartsRepository.Migrations
                             Id = 135,
                             BrandDescription = "",
                             BrandName = "sbs",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(952),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4214),
                             IsActive = true,
                             TecDoc = 297
                         },
@@ -1294,7 +1294,7 @@ namespace AutopartsRepository.Migrations
                             Id = 136,
                             BrandDescription = "",
                             BrandName = "WEBASTO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(964),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4218),
                             IsActive = true,
                             TecDoc = 299
                         },
@@ -1303,7 +1303,7 @@ namespace AutopartsRepository.Migrations
                             Id = 137,
                             BrandDescription = "",
                             BrandName = "AUTEX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(967),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4222),
                             IsActive = true,
                             TecDoc = 300
                         },
@@ -1312,7 +1312,7 @@ namespace AutopartsRepository.Migrations
                             Id = 138,
                             BrandDescription = "",
                             BrandName = "TOPRAN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(972),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4225),
                             IsActive = true,
                             TecDoc = 301
                         },
@@ -1321,7 +1321,7 @@ namespace AutopartsRepository.Migrations
                             Id = 139,
                             BrandDescription = "",
                             BrandName = "K&N Filters",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(975),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4229),
                             IsActive = true,
                             TecDoc = 305
                         },
@@ -1330,7 +1330,7 @@ namespace AutopartsRepository.Migrations
                             Id = 140,
                             BrandDescription = "",
                             BrandName = "GRAF",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(980),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4232),
                             IsActive = true,
                             TecDoc = 310
                         },
@@ -1339,7 +1339,7 @@ namespace AutopartsRepository.Migrations
                             Id = 141,
                             BrandDescription = "",
                             BrandName = "CIFAM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(983),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4237),
                             IsActive = true,
                             TecDoc = 311
                         },
@@ -1348,7 +1348,7 @@ namespace AutopartsRepository.Migrations
                             Id = 142,
                             BrandDescription = "",
                             BrandName = "GENERAL RICAMBI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(986),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4240),
                             IsActive = true,
                             TecDoc = 316
                         },
@@ -1357,7 +1357,7 @@ namespace AutopartsRepository.Migrations
                             Id = 143,
                             BrandDescription = "",
                             BrandName = "AUTOMEGA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(991),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4244),
                             IsActive = true,
                             TecDoc = 323
                         },
@@ -1366,7 +1366,7 @@ namespace AutopartsRepository.Migrations
                             Id = 144,
                             BrandDescription = "",
                             BrandName = "WIX FILTERS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(995),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4247),
                             IsActive = true,
                             TecDoc = 324
                         },
@@ -1375,7 +1375,7 @@ namespace AutopartsRepository.Migrations
                             Id = 145,
                             BrandDescription = "",
                             BrandName = "BorgWarner (Schwitze",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(998),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4250),
                             IsActive = true,
                             TecDoc = 326
                         },
@@ -1384,7 +1384,7 @@ namespace AutopartsRepository.Migrations
                             Id = 146,
                             BrandDescription = "",
                             BrandName = "BorgWarner",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1002),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4254),
                             IsActive = true,
                             TecDoc = 327
                         },
@@ -1393,7 +1393,7 @@ namespace AutopartsRepository.Migrations
                             Id = 147,
                             BrandDescription = "",
                             BrandName = "BorgWarner (3K)",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1005),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4257),
                             IsActive = true,
                             TecDoc = 328
                         },
@@ -1402,7 +1402,7 @@ namespace AutopartsRepository.Migrations
                             Id = 148,
                             BrandDescription = "",
                             BrandName = "ORIGINAL IMPERIUM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1008),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4261),
                             IsActive = true,
                             TecDoc = 331
                         },
@@ -1411,7 +1411,7 @@ namespace AutopartsRepository.Migrations
                             Id = 149,
                             BrandDescription = "",
                             BrandName = "PRASCO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1013),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4264),
                             IsActive = true,
                             TecDoc = 340
                         },
@@ -1420,7 +1420,7 @@ namespace AutopartsRepository.Migrations
                             Id = 150,
                             BrandDescription = "",
                             BrandName = "TRW Engine Component",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1016),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4268),
                             IsActive = true,
                             TecDoc = 347
                         },
@@ -1429,7 +1429,7 @@ namespace AutopartsRepository.Migrations
                             Id = 151,
                             BrandDescription = "",
                             BrandName = "BLUE PRINT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1020),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4271),
                             IsActive = true,
                             TecDoc = 350
                         },
@@ -1438,7 +1438,7 @@ namespace AutopartsRepository.Migrations
                             Id = 152,
                             BrandDescription = "",
                             BrandName = "AUTOFREN SEINSA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1023),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4275),
                             IsActive = true,
                             TecDoc = 351
                         },
@@ -1447,7 +1447,7 @@ namespace AutopartsRepository.Migrations
                             Id = 153,
                             BrandDescription = "",
                             BrandName = "TESLA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1026),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4279),
                             IsActive = true,
                             TecDoc = 356
                         },
@@ -1456,7 +1456,7 @@ namespace AutopartsRepository.Migrations
                             Id = 154,
                             BrandDescription = "",
                             BrandName = "ALKAR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1030),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4282),
                             IsActive = true,
                             TecDoc = 362
                         },
@@ -1465,7 +1465,7 @@ namespace AutopartsRepository.Migrations
                             Id = 155,
                             BrandDescription = "",
                             BrandName = "FA1",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1033),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4285),
                             IsActive = true,
                             TecDoc = 367
                         },
@@ -1474,7 +1474,7 @@ namespace AutopartsRepository.Migrations
                             Id = 156,
                             BrandDescription = "",
                             BrandName = "GSP",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1036),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4289),
                             IsActive = true,
                             TecDoc = 373
                         },
@@ -1483,7 +1483,7 @@ namespace AutopartsRepository.Migrations
                             Id = 157,
                             BrandDescription = "",
                             BrandName = "CENTRA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1040),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4292),
                             IsActive = true,
                             TecDoc = 376
                         },
@@ -1492,7 +1492,7 @@ namespace AutopartsRepository.Migrations
                             Id = 158,
                             BrandDescription = "",
                             BrandName = "BOSCH DIAGNOSTICS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1043),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4296),
                             IsActive = true,
                             TecDoc = 377
                         },
@@ -1501,7 +1501,7 @@ namespace AutopartsRepository.Migrations
                             Id = 159,
                             BrandDescription = "",
                             BrandName = "FRENKIT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1047),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4300),
                             IsActive = true,
                             TecDoc = 380
                         },
@@ -1510,7 +1510,7 @@ namespace AutopartsRepository.Migrations
                             Id = 160,
                             BrandDescription = "",
                             BrandName = "GOETZE ENGINE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1050),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4304),
                             IsActive = true,
                             TecDoc = 385
                         },
@@ -1519,7 +1519,7 @@ namespace AutopartsRepository.Migrations
                             Id = 161,
                             BrandDescription = "",
                             BrandName = "MOTORAD",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1054),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4307),
                             IsActive = true,
                             TecDoc = 388
                         },
@@ -1528,7 +1528,7 @@ namespace AutopartsRepository.Migrations
                             Id = 162,
                             BrandDescription = "",
                             BrandName = "GLYSANTIN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1057),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4311),
                             IsActive = true,
                             TecDoc = 389
                         },
@@ -1537,7 +1537,7 @@ namespace AutopartsRepository.Migrations
                             Id = 163,
                             BrandDescription = "",
                             BrandName = "EAI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1060),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4314),
                             IsActive = true,
                             TecDoc = 391
                         },
@@ -1546,7 +1546,7 @@ namespace AutopartsRepository.Migrations
                             Id = 164,
                             BrandDescription = "",
                             BrandName = "BARUM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1064),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4318),
                             IsActive = true,
                             TecDoc = 394
                         },
@@ -1555,7 +1555,7 @@ namespace AutopartsRepository.Migrations
                             Id = 165,
                             BrandDescription = "",
                             BrandName = "JANMOR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1068),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4321),
                             IsActive = true,
                             TecDoc = 397
                         },
@@ -1564,7 +1564,7 @@ namespace AutopartsRepository.Migrations
                             Id = 166,
                             BrandDescription = "",
                             BrandName = "EXEDY",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1071),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4325),
                             IsActive = true,
                             TecDoc = 399
                         },
@@ -1573,7 +1573,7 @@ namespace AutopartsRepository.Migrations
                             Id = 167,
                             BrandDescription = "",
                             BrandName = "RAICAM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1074),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4329),
                             IsActive = true,
                             TecDoc = 400
                         },
@@ -1582,7 +1582,7 @@ namespace AutopartsRepository.Migrations
                             Id = 168,
                             BrandDescription = "",
                             BrandName = "MAXGEAR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1079),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4332),
                             IsActive = true,
                             TecDoc = 403
                         },
@@ -1591,7 +1591,7 @@ namespace AutopartsRepository.Migrations
                             Id = 169,
                             BrandDescription = "",
                             BrandName = "BM CATALYSTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1082),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4336),
                             IsActive = true,
                             TecDoc = 406
                         },
@@ -1600,7 +1600,7 @@ namespace AutopartsRepository.Migrations
                             Id = 170,
                             BrandDescription = "",
                             BrandName = "FREMAX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1086),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4339),
                             IsActive = true,
                             TecDoc = 409
                         },
@@ -1609,7 +1609,7 @@ namespace AutopartsRepository.Migrations
                             Id = 171,
                             BrandDescription = "",
                             BrandName = "ASMET",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1089),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4343),
                             IsActive = true,
                             TecDoc = 427
                         },
@@ -1618,7 +1618,7 @@ namespace AutopartsRepository.Migrations
                             Id = 172,
                             BrandDescription = "",
                             BrandName = "RTS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1092),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4346),
                             IsActive = true,
                             TecDoc = 430
                         },
@@ -1627,7 +1627,7 @@ namespace AutopartsRepository.Migrations
                             Id = 173,
                             BrandDescription = "",
                             BrandName = "KOLBENSCHMIDT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1096),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4349),
                             IsActive = true,
                             TecDoc = 432
                         },
@@ -1636,7 +1636,7 @@ namespace AutopartsRepository.Migrations
                             Id = 174,
                             BrandDescription = "",
                             BrandName = "STATIM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1099),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4353),
                             IsActive = true,
                             TecDoc = 433
                         },
@@ -1645,7 +1645,7 @@ namespace AutopartsRepository.Migrations
                             Id = 175,
                             BrandDescription = "",
                             BrandName = "MOTUL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1102),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4356),
                             IsActive = true,
                             TecDoc = 436
                         },
@@ -1654,7 +1654,7 @@ namespace AutopartsRepository.Migrations
                             Id = 176,
                             BrandDescription = "",
                             BrandName = "CoopersFiaam",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1106),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4360),
                             IsActive = true,
                             TecDoc = 437
                         },
@@ -1663,7 +1663,7 @@ namespace AutopartsRepository.Migrations
                             Id = 177,
                             BrandDescription = "",
                             BrandName = "ENERGIZER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1109),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4364),
                             IsActive = true,
                             TecDoc = 443
                         },
@@ -1672,7 +1672,7 @@ namespace AutopartsRepository.Migrations
                             Id = 178,
                             BrandDescription = "",
                             BrandName = "PILKINGTON",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1113),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4368),
                             IsActive = true,
                             TecDoc = 447
                         },
@@ -1681,7 +1681,7 @@ namespace AutopartsRepository.Migrations
                             Id = 179,
                             BrandDescription = "",
                             BrandName = "HITACHI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1116),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4371),
                             IsActive = true,
                             TecDoc = 449
                         },
@@ -1690,7 +1690,7 @@ namespace AutopartsRepository.Migrations
                             Id = 180,
                             BrandDescription = "",
                             BrandName = "BANDO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1120),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4375),
                             IsActive = true,
                             TecDoc = 454
                         },
@@ -1699,7 +1699,7 @@ namespace AutopartsRepository.Migrations
                             Id = 181,
                             BrandDescription = "",
                             BrandName = "DRI",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1123),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4378),
                             IsActive = true,
                             TecDoc = 460
                         },
@@ -1708,7 +1708,7 @@ namespace AutopartsRepository.Migrations
                             Id = 182,
                             BrandDescription = "",
                             BrandName = "RAVENOL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1126),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4382),
                             IsActive = true,
                             TecDoc = 461
                         },
@@ -1717,7 +1717,7 @@ namespace AutopartsRepository.Migrations
                             Id = 183,
                             BrandDescription = "",
                             BrandName = "OSVAT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1130),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4385),
                             IsActive = true,
                             TecDoc = 464
                         },
@@ -1726,7 +1726,7 @@ namespace AutopartsRepository.Migrations
                             Id = 184,
                             BrandDescription = "",
                             BrandName = "CS Germany",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1133),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4388),
                             IsActive = true,
                             TecDoc = 467
                         },
@@ -1735,7 +1735,7 @@ namespace AutopartsRepository.Migrations
                             Id = 185,
                             BrandDescription = "",
                             BrandName = "BORG & BECK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1137),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4392),
                             IsActive = true,
                             TecDoc = 475
                         },
@@ -1744,7 +1744,7 @@ namespace AutopartsRepository.Migrations
                             Id = 186,
                             BrandDescription = "",
                             BrandName = "ClimAir",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1141),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4395),
                             IsActive = true,
                             TecDoc = 483
                         },
@@ -1753,7 +1753,7 @@ namespace AutopartsRepository.Migrations
                             Id = 187,
                             BrandDescription = "",
                             BrandName = "NARVA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1145),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4399),
                             IsActive = true,
                             TecDoc = 485
                         },
@@ -1762,7 +1762,7 @@ namespace AutopartsRepository.Migrations
                             Id = 188,
                             BrandDescription = "",
                             BrandName = "BRISK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1149),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4403),
                             IsActive = true,
                             TecDoc = 494
                         },
@@ -1771,7 +1771,7 @@ namespace AutopartsRepository.Migrations
                             Id = 189,
                             BrandDescription = "",
                             BrandName = "ZAFFO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1152),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4406),
                             IsActive = true,
                             TecDoc = 499
                         },
@@ -1780,7 +1780,7 @@ namespace AutopartsRepository.Migrations
                             Id = 190,
                             BrandDescription = "",
                             BrandName = "EPS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1156),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4410),
                             IsActive = true,
                             TecDoc = 4005
                         },
@@ -1789,7 +1789,7 @@ namespace AutopartsRepository.Migrations
                             Id = 191,
                             BrandDescription = "",
                             BrandName = "KW",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1159),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4414),
                             IsActive = true,
                             TecDoc = 4006
                         },
@@ -1798,7 +1798,7 @@ namespace AutopartsRepository.Migrations
                             Id = 192,
                             BrandDescription = "",
                             BrandName = "KS TOOLS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1162),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4417),
                             IsActive = true,
                             TecDoc = 4023
                         },
@@ -1807,7 +1807,7 @@ namespace AutopartsRepository.Migrations
                             Id = 193,
                             BrandDescription = "",
                             BrandName = "VIGOR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1166),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4421),
                             IsActive = true,
                             TecDoc = 4026
                         },
@@ -1816,7 +1816,7 @@ namespace AutopartsRepository.Migrations
                             Id = 194,
                             BrandDescription = "",
                             BrandName = "SHELL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1170),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4424),
                             IsActive = true,
                             TecDoc = 4314
                         },
@@ -1825,7 +1825,7 @@ namespace AutopartsRepository.Migrations
                             Id = 195,
                             BrandDescription = "",
                             BrandName = "Prestone",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1173),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4428),
                             IsActive = true,
                             TecDoc = 4333
                         },
@@ -1834,7 +1834,7 @@ namespace AutopartsRepository.Migrations
                             Id = 196,
                             BrandDescription = "",
                             BrandName = "ELTA AUTOMOTIVE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1177),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4432),
                             IsActive = true,
                             TecDoc = 4344
                         },
@@ -1843,7 +1843,7 @@ namespace AutopartsRepository.Migrations
                             Id = 197,
                             BrandDescription = "",
                             BrandName = "vika",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1181),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4435),
                             IsActive = true,
                             TecDoc = 4346
                         },
@@ -1852,7 +1852,7 @@ namespace AutopartsRepository.Migrations
                             Id = 198,
                             BrandDescription = "",
                             BrandName = "DPA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1184),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4439),
                             IsActive = true,
                             TecDoc = 4353
                         },
@@ -1861,7 +1861,7 @@ namespace AutopartsRepository.Migrations
                             Id = 199,
                             BrandDescription = "",
                             BrandName = "STOP&GO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1188),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4442),
                             IsActive = true,
                             TecDoc = 4367
                         },
@@ -1870,7 +1870,7 @@ namespace AutopartsRepository.Migrations
                             Id = 200,
                             BrandDescription = "",
                             BrandName = "PETEC",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1191),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4446),
                             IsActive = true,
                             TecDoc = 4372
                         },
@@ -1879,7 +1879,7 @@ namespace AutopartsRepository.Migrations
                             Id = 201,
                             BrandDescription = "",
                             BrandName = "Airstal",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1195),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4449),
                             IsActive = true,
                             TecDoc = 4381
                         },
@@ -1888,7 +1888,7 @@ namespace AutopartsRepository.Migrations
                             Id = 202,
                             BrandDescription = "",
                             BrandName = "CONTINENTAL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1198),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4453),
                             IsActive = true,
                             TecDoc = 4434
                         },
@@ -1897,7 +1897,7 @@ namespace AutopartsRepository.Migrations
                             Id = 203,
                             BrandDescription = "",
                             BrandName = "DUNLOP",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1201),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4456),
                             IsActive = true,
                             TecDoc = 4436
                         },
@@ -1906,7 +1906,7 @@ namespace AutopartsRepository.Migrations
                             Id = 204,
                             BrandDescription = "",
                             BrandName = "MOBIL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1205),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4460),
                             IsActive = true,
                             TecDoc = 4449
                         },
@@ -1915,7 +1915,7 @@ namespace AutopartsRepository.Migrations
                             Id = 205,
                             BrandDescription = "",
                             BrandName = "YUASA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1209),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4537),
                             IsActive = true,
                             TecDoc = 4451
                         },
@@ -1924,7 +1924,7 @@ namespace AutopartsRepository.Migrations
                             Id = 206,
                             BrandDescription = "",
                             BrandName = "GS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1212),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4541),
                             IsActive = true,
                             TecDoc = 4452
                         },
@@ -1933,7 +1933,7 @@ namespace AutopartsRepository.Migrations
                             Id = 207,
                             BrandDescription = "",
                             BrandName = "SONAX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1216),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4545),
                             IsActive = true,
                             TecDoc = 4457
                         },
@@ -1942,7 +1942,7 @@ namespace AutopartsRepository.Migrations
                             Id = 208,
                             BrandDescription = "",
                             BrandName = "ERT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1219),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4548),
                             IsActive = true,
                             TecDoc = 4512
                         },
@@ -1951,7 +1951,7 @@ namespace AutopartsRepository.Migrations
                             Id = 209,
                             BrandDescription = "",
                             BrandName = "ET ENGINETEAM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1223),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4552),
                             IsActive = true,
                             TecDoc = 4514
                         },
@@ -1960,7 +1960,7 @@ namespace AutopartsRepository.Migrations
                             Id = 210,
                             BrandDescription = "",
                             BrandName = "LINEX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1226),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4555),
                             IsActive = true,
                             TecDoc = 4536
                         },
@@ -1969,7 +1969,7 @@ namespace AutopartsRepository.Migrations
                             Id = 211,
                             BrandDescription = "",
                             BrandName = "Arnott",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1229),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4559),
                             IsActive = true,
                             TecDoc = 4539
                         },
@@ -1978,7 +1978,7 @@ namespace AutopartsRepository.Migrations
                             Id = 212,
                             BrandDescription = "",
                             BrandName = "TEDGUM",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1233),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4563),
                             IsActive = true,
                             TecDoc = 4593
                         },
@@ -1987,7 +1987,7 @@ namespace AutopartsRepository.Migrations
                             Id = 213,
                             BrandDescription = "",
                             BrandName = "GE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1236),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4567),
                             IsActive = true,
                             TecDoc = 4612
                         },
@@ -1996,7 +1996,7 @@ namespace AutopartsRepository.Migrations
                             Id = 214,
                             BrandDescription = "",
                             BrandName = "GARRETT",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1240),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4571),
                             IsActive = true,
                             TecDoc = 4615
                         },
@@ -2005,7 +2005,7 @@ namespace AutopartsRepository.Migrations
                             Id = 215,
                             BrandDescription = "",
                             BrandName = "ABAKUS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1243),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4574),
                             IsActive = true,
                             TecDoc = 4657
                         },
@@ -2014,7 +2014,7 @@ namespace AutopartsRepository.Migrations
                             Id = 216,
                             BrandDescription = "",
                             BrandName = "ROTINGER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1247),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4578),
                             IsActive = true,
                             TecDoc = 4676
                         },
@@ -2023,7 +2023,7 @@ namespace AutopartsRepository.Migrations
                             Id = 217,
                             BrandDescription = "",
                             BrandName = "CAFFARO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1250),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4581),
                             IsActive = true,
                             TecDoc = 4679
                         },
@@ -2032,7 +2032,7 @@ namespace AutopartsRepository.Migrations
                             Id = 218,
                             BrandDescription = "",
                             BrandName = "MOBILETRON",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1253),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4585),
                             IsActive = true,
                             TecDoc = 4705
                         },
@@ -2041,7 +2041,7 @@ namespace AutopartsRepository.Migrations
                             Id = 219,
                             BrandDescription = "",
                             BrandName = "NE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1257),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4588),
                             IsActive = true,
                             TecDoc = 4717
                         },
@@ -2050,7 +2050,7 @@ namespace AutopartsRepository.Migrations
                             Id = 220,
                             BrandDescription = "",
                             BrandName = "LIFT-TEK",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1260),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4592),
                             IsActive = true,
                             TecDoc = 4719
                         },
@@ -2059,7 +2059,7 @@ namespace AutopartsRepository.Migrations
                             Id = 221,
                             BrandDescription = "",
                             BrandName = "MIRAGLIO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1264),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4595),
                             IsActive = true,
                             TecDoc = 4721
                         },
@@ -2068,7 +2068,7 @@ namespace AutopartsRepository.Migrations
                             Id = 222,
                             BrandDescription = "",
                             BrandName = "HELLA GUTMANN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1277),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4599),
                             IsActive = true,
                             TecDoc = 4734
                         },
@@ -2077,7 +2077,7 @@ namespace AutopartsRepository.Migrations
                             Id = 223,
                             BrandDescription = "",
                             BrandName = "HAZET",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1280),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4602),
                             IsActive = true,
                             TecDoc = 4808
                         },
@@ -2086,7 +2086,7 @@ namespace AutopartsRepository.Migrations
                             Id = 224,
                             BrandDescription = "",
                             BrandName = "Borsehung",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1284),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4606),
                             IsActive = true,
                             TecDoc = 4815
                         },
@@ -2095,7 +2095,7 @@ namespace AutopartsRepository.Migrations
                             Id = 225,
                             BrandDescription = "",
                             BrandName = "QUARO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1288),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4609),
                             IsActive = true,
                             TecDoc = 4821
                         },
@@ -2104,7 +2104,7 @@ namespace AutopartsRepository.Migrations
                             Id = 226,
                             BrandDescription = "",
                             BrandName = "AS-PL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1291),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4613),
                             IsActive = true,
                             TecDoc = 4843
                         },
@@ -2113,7 +2113,7 @@ namespace AutopartsRepository.Migrations
                             Id = 227,
                             BrandDescription = "",
                             BrandName = "Ac Rolcar",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1295),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4616),
                             IsActive = true,
                             TecDoc = 4849
                         },
@@ -2122,7 +2122,7 @@ namespace AutopartsRepository.Migrations
                             Id = 228,
                             BrandDescription = "",
                             BrandName = "ARAL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1298),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4620),
                             IsActive = true,
                             TecDoc = 4866
                         },
@@ -2131,7 +2131,7 @@ namespace AutopartsRepository.Migrations
                             Id = 229,
                             BrandDescription = "",
                             BrandName = "COFLE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1302),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4624),
                             IsActive = true,
                             TecDoc = 4871
                         },
@@ -2140,7 +2140,7 @@ namespace AutopartsRepository.Migrations
                             Id = 230,
                             BrandDescription = "",
                             BrandName = "POLMO",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1305),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4627),
                             IsActive = true,
                             TecDoc = 4873
                         },
@@ -2149,7 +2149,7 @@ namespace AutopartsRepository.Migrations
                             Id = 231,
                             BrandDescription = "",
                             BrandName = "DYNAMAX",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1308),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4631),
                             IsActive = true,
                             TecDoc = 4881
                         },
@@ -2158,7 +2158,7 @@ namespace AutopartsRepository.Migrations
                             Id = 232,
                             BrandDescription = "",
                             BrandName = "ALLIGATOR",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1312),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4635),
                             IsActive = true,
                             TecDoc = 4911
                         },
@@ -2167,7 +2167,7 @@ namespace AutopartsRepository.Migrations
                             Id = 233,
                             BrandDescription = "",
                             BrandName = "GEDORE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1315),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4638),
                             IsActive = true,
                             TecDoc = 4912
                         },
@@ -2176,7 +2176,7 @@ namespace AutopartsRepository.Migrations
                             Id = 234,
                             BrandDescription = "",
                             BrandName = "NORMA",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1319),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4642),
                             IsActive = true,
                             TecDoc = 4923
                         },
@@ -2185,7 +2185,7 @@ namespace AutopartsRepository.Migrations
                             Id = 235,
                             BrandDescription = "",
                             BrandName = "SCHRADER",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1322),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4645),
                             IsActive = true,
                             TecDoc = 4946
                         },
@@ -2194,7 +2194,7 @@ namespace AutopartsRepository.Migrations
                             Id = 236,
                             BrandDescription = "",
                             BrandName = "TURBORAIL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1326),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4649),
                             IsActive = true,
                             TecDoc = 4949
                         },
@@ -2203,7 +2203,7 @@ namespace AutopartsRepository.Migrations
                             Id = 237,
                             BrandDescription = "",
                             BrandName = "ESEN SKV",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1330),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4653),
                             IsActive = true,
                             TecDoc = 4969
                         },
@@ -2212,7 +2212,7 @@ namespace AutopartsRepository.Migrations
                             Id = 238,
                             BrandDescription = "",
                             BrandName = "HART",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1335),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4657),
                             IsActive = true,
                             TecDoc = 5251
                         },
@@ -2221,7 +2221,7 @@ namespace AutopartsRepository.Migrations
                             Id = 239,
                             BrandDescription = "",
                             BrandName = "ACPS-ORIS",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1338),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4660),
                             IsActive = true,
                             TecDoc = 6102
                         },
@@ -2230,7 +2230,7 @@ namespace AutopartsRepository.Migrations
                             Id = 240,
                             BrandDescription = "",
                             BrandName = "VALVOLINE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1342),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4664),
                             IsActive = true,
                             TecDoc = 6186
                         },
@@ -2239,7 +2239,7 @@ namespace AutopartsRepository.Migrations
                             Id = 241,
                             BrandDescription = "",
                             BrandName = "CPB",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1345),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4668),
                             IsActive = true,
                             TecDoc = 6263
                         },
@@ -2248,7 +2248,7 @@ namespace AutopartsRepository.Migrations
                             Id = 242,
                             BrandDescription = "",
                             BrandName = "QUICK BRAKE",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1349),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4672),
                             IsActive = true,
                             TecDoc = 6304
                         },
@@ -2257,7 +2257,7 @@ namespace AutopartsRepository.Migrations
                             Id = 243,
                             BrandDescription = "",
                             BrandName = "GKN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1352),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4675),
                             IsActive = true,
                             TecDoc = 6306
                         },
@@ -2266,7 +2266,7 @@ namespace AutopartsRepository.Migrations
                             Id = 244,
                             BrandDescription = "",
                             BrandName = "REPSOL",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1355),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4678),
                             IsActive = true,
                             TecDoc = 6343
                         },
@@ -2275,7 +2275,7 @@ namespace AutopartsRepository.Migrations
                             Id = 245,
                             BrandDescription = "",
                             BrandName = "EBC Brakes",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1359),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4682),
                             IsActive = true,
                             TecDoc = 6368
                         },
@@ -2284,7 +2284,7 @@ namespace AutopartsRepository.Migrations
                             Id = 246,
                             BrandDescription = "",
                             BrandName = "BERU by DRiV",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1362),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4686),
                             IsActive = true,
                             TecDoc = 6441
                         },
@@ -2293,7 +2293,7 @@ namespace AutopartsRepository.Migrations
                             Id = 247,
                             BrandDescription = "",
                             BrandName = "BorgWarner (AWD)",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1365),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4690),
                             IsActive = true,
                             TecDoc = 6444
                         },
@@ -2302,7 +2302,7 @@ namespace AutopartsRepository.Migrations
                             Id = 248,
                             BrandDescription = "",
                             BrandName = "Dr.Motor Automotive",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1369),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4694),
                             IsActive = true,
                             TecDoc = 6534
                         },
@@ -2311,7 +2311,7 @@ namespace AutopartsRepository.Migrations
                             Id = 249,
                             BrandDescription = "",
                             BrandName = "AIC",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1372),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4697),
                             IsActive = true,
                             TecDoc = 6558
                         },
@@ -2320,7 +2320,7 @@ namespace AutopartsRepository.Migrations
                             Id = 250,
                             BrandDescription = "",
                             BrandName = "Oyodo",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1376),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4701),
                             IsActive = true,
                             TecDoc = 6984
                         },
@@ -2329,7 +2329,7 @@ namespace AutopartsRepository.Migrations
                             Id = 251,
                             BrandDescription = "",
                             BrandName = "JPN",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(1379),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 43, DateTimeKind.Local).AddTicks(4704),
                             IsActive = true,
                             TecDoc = 6985
                         });
@@ -2401,7 +2401,7 @@ namespace AutopartsRepository.Migrations
                             Id = 1,
                             CountryNameCZ = "Česká republika",
                             CountryNameENG = "Czech Republic",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6210),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(448),
                             CurrencyId = 1,
                             ISOAlpha2 = "CZ",
                             ISOAlpha3 = "CZE",
@@ -2413,7 +2413,7 @@ namespace AutopartsRepository.Migrations
                             Id = 2,
                             CountryNameCZ = "Slovenská republika",
                             CountryNameENG = "Slovakia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6243),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(484),
                             CurrencyId = 2,
                             ISOAlpha2 = "SK",
                             ISOAlpha3 = "SVK",
@@ -2425,7 +2425,7 @@ namespace AutopartsRepository.Migrations
                             Id = 3,
                             CountryNameCZ = "Polsko",
                             CountryNameENG = "Poland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6248),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(489),
                             CurrencyId = 3,
                             ISOAlpha2 = "PL",
                             ISOAlpha3 = "POL",
@@ -2437,7 +2437,7 @@ namespace AutopartsRepository.Migrations
                             Id = 4,
                             CountryNameCZ = "Německo",
                             CountryNameENG = "Germany",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6252),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(494),
                             CurrencyId = 2,
                             ISOAlpha2 = "DE",
                             ISOAlpha3 = "DEU",
@@ -2449,7 +2449,7 @@ namespace AutopartsRepository.Migrations
                             Id = 5,
                             CountryNameCZ = "Rakousko",
                             CountryNameENG = "Austria",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6257),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(498),
                             CurrencyId = 2,
                             ISOAlpha2 = "AT",
                             ISOAlpha3 = "AUT",
@@ -2461,7 +2461,7 @@ namespace AutopartsRepository.Migrations
                             Id = 6,
                             CountryNameCZ = "Albánie",
                             CountryNameENG = "Albania",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6261),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(502),
                             CurrencyId = 4,
                             ISOAlpha2 = "AL",
                             ISOAlpha3 = "ALB",
@@ -2473,7 +2473,7 @@ namespace AutopartsRepository.Migrations
                             Id = 7,
                             CountryNameCZ = "Andorra",
                             CountryNameENG = "Andorra",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6265),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(506),
                             CurrencyId = 2,
                             ISOAlpha2 = "AD",
                             ISOAlpha3 = "AND",
@@ -2485,7 +2485,7 @@ namespace AutopartsRepository.Migrations
                             Id = 8,
                             CountryNameCZ = "Arménie",
                             CountryNameENG = "Armenia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6268),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(510),
                             CurrencyId = 5,
                             ISOAlpha2 = "AM",
                             ISOAlpha3 = "ARM",
@@ -2497,7 +2497,7 @@ namespace AutopartsRepository.Migrations
                             Id = 9,
                             CountryNameCZ = "Ázerbájdžán",
                             CountryNameENG = "Azerbaijan",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6272),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(514),
                             CurrencyId = 19,
                             ISOAlpha2 = "AZ",
                             ISOAlpha3 = "AZE",
@@ -2509,7 +2509,7 @@ namespace AutopartsRepository.Migrations
                             Id = 10,
                             CountryNameCZ = "Belgie",
                             CountryNameENG = "Belgium",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6276),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(518),
                             CurrencyId = 2,
                             ISOAlpha2 = "BE",
                             ISOAlpha3 = "BEL",
@@ -2521,7 +2521,7 @@ namespace AutopartsRepository.Migrations
                             Id = 11,
                             CountryNameCZ = "Bělorusko",
                             CountryNameENG = "Belarus",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6280),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(522),
                             CurrencyId = 24,
                             ISOAlpha2 = "BY",
                             ISOAlpha3 = "BLR",
@@ -2533,7 +2533,7 @@ namespace AutopartsRepository.Migrations
                             Id = 12,
                             CountryNameCZ = "Bosna a Hercegovina",
                             CountryNameENG = "Bosnia and Herzegovina",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6285),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(526),
                             CurrencyId = 26,
                             ISOAlpha2 = "BA",
                             ISOAlpha3 = "BIH",
@@ -2545,7 +2545,7 @@ namespace AutopartsRepository.Migrations
                             Id = 13,
                             CountryNameCZ = "Bulharsko",
                             CountryNameENG = "Bulgaria",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6289),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(530),
                             CurrencyId = 25,
                             ISOAlpha2 = "BG",
                             ISOAlpha3 = "BGR",
@@ -2557,7 +2557,7 @@ namespace AutopartsRepository.Migrations
                             Id = 14,
                             CountryNameCZ = "Černá Hora",
                             CountryNameENG = "Montenegro",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6293),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(534),
                             CurrencyId = 2,
                             ISOAlpha2 = "ME",
                             ISOAlpha3 = "MNE",
@@ -2569,7 +2569,7 @@ namespace AutopartsRepository.Migrations
                             Id = 15,
                             CountryNameCZ = "Dánsko",
                             CountryNameENG = "Denmark",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6299),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(538),
                             CurrencyId = 7,
                             ISOAlpha2 = "DK",
                             ISOAlpha3 = "DNK",
@@ -2581,7 +2581,7 @@ namespace AutopartsRepository.Migrations
                             Id = 16,
                             CountryNameCZ = "Estonsko",
                             CountryNameENG = "Estonia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6303),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(543),
                             CurrencyId = 2,
                             ISOAlpha2 = "EE",
                             ISOAlpha3 = "EST",
@@ -2593,7 +2593,7 @@ namespace AutopartsRepository.Migrations
                             Id = 17,
                             CountryNameCZ = "Finsko",
                             CountryNameENG = "Finland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6308),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(547),
                             CurrencyId = 2,
                             ISOAlpha2 = "FI",
                             ISOAlpha3 = "FIN",
@@ -2605,7 +2605,7 @@ namespace AutopartsRepository.Migrations
                             Id = 18,
                             CountryNameCZ = "Francie",
                             CountryNameENG = "France",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6313),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(551),
                             CurrencyId = 2,
                             ISOAlpha2 = "FR",
                             ISOAlpha3 = "FRA",
@@ -2617,7 +2617,7 @@ namespace AutopartsRepository.Migrations
                             Id = 19,
                             CountryNameCZ = "Gruzie",
                             CountryNameENG = "Georgia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6318),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(555),
                             CurrencyId = 28,
                             ISOAlpha2 = "GE",
                             ISOAlpha3 = "GEO",
@@ -2629,7 +2629,7 @@ namespace AutopartsRepository.Migrations
                             Id = 20,
                             CountryNameCZ = "Chorvatsko",
                             CountryNameENG = "Croatia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6323),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(559),
                             CurrencyId = 6,
                             ISOAlpha2 = "HR",
                             ISOAlpha3 = "HRV",
@@ -2641,7 +2641,7 @@ namespace AutopartsRepository.Migrations
                             Id = 21,
                             CountryNameCZ = "Irsko",
                             CountryNameENG = "Ireland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6328),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(562),
                             CurrencyId = 2,
                             ISOAlpha2 = "IE",
                             ISOAlpha3 = "IRL",
@@ -2653,7 +2653,7 @@ namespace AutopartsRepository.Migrations
                             Id = 22,
                             CountryNameCZ = "Island",
                             CountryNameENG = "Iceland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6333),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(567),
                             CurrencyId = 9,
                             ISOAlpha2 = "IS",
                             ISOAlpha3 = "ISL",
@@ -2665,7 +2665,7 @@ namespace AutopartsRepository.Migrations
                             Id = 23,
                             CountryNameCZ = "Itálie",
                             CountryNameENG = "Italy",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6338),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(571),
                             CurrencyId = 2,
                             ISOAlpha2 = "IT",
                             ISOAlpha3 = "ITA",
@@ -2677,7 +2677,7 @@ namespace AutopartsRepository.Migrations
                             Id = 24,
                             CountryNameCZ = "Kazachstán",
                             CountryNameENG = "Kazakhstan",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6343),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(575),
                             CurrencyId = 10,
                             ISOAlpha2 = "KZ",
                             ISOAlpha3 = "KAZ",
@@ -2689,7 +2689,7 @@ namespace AutopartsRepository.Migrations
                             Id = 25,
                             CountryNameCZ = "Kypr (Kyperská republika)",
                             CountryNameENG = "Cyprus",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6348),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(579),
                             CurrencyId = 2,
                             ISOAlpha2 = "CY",
                             ISOAlpha3 = "CYP",
@@ -2701,7 +2701,7 @@ namespace AutopartsRepository.Migrations
                             Id = 26,
                             CountryNameCZ = "Lichtenštejnsko (Lichtenštejnské knížectví)",
                             CountryNameENG = "Liechtenstein",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6353),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(583),
                             CurrencyId = 15,
                             ISOAlpha2 = "LI",
                             ISOAlpha3 = "LIE",
@@ -2713,7 +2713,7 @@ namespace AutopartsRepository.Migrations
                             Id = 27,
                             CountryNameCZ = "Litva (Litevská republika)",
                             CountryNameENG = "Lithuania",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6358),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(587),
                             CurrencyId = 2,
                             ISOAlpha2 = "LT",
                             ISOAlpha3 = "LTU",
@@ -2725,7 +2725,7 @@ namespace AutopartsRepository.Migrations
                             Id = 28,
                             CountryNameCZ = "Lotyšsko (Lotyšská republika)",
                             CountryNameENG = "Latvia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6364),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(592),
                             CurrencyId = 2,
                             ISOAlpha2 = "LV",
                             ISOAlpha3 = "LVA",
@@ -2737,7 +2737,7 @@ namespace AutopartsRepository.Migrations
                             Id = 29,
                             CountryNameCZ = "Lucembursko",
                             CountryNameENG = "Luxembourg",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6369),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(596),
                             CurrencyId = 2,
                             ISOAlpha2 = "LU",
                             ISOAlpha3 = "LUX",
@@ -2749,7 +2749,7 @@ namespace AutopartsRepository.Migrations
                             Id = 30,
                             CountryNameCZ = "Maďarsko",
                             CountryNameENG = "Hungary",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6374),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(600),
                             CurrencyId = 8,
                             ISOAlpha2 = "HU",
                             ISOAlpha3 = "HUN",
@@ -2761,7 +2761,7 @@ namespace AutopartsRepository.Migrations
                             Id = 31,
                             CountryNameCZ = "Malta",
                             CountryNameENG = "Malta",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6380),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(604),
                             CurrencyId = 2,
                             ISOAlpha2 = "MT",
                             ISOAlpha3 = "MLT",
@@ -2773,7 +2773,7 @@ namespace AutopartsRepository.Migrations
                             Id = 32,
                             CountryNameCZ = "Moldavsko (Moldavská republika)",
                             CountryNameENG = "Moldova",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6385),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(609),
                             CurrencyId = 11,
                             ISOAlpha2 = "MD",
                             ISOAlpha3 = "MDA",
@@ -2785,7 +2785,7 @@ namespace AutopartsRepository.Migrations
                             Id = 33,
                             CountryNameCZ = "Monako",
                             CountryNameENG = "Monaco",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6453),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(613),
                             CurrencyId = 2,
                             ISOAlpha2 = "MC",
                             ISOAlpha3 = "MCO",
@@ -2797,7 +2797,7 @@ namespace AutopartsRepository.Migrations
                             Id = 34,
                             CountryNameCZ = "Nizozemsko",
                             CountryNameENG = "Netherlands",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6457),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(617),
                             CurrencyId = 2,
                             ISOAlpha2 = "NL",
                             ISOAlpha3 = "NLD",
@@ -2809,7 +2809,7 @@ namespace AutopartsRepository.Migrations
                             Id = 35,
                             CountryNameCZ = "Norsko",
                             CountryNameENG = "Norway",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6461),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(621),
                             CurrencyId = 12,
                             ISOAlpha2 = "NO",
                             ISOAlpha3 = "NOR",
@@ -2821,7 +2821,7 @@ namespace AutopartsRepository.Migrations
                             Id = 36,
                             CountryNameCZ = "Portugalsko",
                             CountryNameENG = "Portugal",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6465),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(625),
                             CurrencyId = 2,
                             ISOAlpha2 = "PT",
                             ISOAlpha3 = "PRT",
@@ -2833,7 +2833,7 @@ namespace AutopartsRepository.Migrations
                             Id = 37,
                             CountryNameCZ = "Rumunsko",
                             CountryNameENG = "Romania",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6469),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(629),
                             CurrencyId = 20,
                             ISOAlpha2 = "RO",
                             ISOAlpha3 = "ROU",
@@ -2845,7 +2845,7 @@ namespace AutopartsRepository.Migrations
                             Id = 38,
                             CountryNameCZ = "Rusko",
                             CountryNameENG = "Russian Federation",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6473),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(633),
                             CurrencyId = 13,
                             ISOAlpha2 = "RU",
                             ISOAlpha3 = "RUS",
@@ -2857,7 +2857,7 @@ namespace AutopartsRepository.Migrations
                             Id = 39,
                             CountryNameCZ = "Řecko",
                             CountryNameENG = "Greece",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6477),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(637),
                             CurrencyId = 2,
                             ISOAlpha2 = "GR",
                             ISOAlpha3 = "GRC",
@@ -2869,7 +2869,7 @@ namespace AutopartsRepository.Migrations
                             Id = 40,
                             CountryNameCZ = "San Marino",
                             CountryNameENG = "San Marino",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6481),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(641),
                             CurrencyId = 2,
                             ISOAlpha2 = "SM",
                             ISOAlpha3 = "SMR",
@@ -2881,7 +2881,7 @@ namespace AutopartsRepository.Migrations
                             Id = 41,
                             CountryNameCZ = "Severní Makedonie (Republika Severní Makedonie)",
                             CountryNameENG = "Macedonia, Republic of",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6484),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(645),
                             CurrencyId = 16,
                             ISOAlpha2 = "MK",
                             ISOAlpha3 = "MKD",
@@ -2893,7 +2893,7 @@ namespace AutopartsRepository.Migrations
                             Id = 42,
                             CountryNameCZ = "Slovinsko",
                             CountryNameENG = "Slovenia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6488),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(649),
                             CurrencyId = 2,
                             ISOAlpha2 = "SI",
                             ISOAlpha3 = "SVN",
@@ -2905,7 +2905,7 @@ namespace AutopartsRepository.Migrations
                             Id = 43,
                             CountryNameCZ = "Srbsko",
                             CountryNameENG = "Serbia",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6493),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(653),
                             CurrencyId = 18,
                             ISOAlpha2 = "RS",
                             ISOAlpha3 = "SRB",
@@ -2917,7 +2917,7 @@ namespace AutopartsRepository.Migrations
                             Id = 44,
                             CountryNameCZ = "Španělsko",
                             CountryNameENG = "Spain",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6497),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(741),
                             CurrencyId = 2,
                             ISOAlpha2 = "ES",
                             ISOAlpha3 = "ESP",
@@ -2929,7 +2929,7 @@ namespace AutopartsRepository.Migrations
                             Id = 45,
                             CountryNameCZ = "Švédsko",
                             CountryNameENG = "Sweden",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6501),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(747),
                             CurrencyId = 14,
                             ISOAlpha2 = "SE",
                             ISOAlpha3 = "SWE",
@@ -2941,7 +2941,7 @@ namespace AutopartsRepository.Migrations
                             Id = 46,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6504),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(753),
                             CurrencyId = 21,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2953,7 +2953,7 @@ namespace AutopartsRepository.Migrations
                             Id = 47,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6508),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(757),
                             CurrencyId = 15,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2965,7 +2965,7 @@ namespace AutopartsRepository.Migrations
                             Id = 48,
                             CountryNameCZ = "Švýcarsko",
                             CountryNameENG = "Switzerland",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6512),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(761),
                             CurrencyId = 22,
                             ISOAlpha2 = "CH",
                             ISOAlpha3 = "CHE",
@@ -2977,7 +2977,7 @@ namespace AutopartsRepository.Migrations
                             Id = 49,
                             CountryNameCZ = "Turecko",
                             CountryNameENG = "Turkey",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6516),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(765),
                             CurrencyId = 23,
                             ISOAlpha2 = "TR",
                             ISOAlpha3 = "TUR",
@@ -2989,7 +2989,7 @@ namespace AutopartsRepository.Migrations
                             Id = 50,
                             CountryNameCZ = "Ukrajina",
                             CountryNameENG = "Ukraine",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6519),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(769),
                             CurrencyId = 27,
                             ISOAlpha2 = "UA",
                             ISOAlpha3 = "UKR",
@@ -3001,7 +3001,7 @@ namespace AutopartsRepository.Migrations
                             Id = 51,
                             CountryNameCZ = "Vatikán (Městský stát Vatikán)",
                             CountryNameENG = "Holy See (Vatican City State)",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6523),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(773),
                             CurrencyId = 2,
                             ISOAlpha2 = "VA",
                             ISOAlpha3 = "VAT",
@@ -3013,7 +3013,7 @@ namespace AutopartsRepository.Migrations
                             Id = 52,
                             CountryNameCZ = "Velká Británie (Spojené království)",
                             CountryNameENG = "United Kingdom",
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 148, DateTimeKind.Local).AddTicks(6527),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(776),
                             CurrencyId = 17,
                             ISOAlpha2 = "GB",
                             ISOAlpha3 = "GBR",
@@ -3071,7 +3071,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(389),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4934),
                             CurrencyCode = "CZK",
                             CurrencyName = "Česká koruna",
                             IsActive = true,
@@ -3080,7 +3080,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(419),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4968),
                             CurrencyCode = "EUR",
                             CurrencyName = "Euro",
                             IsActive = true,
@@ -3089,7 +3089,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(424),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4972),
                             CurrencyCode = "PLN",
                             CurrencyName = "Złoty",
                             IsActive = true,
@@ -3098,7 +3098,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(427),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4976),
                             CurrencyCode = "ALL",
                             CurrencyName = "Albánský lek",
                             IsActive = false,
@@ -3107,7 +3107,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(431),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4979),
                             CurrencyCode = "AMD",
                             CurrencyName = "Arménský dram",
                             IsActive = false,
@@ -3116,7 +3116,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(435),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4983),
                             CurrencyCode = "HRK",
                             CurrencyName = "Kuna",
                             IsActive = false,
@@ -3125,7 +3125,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 7,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(438),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4987),
                             CurrencyCode = "DKK",
                             CurrencyName = "Dánská koruna",
                             IsActive = false,
@@ -3134,7 +3134,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 8,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(442),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4990),
                             CurrencyCode = "HUF",
                             CurrencyName = "Forint",
                             IsActive = false,
@@ -3143,7 +3143,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 9,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(445),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4994),
                             CurrencyCode = "ISK",
                             CurrencyName = "Islandská koruna",
                             IsActive = false,
@@ -3152,7 +3152,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 10,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(448),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(4997),
                             CurrencyCode = "KZT",
                             CurrencyName = "Tenge",
                             IsActive = false,
@@ -3161,7 +3161,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 11,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(452),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5000),
                             CurrencyCode = "MDL",
                             CurrencyName = "Moldavské leu",
                             IsActive = false,
@@ -3170,7 +3170,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 12,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(455),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5004),
                             CurrencyCode = "NOK",
                             CurrencyName = "Norská koruna",
                             IsActive = false,
@@ -3179,7 +3179,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 13,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(459),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5007),
                             CurrencyCode = "RUB",
                             CurrencyName = "Ruský rubl",
                             IsActive = false,
@@ -3188,7 +3188,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 14,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(462),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5011),
                             CurrencyCode = "SEK",
                             CurrencyName = "Švédská koruna",
                             IsActive = false,
@@ -3197,7 +3197,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 15,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(466),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5014),
                             CurrencyCode = "CHF",
                             CurrencyName = "Švýcarský frank",
                             IsActive = false,
@@ -3206,7 +3206,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 16,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(469),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5017),
                             CurrencyCode = "MKD",
                             CurrencyName = "Denár",
                             IsActive = false,
@@ -3215,7 +3215,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 17,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(472),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5021),
                             CurrencyCode = "GBP",
                             CurrencyName = "Libra šterlinků",
                             IsActive = false,
@@ -3224,7 +3224,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 18,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(476),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5024),
                             CurrencyCode = "RSD",
                             CurrencyName = "Srbský dinár",
                             IsActive = false,
@@ -3233,7 +3233,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 19,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(479),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5028),
                             CurrencyCode = "AZN",
                             CurrencyName = "Ázerbájdžánský manat",
                             IsActive = false,
@@ -3242,7 +3242,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 20,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(482),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5031),
                             CurrencyCode = "RON",
                             CurrencyName = "Rumunské leu",
                             IsActive = false,
@@ -3251,7 +3251,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 21,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(486),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5034),
                             CurrencyCode = "CHE",
                             CurrencyName = "WIR Euro",
                             IsActive = false,
@@ -3260,7 +3260,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 22,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(489),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5038),
                             CurrencyCode = "CHW",
                             CurrencyName = "WIR Frank",
                             IsActive = false,
@@ -3269,7 +3269,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 23,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(492),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5041),
                             CurrencyCode = "TRY",
                             CurrencyName = "Turecká lira",
                             IsActive = false,
@@ -3278,7 +3278,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 24,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(496),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5044),
                             CurrencyCode = "BYR",
                             CurrencyName = "Běloruský rubl",
                             IsActive = false,
@@ -3287,7 +3287,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 25,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(499),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5048),
                             CurrencyCode = "BGN",
                             CurrencyName = "Bulharská leva",
                             IsActive = false,
@@ -3296,7 +3296,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 26,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(503),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5051),
                             CurrencyCode = "BAM",
                             CurrencyName = "Konvertibilní marka",
                             IsActive = false,
@@ -3305,7 +3305,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 27,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(506),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5054),
                             CurrencyCode = "UAH",
                             CurrencyName = "Ukrajinská hřivna",
                             IsActive = false,
@@ -3314,7 +3314,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 28,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 149, DateTimeKind.Local).AddTicks(509),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 44, DateTimeKind.Local).AddTicks(5058),
                             CurrencyCode = "GEL",
                             CurrencyName = "Lari",
                             IsActive = false,
@@ -3439,7 +3439,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3158),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 45, DateTimeKind.Local).AddTicks(6647),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3460,7 +3460,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3212),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 45, DateTimeKind.Local).AddTicks(6686),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3481,7 +3481,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3223),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 45, DateTimeKind.Local).AddTicks(6695),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3502,7 +3502,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3230),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 45, DateTimeKind.Local).AddTicks(6701),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3523,7 +3523,7 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(3237),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 45, DateTimeKind.Local).AddTicks(6707),
                             IsActive = true,
                             IsAgriculturalMachinery = false,
                             IsAutoParts = false,
@@ -3540,6 +3540,184 @@ namespace AutopartsRepository.Migrations
                             IsVacuumPumps = false,
                             ManufacturerName = "VOLKSWAGEN",
                             TecDoc = 881
+                        });
+                });
+
+            modelBuilder.Entity("AutopartsEntity.Catalog.Entities.Model", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasMaxLength(10)
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsAgriculturalMachinery")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsCompressors")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsConstuctionAndMining")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsElectronicDischargeMachines")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsEngines")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsForkLiftTruck")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsIndustrialApplications")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsLKW")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsMotorcycle")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsPKW")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsShipsAndBoats")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsVacuumPumps")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<DateTime>("MadeBy")
+                        .HasMaxLength(10)
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("MadeTo")
+                        .HasMaxLength(10)
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ManufacturerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModelName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasMaxLength(10)
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ManufacturerId");
+
+                    b.ToTable("Models");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 46, DateTimeKind.Local).AddTicks(8683),
+                            IsActive = true,
+                            IsAgriculturalMachinery = false,
+                            IsCompressors = false,
+                            IsConstuctionAndMining = false,
+                            IsElectronicDischargeMachines = false,
+                            IsEngines = false,
+                            IsForkLiftTruck = false,
+                            IsIndustrialApplications = false,
+                            IsLKW = false,
+                            IsMotorcycle = false,
+                            IsPKW = true,
+                            IsShipsAndBoats = false,
+                            IsVacuumPumps = false,
+                            MadeBy = new DateTime(1976, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MadeTo = new DateTime(1984, 8, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManufacturerId = 1,
+                            ModelName = "100 (431, 433, 434, C2)"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 46, DateTimeKind.Local).AddTicks(8731),
+                            IsActive = true,
+                            IsAgriculturalMachinery = false,
+                            IsCompressors = false,
+                            IsConstuctionAndMining = false,
+                            IsElectronicDischargeMachines = false,
+                            IsEngines = false,
+                            IsForkLiftTruck = false,
+                            IsIndustrialApplications = false,
+                            IsLKW = false,
+                            IsMotorcycle = false,
+                            IsPKW = true,
+                            IsShipsAndBoats = false,
+                            IsVacuumPumps = false,
+                            MadeBy = new DateTime(1982, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MadeTo = new DateTime(1991, 7, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManufacturerId = 1,
+                            ModelName = "100 (443, 444, C3)"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 46, DateTimeKind.Local).AddTicks(8739),
+                            IsActive = true,
+                            IsAgriculturalMachinery = false,
+                            IsCompressors = false,
+                            IsConstuctionAndMining = false,
+                            IsElectronicDischargeMachines = false,
+                            IsEngines = false,
+                            IsForkLiftTruck = false,
+                            IsIndustrialApplications = false,
+                            IsLKW = false,
+                            IsMotorcycle = false,
+                            IsPKW = true,
+                            IsShipsAndBoats = false,
+                            IsVacuumPumps = false,
+                            MadeBy = new DateTime(1990, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            MadeTo = new DateTime(1994, 7, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ManufacturerId = 1,
+                            ModelName = "100 (4A2, C4)"
                         });
                 });
 
@@ -3583,42 +3761,42 @@ namespace AutopartsRepository.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8879),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2502),
                             IsActive = true,
                             WarrantyPeriod = "6 měsíců"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8910),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2530),
                             IsActive = true,
                             WarrantyPeriod = "12 měsíců"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8916),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2534),
                             IsActive = true,
                             WarrantyPeriod = "24 měsíců"
                         },
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8921),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2537),
                             IsActive = true,
                             WarrantyPeriod = "36 měsíců"
                         },
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8926),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2540),
                             IsActive = false,
                             WarrantyPeriod = "48 měsíců"
                         },
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2023, 11, 29, 12, 36, 59, 150, DateTimeKind.Local).AddTicks(8931),
+                            CreateDate = new DateTime(2023, 11, 30, 11, 47, 8, 47, DateTimeKind.Local).AddTicks(2543),
                             IsActive = false,
                             WarrantyPeriod = "60 měsíců"
                         });
@@ -3633,6 +3811,17 @@ namespace AutopartsRepository.Migrations
                         .IsRequired();
 
                     b.Navigation("Currency");
+                });
+
+            modelBuilder.Entity("AutopartsEntity.Catalog.Entities.Model", b =>
+                {
+                    b.HasOne("AutopartsEntity.Catalog.Entities.Manufacturer", "Manufacturer")
+                        .WithMany()
+                        .HasForeignKey("ManufacturerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Manufacturer");
                 });
 #pragma warning restore 612, 618
         }
