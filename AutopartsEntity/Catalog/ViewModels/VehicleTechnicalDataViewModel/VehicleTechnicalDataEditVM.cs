@@ -1,10 +1,14 @@
-﻿using AutopartsCore.BaseEntities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace AutopartsEntity.Catalog.Entities
+namespace AutopartsEntity.Catalog.ViewModels.VehicleTechnicalDataViewModel
 {
-    public class TechnicalData : BaseEntity
+    public class VehicleTechnicalDataEditVM
     {
+        public int Id { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime UpdateDate { get; set; } = DateTime.Now;
+        public byte[] RowVersion { get; set; } = null!;
+
         public int PowerKW { get; set; }
         public int PowerHP { get; set; }
         public int EngineCapacity { get; set; }

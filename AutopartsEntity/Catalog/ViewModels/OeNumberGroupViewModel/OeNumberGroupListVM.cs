@@ -8,8 +8,8 @@ namespace AutopartsEntity.Catalog.ViewModels.OeNumberGroupViewModel
         public DateTime CreateDate { get; set; } = DateTime.Now;
         public DateTime? UpdateDate { get; set; } = DateTime.Now;
 
+        public int OENumberInGroupId { get; set; }
         public int OeId { get; set; }
         public Oe Oe { get; set; } = null!;
-        public int OENumberInGroupId { get; set; }
     }
 }

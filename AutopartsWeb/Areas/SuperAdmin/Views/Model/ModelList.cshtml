@@ -24,7 +24,7 @@
                 <tr>
                     <th class="text-center align-middle" scope="col">Výrobce</th>
                     <th class="text-center align-middle" scope="col">Model</th>
-                    <th class="text-center align-middle" scope="col">Rok výroby</th>
+                    <th class="text-center align-middle" scope="col">Od<br />Do</th>
                     <th class="text-center align-middle" scope="col">
                         <img src="~/Image/Icons/32px/sport-car32.png" />
                     </th>
@@ -72,7 +72,10 @@
                     <tr>
                         <td class="text-center align-middle">@item.Manufacturer.ManufacturerName</td>
                         <td class="text-center align-middle">@item.ModelName</td>
-                        <td class="text-center align-middle">@item.MadeBy.ToString("yyyy") - @item.MadeTo.ToString("yyyy")</td>
+                        <td class="text-center align-middle">
+                            @item.MadeBy.ToString("yyyy")<br />
+                            @(item.MadeTo.HasValue ? item.MadeTo.Value.ToString("yyyy") : "nyní")
+                        </td>
                         @if (item.IsPKW == false)
                         {
                             <td class="text-center align-middle">

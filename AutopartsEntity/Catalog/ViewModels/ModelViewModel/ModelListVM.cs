@@ -12,7 +12,7 @@ namespace AutopartsEntity.Catalog.ViewModels.ModelViewModel
         public Manufacturer Manufacturer { get; set; } = null!;
         public string ModelName { get; set; } = null!;
         public DateTime MadeBy { get; set; }
-        public DateTime MadeTo { get; set; }
+        public DateTime? MadeTo { get; set; } = null;
         public bool IsPKW { get; set; } = false;
         public bool IsLKW { get; set; } = false;
         public bool IsMotorcycle { get; set; } = false;

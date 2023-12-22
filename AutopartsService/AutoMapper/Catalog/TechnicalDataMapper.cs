@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using AutopartsEntity.Catalog.Entities;
-using AutopartsEntity.Catalog.ViewModels.TechnicalDataViewModel;
+using AutopartsEntity.Catalog.ViewModels.VehicleTechnicalDataViewModel;
 
 namespace AutopartsService.AutoMapper.Catalog
 {
@@ -8,9 +8,9 @@ namespace AutopartsService.AutoMapper.Catalog
     {
         public TechnicalDataMapper()
         {
-            CreateMap<TechnicalData, TechnicalDataListVM>().ReverseMap();
-            CreateMap<TechnicalData, TechnicalDataCreateVM>().ReverseMap();
-            CreateMap<TechnicalData, TechnicalDataEditVM>().ReverseMap();
+            CreateMap<VehicleTechnicalData, VehicleTechnicalDataListVM>().ReverseMap();
+            CreateMap<VehicleTechnicalData, VehicleTechnicalDataCreateVM>().ReverseMap();
+            CreateMap<VehicleTechnicalData, VehicleTechnicalDataEditVM>().ReverseMap();
         }
     }
 }

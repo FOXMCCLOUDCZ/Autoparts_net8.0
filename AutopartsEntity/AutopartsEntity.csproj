@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Catalog\ViewModels\ParentPkwEngineViewModel\" />
     <Folder Include="Identity\Entities\" />
     <Folder Include="Identity\ViewModels\" />
   </ItemGroup>

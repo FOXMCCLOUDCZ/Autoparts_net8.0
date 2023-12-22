@@ -1,13 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AutopartsEntity.Catalog.ViewModels.TechnicalDataViewModel
+namespace AutopartsEntity.Catalog.ViewModels.VehicleTechnicalDataViewModel
 {
-    public class TechnicalDataListVM
+    public class VehicleTechnicalDataCreateVM
     {
-        public int Id { get; set; }
-        public DateTime CreateDate { get; set; } = DateTime.Now;
-        public DateTime? UpdateDate { get; set; } = DateTime.Now;
-
         public int PowerKW { get; set; }
         public int PowerHP { get; set; }
         public int EngineCapacity { get; set; }
